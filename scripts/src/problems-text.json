@@ -1,0 +1,1524 @@
+[
+ {
+  "title": "Daftar xaridi",
+  "story": "Ali do‘konga daftar olgani bordi. Bitta daftar narxi, Ali olgan daftarlar soni va Alidagi pul kiritiladi. Ali daftarlar uchun jami qancha to‘lashini va qancha qaytim olishini toping.",
+  "kirish": [
+   "narx — bitta daftar narxi",
+   "son — daftarlar soni",
+   "pul — Alidagi pul"
+  ],
+  "chiqish": [
+   "1-qator: jami narx",
+   "2-qator: qaytim"
+  ],
+  "cheklov": "1000 ≤ narx ≤ 50000; 1 ≤ son ≤ 20; pul har doim yetarli",
+  "samples": [
+   [
+    4000,
+    5,
+    50000
+   ],
+   [
+    3500,
+    2,
+    7000
+   ]
+  ],
+  "izoh": "Jami narx = 4000 × 5 = 20000. Qaytim = 50000 − 20000 = 30000.",
+  "sampleOutputs": [
+   "20000\n30000",
+   "7000\n0"
+  ]
+ },
+ {
+  "title": "Film davomiyligi",
+  "story": "Kinoteatr afishasida film davomiyligi daqiqada yozilgan. Shu vaqt necha soat va necha daqiqa ekanini toping (1 soat = 60 daqiqa).",
+  "kirish": [
+   "t — film davomiyligi (daqiqa)"
+  ],
+  "chiqish": [
+   "1-qator: to‘liq soatlar soni",
+   "2-qator: qolgan daqiqalar"
+  ],
+  "cheklov": "1 ≤ t ≤ 600",
+  "samples": [
+   [
+    135
+   ],
+   [
+    59
+   ],
+   [
+    180
+   ]
+  ],
+  "izoh": "135 / 60 = 2 (butun qism) → 2 soat. 135 mod 60 = 15 → 15 daqiqa. Demak, film 2 soat 15 daqiqa davom etadi.",
+  "sampleOutputs": [
+   "2\n15",
+   "0\n59",
+   "3\n0"
+  ]
+ },
+ {
+  "title": "Ekskursiya avtobuslari",
+  "story": "Ekskursiyaga N ta o‘quvchi boradi. Har bir avtobusga 30 kishi sig‘adi. Avtobuslar ketma-ket to‘ldiriladi. Nechta avtobus to‘liq to‘ladi va oxirgi, to‘lmagan avtobusga nechta o‘quvchi qoladi?",
+  "kirish": [
+   "N — o‘quvchilar soni"
+  ],
+  "chiqish": [
+   "1-qator: to‘liq avtobuslar soni",
+   "2-qator: ortib qolgan o‘quvchilar soni"
+  ],
+  "cheklov": "1 ≤ N ≤ 1000",
+  "samples": [
+   [
+    95
+   ],
+   [
+    60
+   ],
+   [
+    17
+   ]
+  ],
+  "izoh": "95 / 30 = 3 → 3 ta avtobus to‘liq (90 kishi). 95 mod 30 = 5 → 5 ta o‘quvchi ortib qoladi.",
+  "sampleOutputs": [
+   "3\n5",
+   "2\n0",
+   "0\n17"
+  ]
+ },
+ {
+  "title": "Xonadon raqami",
+  "story": "Xonadon raqami ikki xonali son. Uning raqamlari yig‘indisini va raqamlari ko‘paytmasini toping.",
+  "kirish": [
+   "n — ikki xonali son"
+  ],
+  "chiqish": [
+   "1-qator: raqamlar yig‘indisi",
+   "2-qator: raqamlar ko‘paytmasi"
+  ],
+  "cheklov": "10 ≤ n ≤ 99",
+  "samples": [
+   [
+    47
+   ],
+   [
+    90
+   ],
+   [
+    11
+   ]
+  ],
+  "izoh": "O‘nliklar raqami: 47 / 10 = 4. Birliklar raqami: 47 mod 10 = 7. Yig‘indi: 4 + 7 = 11. Ko‘paytma: 4 × 7 = 28.",
+  "sampleOutputs": [
+   "11\n28",
+   "9\n0",
+   "2\n1"
+  ]
+ },
+ {
+  "title": "Teskari raqam",
+  "story": "Uch xonali son kiritiladi. Uning raqamlarini teskari tartibda yozib, yangi son hosil qiling (masalan, 123 → 321) va shu sonni chiqaring.",
+  "kirish": [
+   "n — uch xonali son"
+  ],
+  "chiqish": [
+   "teskari tartibda yozilgan son"
+  ],
+  "cheklov": "100 ≤ n ≤ 999",
+  "samples": [
+   [
+    123
+   ],
+   [
+    507
+   ],
+   [
+    900
+   ]
+  ],
+  "izoh": "Yuzliklar: 123 / 100 = 1. O‘nliklar: (123 / 10) mod 10 = 2. Birliklar: 123 mod 10 = 3. Yangi son: 3 × 100 + 2 × 10 + 1 = 321. (900 uchun 009 hosil bo‘ladi, ya’ni 9.)",
+  "sampleOutputs": [
+   "321",
+   "705",
+   "9"
+  ]
+ },
+ {
+  "title": "Elektr to‘lovi",
+  "story": "Elektr hisoblagichi oy boshida A, oy oxirida B kVt ko‘rsatdi. 1 kVt narxi P so‘m. Oy davomida qancha elektr sarflanganini va qancha to‘lash kerakligini toping.",
+  "kirish": [
+   "A — oy boshidagi ko‘rsatkich",
+   "B — oy oxiridagi ko‘rsatkich",
+   "P — 1 kVt narxi"
+  ],
+  "chiqish": [
+   "1-qator: sarf (kVt)",
+   "2-qator: to‘lov summasi"
+  ],
+  "cheklov": "0 ≤ A ≤ B ≤ 100000; 100 ≤ P ≤ 2000",
+  "samples": [
+   [
+    1520,
+    1690,
+    600
+   ],
+   [
+    300,
+    300,
+    450
+   ]
+  ],
+  "izoh": "Sarf = 1690 − 1520 = 170 kVt. To‘lov = 170 × 600 = 102000 so‘m.",
+  "sampleOutputs": [
+   "170\n102000",
+   "0\n0"
+  ]
+ },
+ {
+  "title": "Sekundlarni ajratish",
+  "story": "Yuguruvchi masofani N sekundda bosib o‘tdi. Bu vaqt necha soat, necha daqiqa va necha sekund ekanini toping (1 soat = 3600 sekund, 1 daqiqa = 60 sekund).",
+  "kirish": [
+   "N — vaqt (sekund)"
+  ],
+  "chiqish": [
+   "1-qator: soat",
+   "2-qator: daqiqa",
+   "3-qator: sekund"
+  ],
+  "cheklov": "0 ≤ N ≤ 86399",
+  "samples": [
+   [
+    3725
+   ],
+   [
+    59
+   ],
+   [
+    7200
+   ]
+  ],
+  "izoh": "Soat: 3725 / 3600 = 1. Qolgan: 3725 mod 3600 = 125 sekund. Daqiqa: 125 / 60 = 2. Sekund: 3725 mod 60 = 5. Javob: 1 soat 2 daqiqa 5 sekund.",
+  "sampleOutputs": [
+   "1\n2\n5",
+   "0\n0\n59",
+   "2\n0\n0"
+  ]
+ },
+ {
+  "title": "Pulni maydalash",
+  "story": "Kassir S so‘mni berishi kerak. Avval imkon qadar ko‘p 5000 so‘mlik kupyura beradi, qolganini imkon qadar ko‘p 1000 so‘mlik kupyura bilan beradi. 1000 so‘mdan kam qolgan qismi tanga bilan beriladi. Nechta 5000 lik, nechta 1000 lik va necha so‘m tanga bo‘lishini toping.",
+  "kirish": [
+   "S — summa (so‘m)"
+  ],
+  "chiqish": [
+   "1-qator: 5000 liklar soni",
+   "2-qator: 1000 liklar soni",
+   "3-qator: tanga (so‘m)"
+  ],
+  "cheklov": "0 ≤ S ≤ 1000000",
+  "samples": [
+   [
+    17300
+   ],
+   [
+    4999
+   ],
+   [
+    10000
+   ]
+  ],
+  "izoh": "17300 / 5000 = 3 → 3 ta 5000 lik (15000). Qolgan: 17300 mod 5000 = 2300. 2300 / 1000 = 2 → 2 ta 1000 lik. Tanga: 2300 mod 1000 = 300 so‘m.",
+  "sampleOutputs": [
+   "3\n2\n300",
+   "0\n4\n999",
+   "2\n0\n0"
+  ]
+ },
+ {
+  "title": "Qaysi do‘kon arzon?",
+  "story": "Bir xil mahsulot 1-do‘konda a so‘m, 2-do‘konda b so‘m turadi. Narxlar teng bo‘lsa, faqat Teng deb chiqaring. Aks holda birinchi qatorda arzon do‘kon raqamini (1 yoki 2), ikkinchi qatorda narxlar farqini chiqaring.",
+  "kirish": [
+   "a — 1-do‘kondagi narx",
+   "b — 2-do‘kondagi narx"
+  ],
+  "chiqish": [
+   "Teng; yoki ikki qator: arzon do‘kon raqami va narxlar farqi"
+  ],
+  "cheklov": "1 ≤ a, b ≤ 10000000",
+  "samples": [
+   [
+    12000,
+    10500
+   ],
+   [
+    8000,
+    9000
+   ],
+   [
+    5000,
+    5000
+   ]
+  ],
+  "izoh": "12000 > 10500, demak 2-do‘kon arzon. Farq: 12000 − 10500 = 1500.",
+  "sampleOutputs": [
+   "2\n1500",
+   "1\n1000",
+   "Teng"
+  ]
+ },
+ {
+  "title": "To‘y stollari",
+  "story": "To‘yga N ta mehmon keladi. Har bir stolga ko‘pi bilan 4 kishi o‘tiradi. Barcha mehmonlar o‘tirishi uchun kamida nechta stol kerak?",
+  "kirish": [
+   "N — mehmonlar soni"
+  ],
+  "chiqish": [
+   "kerakli stollar soni"
+  ],
+  "cheklov": "1 ≤ N ≤ 1000",
+  "samples": [
+   [
+    10
+   ],
+   [
+    12
+   ],
+   [
+    1
+   ]
+  ],
+  "izoh": "10 / 4 = 2 ta to‘liq stol (8 kishi). 10 mod 4 = 2, ya’ni 2 kishi qoldi, ular uchun yana 1 stol kerak. Jami: 2 + 1 = 3. (12 ta mehmonda qoldiq 0, shuning uchun 3 ta stolning o‘zi yetadi.)",
+  "sampleOutputs": [
+   "3",
+   "3",
+   "1"
+  ]
+ },
+ {
+  "title": "Yosh guruhi",
+  "story": "Inson yoshi kiritiladi. Yoshi 7 dan kichik bo‘lsa — Bogcha; 7 dan 17 gacha (7 va 17 ham kiradi) — Maktab; 18 dan 22 gacha (18 va 22 ham kiradi) — Talaba; 23 va undan katta — Katta deb chiqaring.",
+  "kirish": [
+   "yosh"
+  ],
+  "chiqish": [
+   "Bogcha, Maktab, Talaba yoki Katta"
+  ],
+  "cheklov": "0 ≤ yosh ≤ 120",
+  "samples": [
+   [
+    17
+   ],
+   [
+    5
+   ],
+   [
+    18
+   ],
+   [
+    40
+   ]
+  ],
+  "izoh": "17 soni 7 dan 17 gacha oraliqqa kiradi (17 ham kiradi), shuning uchun javob Maktab.",
+  "sampleOutputs": [
+   "Maktab",
+   "Bogcha",
+   "Talaba",
+   "Katta"
+  ]
+ },
+ {
+  "title": "Imtihon bahosi",
+  "story": "Imtihon bali kiritiladi. Baho quyidagicha qo‘yiladi: 86–100 ball → 5; 71–85 → 4; 56–70 → 3; 0–55 → 2. Bahoni chiqaring.",
+  "kirish": [
+   "ball"
+  ],
+  "chiqish": [
+   "baho: 2, 3, 4 yoki 5"
+  ],
+  "cheklov": "0 ≤ ball ≤ 100",
+  "samples": [
+   [
+    71
+   ],
+   [
+    91
+   ],
+   [
+    56
+   ],
+   [
+    30
+   ]
+  ],
+  "izoh": "71 ball 71–85 oralig‘iga kiradi, shuning uchun baho 4.",
+  "sampleOutputs": [
+   "4",
+   "5",
+   "3",
+   "2"
+  ]
+ },
+ {
+  "title": "Attraksionga kirish",
+  "story": "Attraksionga uchta shart bajarilsagina kiritiladi: yoshi 12 dan katta yoki teng, bo‘yi 140 sm dan baland yoki teng, vazni 100 kg dan oshmaydi. Uchala shart bajarilsa Mumkin, aks holda Mumkin emas deb chiqaring.",
+  "kirish": [
+   "yosh",
+   "boy — bo‘yi (sm)",
+   "vazn — vazni (kg)"
+  ],
+  "chiqish": [
+   "Mumkin yoki Mumkin emas"
+  ],
+  "cheklov": "1 ≤ yosh ≤ 100; 50 ≤ boy ≤ 220; 10 ≤ vazn ≤ 200",
+  "samples": [
+   [
+    13,
+    150,
+    45
+   ],
+   [
+    12,
+    139,
+    40
+   ],
+   [
+    30,
+    180,
+    101
+   ]
+  ],
+  "izoh": "13 ≥ 12 ✓, 150 ≥ 140 ✓, 45 ≤ 100 ✓. Uchala shart bajarildi, demak Mumkin.",
+  "sampleOutputs": [
+   "Mumkin",
+   "Mumkin emas",
+   "Mumkin emas"
+  ]
+ },
+ {
+  "title": "Fevral necha kun?",
+  "story": "Yil kiritiladi. Shu yil fevralida necha kun borligini aniqlang. Yil kabisa bo‘lsa, fevralda 29 kun, aks holda 28 kun bo‘ladi. Yil kabisa hisoblanadi, agar u 400 ga bo‘linsa, yoki 4 ga bo‘linib, 100 ga bo‘linmasa.",
+  "kirish": [
+   "yil"
+  ],
+  "chiqish": [
+   "29 yoki 28"
+  ],
+  "cheklov": "1 ≤ yil ≤ 9999",
+  "samples": [
+   [
+    1900
+   ],
+   [
+    2024
+   ],
+   [
+    2023
+   ],
+   [
+    2000
+   ]
+  ],
+  "izoh": "1900 soni 4 ga bo‘linadi, lekin 100 ga ham bo‘linadi va 400 ga bo‘linmaydi. Demak kabisa emas, fevralda 28 kun.",
+  "sampleOutputs": [
+   "28",
+   "29",
+   "28",
+   "29"
+  ]
+ },
+ {
+  "title": "Chegirma",
+  "story": "Do‘konda xarid summasi 100000 so‘m yoki undan ko‘p bo‘lsa, 10% chegirma beriladi. Xarid summasi S kiritiladi. To‘lanadigan summani chiqaring.",
+  "kirish": [
+   "S — xarid summasi"
+  ],
+  "chiqish": [
+   "to‘lanadigan summa"
+  ],
+  "cheklov": "100 ≤ S ≤ 10000000; S 100 ga qoldiqsiz bo‘linadi",
+  "samples": [
+   [
+    150000
+   ],
+   [
+    99000
+   ],
+   [
+    100000
+   ]
+  ],
+  "izoh": "150000 ≥ 100000, chegirma bor. Chegirma: 150000 × 10 / 100 = 15000. To‘lov: 150000 − 15000 = 135000.",
+  "sampleOutputs": [
+   "135000",
+   "99000",
+   "90000"
+  ]
+ },
+ {
+  "title": "Pul yetadimi?",
+  "story": "Bitta mahsulot narxi, olinadigan mahsulotlar soni va xaridordagi pul kiritiladi. Pul yetsa, birinchi qatorda Yetadi, ikkinchi qatorda ortib qolgan pulni chiqaring. Pul yetmasa, birinchi qatorda Yetmaydi, ikkinchi qatorda qancha pul yetishmayotganini chiqaring.",
+  "kirish": [
+   "narx",
+   "son",
+   "pul"
+  ],
+  "chiqish": [
+   "1-qator: Yetadi yoki Yetmaydi",
+   "2-qator: ortgan yoki yetishmagan summa"
+  ],
+  "cheklov": "1 ≤ narx ≤ 1000000; 1 ≤ son ≤ 100; 0 ≤ pul ≤ 100000000",
+  "samples": [
+   [
+    12000,
+    4,
+    40000
+   ],
+   [
+    7000,
+    3,
+    25000
+   ],
+   [
+    5000,
+    2,
+    10000
+   ]
+  ],
+  "izoh": "Jami narx: 12000 × 4 = 48000. Pul 40000, ya’ni 48000 dan kam → Yetmaydi. Yetishmagan summa: 48000 − 40000 = 8000.",
+  "sampleOutputs": [
+   "Yetmaydi\n8000",
+   "Yetadi\n4000",
+   "Yetadi\n0"
+  ]
+ },
+ {
+  "title": "Taksi narxi",
+  "story": "Taksida masofa 3 km yoki undan kam bo‘lsa, to‘lov 10000 so‘m. Masofa 3 km dan ko‘p bo‘lsa, 10000 so‘mga 3 km dan keyingi har bir km uchun 2000 so‘m qo‘shiladi. Masofa butun km da kiritiladi. To‘lovni toping.",
+  "kirish": [
+   "km — masofa"
+  ],
+  "chiqish": [
+   "to‘lov"
+  ],
+  "cheklov": "1 ≤ km ≤ 500",
+  "samples": [
+   [
+    10
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "izoh": "10 km > 3 km. Qo‘shimcha masofa: 10 − 3 = 7 km. To‘lov: 10000 + 7 × 2000 = 24000.",
+  "sampleOutputs": [
+   "24000",
+   "10000",
+   "10000"
+  ]
+ },
+ {
+  "title": "Konfetlarni bo‘lish",
+  "story": "Onada a ta konfet bor. U konfetlarni b ta bolaga teng bo‘lib beradi, bo‘linmay qolganlarini o‘ziga oladi. Har bir bolaga nechta konfet tegadi va nechtasi ortib qoladi? Oxirida, ortib qolmasa Teng bolindi, aks holda Ortib qoldi deb chiqaring.",
+  "kirish": [
+   "a — konfetlar soni",
+   "b — bolalar soni"
+  ],
+  "chiqish": [
+   "1-qator: har bir bolaga tegadigan konfetlar",
+   "2-qator: ortib qolgan konfetlar",
+   "3-qator: Teng bolindi yoki Ortib qoldi"
+  ],
+  "cheklov": "0 ≤ a ≤ 10000; 1 ≤ b ≤ 100",
+  "samples": [
+   [
+    23,
+    5
+   ],
+   [
+    20,
+    4
+   ]
+  ],
+  "izoh": "23 / 5 = 4 → har bir bolaga 4 tadan. 23 mod 5 = 3 → 3 ta ortdi. Qoldiq 0 emas, shuning uchun Ortib qoldi.",
+  "sampleOutputs": [
+   "4\n3\nOrtib qoldi",
+   "5\n0\nTeng bolindi"
+  ]
+ },
+ {
+  "title": "Uchburchak yasash",
+  "story": "Uchta tayoqcha uzunligi a, b, c kiritiladi. Istalgan ikki tayoqcha uzunliklari yig‘indisi uchinchisidan katta bo‘lsagina, ulardan uchburchak yasash mumkin. Mumkin yoki Mumkin emas deb chiqaring.",
+  "kirish": [
+   "a, b, c — tayoqchalar uzunligi"
+  ],
+  "chiqish": [
+   "Mumkin yoki Mumkin emas"
+  ],
+  "cheklov": "1 ≤ a, b, c ≤ 1000",
+  "samples": [
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    7,
+    2,
+    4
+   ]
+  ],
+  "izoh": "1 + 2 = 3, bu 3 dan katta emas (teng). Shart bajarilmadi → Mumkin emas.",
+  "sampleOutputs": [
+   "Mumkin emas",
+   "Mumkin",
+   "Mumkin emas"
+  ]
+ },
+ {
+  "title": "Eng tez yuguruvchi",
+  "story": "Uchta yuguruvchi 100 metrga yugurdi. Ularning natijalari (sekundda) kiritiladi, natijalar har xil. Eng kam vaqt sarflagan yuguruvchi eng tez hisoblanadi. Uning raqamini (1, 2 yoki 3) va natijasini chiqaring.",
+  "kirish": [
+   "t1, t2, t3 — natijalar (sekund)"
+  ],
+  "chiqish": [
+   "1-qator: eng tez yuguruvchi raqami",
+   "2-qator: uning natijasi"
+  ],
+  "cheklov": "1 ≤ t ≤ 1000; t1, t2, t3 har xil",
+  "samples": [
+   [
+    65,
+    58,
+    61
+   ],
+   [
+    50,
+    70,
+    60
+   ],
+   [
+    90,
+    80,
+    75
+   ]
+  ],
+  "izoh": "Eng kichik natija 58, u 2-yuguruvchiga tegishli. Javob: 2 va 58.",
+  "sampleOutputs": [
+   "2\n58",
+   "1\n50",
+   "3\n75"
+  ]
+ },
+ {
+  "title": "Kino chiptasi",
+  "story": "Kinoga 18 yoshdan kichiklar kiritilmaydi, ular uchun Ruxsat berilmaydi deb chiqaring. Yoshi 18 va undan katta bo‘lsa, puli tekshiriladi: 50000 so‘m yoki undan ko‘p bo‘lsa — Chipta olindi, aks holda — Pul yetmaydi.",
+  "kirish": [
+   "yosh",
+   "pul"
+  ],
+  "chiqish": [
+   "Ruxsat berilmaydi, Chipta olindi yoki Pul yetmaydi"
+  ],
+  "cheklov": "1 ≤ yosh ≤ 100; 0 ≤ pul ≤ 1000000",
+  "samples": [
+   [
+    15,
+    90000
+   ],
+   [
+    20,
+    60000
+   ],
+   [
+    25,
+    30000
+   ]
+  ],
+  "izoh": "15 < 18, shuning uchun pul tekshirilmaydi ham → Ruxsat berilmaydi (puli ko‘p bo‘lsa ham).",
+  "sampleOutputs": [
+   "Ruxsat berilmaydi",
+   "Chipta olindi",
+   "Pul yetmaydi"
+  ]
+ },
+ {
+  "title": "Lift",
+  "story": "Liftga kirgan kishilar soni va ularning umumiy vazni kiritiladi. Kishilar soni 8 dan ko‘p bo‘lsa — Odam kop. Aks holda vazn tekshiriladi: 600 kg dan ko‘p bo‘lsa — Ogir yuk, aks holda — Yuradi.",
+  "kirish": [
+   "n — kishilar soni",
+   "vazn — umumiy vazn (kg)"
+  ],
+  "chiqish": [
+   "Odam kop, Ogir yuk yoki Yuradi"
+  ],
+  "cheklov": "1 ≤ n ≤ 20; 1 ≤ vazn ≤ 2000",
+  "samples": [
+   [
+    8,
+    650
+   ],
+   [
+    6,
+    450
+   ],
+   [
+    10,
+    500
+   ]
+  ],
+  "izoh": "8 kishi, ya’ni 8 dan ko‘p emas. Keyin vazn: 650 > 600 → Ogir yuk.",
+  "sampleOutputs": [
+   "Ogir yuk",
+   "Yuradi",
+   "Odam kop"
+  ]
+ },
+ {
+  "title": "Kinoteatr narxi",
+  "story": "Tomoshabin yoshi va hafta kuni (1 — dushanba, …, 7 — yakshanba) kiritiladi. Yoshi 12 dan kichik bo‘lsa, chipta har doim 15000 so‘m. Aks holda shanba (6) yoki yakshanba (7) kuni 40000 so‘m, boshqa kunlari 30000 so‘m. Chipta narxini chiqaring.",
+  "kirish": [
+   "yosh",
+   "kun — hafta kuni raqami"
+  ],
+  "chiqish": [
+   "chipta narxi"
+  ],
+  "cheklov": "1 ≤ yosh ≤ 100; 1 ≤ kun ≤ 7",
+  "samples": [
+   [
+    20,
+    6
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    20,
+    3
+   ]
+  ],
+  "izoh": "Yosh 20, ya’ni 12 dan kichik emas. Kun 6 — shanba → 40000.",
+  "sampleOutputs": [
+   "40000",
+   "15000",
+   "30000"
+  ]
+ },
+ {
+  "title": "Fan bo‘yicha natija",
+  "story": "O‘quvchining bali va qoldirgan darslari soni kiritiladi. Bali 60 dan kichik bo‘lsa — Topshirmadi. Aks holda davomat tekshiriladi: qoldirgan darslari 5 tadan ko‘p bo‘lsa — Davomat past, aks holda — Topshirdi.",
+  "kirish": [
+   "ball",
+   "qoldirgan — qoldirilgan darslar soni"
+  ],
+  "chiqish": [
+   "Topshirmadi, Davomat past yoki Topshirdi"
+  ],
+  "cheklov": "0 ≤ ball ≤ 100; 0 ≤ qoldirgan ≤ 50",
+  "samples": [
+   [
+    80,
+    7
+   ],
+   [
+    75,
+    2
+   ],
+   [
+    45,
+    0
+   ]
+  ],
+  "izoh": "80 ≥ 60, ball yetarli. Qoldirgan darslar 7 > 5 → Davomat past.",
+  "sampleOutputs": [
+   "Davomat past",
+   "Topshirdi",
+   "Topshirmadi"
+  ]
+ },
+ {
+  "title": "Ob-havo maslahati",
+  "story": "Havo harorati va yomg‘ir bor-yo‘qligi (1 — bor, 0 — yo‘q) kiritiladi. Harorat 0 yoki undan past bo‘lsa — Issiq kiyining. Aks holda yomg‘ir tekshiriladi: yomg‘ir bo‘lsa — Soyabon oling, bo‘lmasa — Sayrga chiqing.",
+  "kirish": [
+   "harorat",
+   "yomgir — 1 yoki 0"
+  ],
+  "chiqish": [
+   "Issiq kiyining, Soyabon oling yoki Sayrga chiqing"
+  ],
+  "cheklov": "−50 ≤ harorat ≤ 50; yomgir 0 yoki 1",
+  "samples": [
+   [
+    12,
+    1
+   ],
+   [
+    -5,
+    1
+   ],
+   [
+    25,
+    0
+   ]
+  ],
+  "izoh": "12 > 0, sovuq emas. Yomg‘ir bor (1) → Soyabon oling.",
+  "sampleOutputs": [
+   "Soyabon oling",
+   "Issiq kiyining",
+   "Sayrga chiqing"
+  ]
+ },
+ {
+  "title": "Sonning turi",
+  "story": "Butun son kiritiladi. Son 0 bo‘lsa — Nol. Manfiy bo‘lsa — Manfiy. Musbat bo‘lsa, juft yoki toqligi tekshiriladi va Musbat juft yoki Musbat toq deb chiqariladi.",
+  "kirish": [
+   "n — butun son"
+  ],
+  "chiqish": [
+   "Nol, Manfiy, Musbat juft yoki Musbat toq"
+  ],
+  "cheklov": "−10000 ≤ n ≤ 10000",
+  "samples": [
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    -4
+   ],
+   [
+    0
+   ]
+  ],
+  "izoh": "7 > 0, musbat. 7 mod 2 = 1, demak toq → Musbat toq.",
+  "sampleOutputs": [
+   "Musbat toq",
+   "Musbat juft",
+   "Manfiy",
+   "Nol"
+  ]
+ },
+ {
+  "title": "Kredit",
+  "story": "Bank kredit berish uchun avval maoshni tekshiradi: oylik maosh 3000000 so‘mdan kam bo‘lsa — Maosh kam. Maosh yetarli bo‘lsa, yosh tekshiriladi: 21 dan 60 gacha (21 va 60 ham kiradi) bo‘lsa — Beriladi, aks holda — Yosh mos emas.",
+  "kirish": [
+   "maosh",
+   "yosh"
+  ],
+  "chiqish": [
+   "Maosh kam, Beriladi yoki Yosh mos emas"
+  ],
+  "cheklov": "0 ≤ maosh ≤ 100000000; 18 ≤ yosh ≤ 100",
+  "samples": [
+   [
+    4000000,
+    19
+   ],
+   [
+    5000000,
+    35
+   ],
+   [
+    2000000,
+    40
+   ]
+  ],
+  "izoh": "Maosh 4000000 ≥ 3000000, yetarli. Yosh 19 < 21 → Yosh mos emas.",
+  "sampleOutputs": [
+   "Yosh mos emas",
+   "Beriladi",
+   "Maosh kam"
+  ]
+ },
+ {
+  "title": "Yil fasli",
+  "story": "Oy raqami kiritiladi. Raqam 1 dan 12 gacha bo‘lmasa, Xato deb chiqaring. Aks holda fasl nomini chiqaring: 12, 1, 2-oylar — Qish; 3, 4, 5 — Bahor; 6, 7, 8 — Yoz; 9, 10, 11 — Kuz.",
+  "kirish": [
+   "oy — oy raqami"
+  ],
+  "chiqish": [
+   "Qish, Bahor, Yoz, Kuz yoki Xato"
+  ],
+  "cheklov": "−100 ≤ oy ≤ 100",
+  "samples": [
+   [
+    13
+   ],
+   [
+    12
+   ],
+   [
+    4
+   ],
+   [
+    8
+   ]
+  ],
+  "izoh": "13 soni 1–12 oralig‘ida emas → Xato.",
+  "sampleOutputs": [
+   "Xato",
+   "Qish",
+   "Bahor",
+   "Yoz"
+  ]
+ },
+ {
+  "title": "Samolyot bagaji",
+  "story": "Chipta turi (1 — ekonom, 2 — biznes) va bagaj vazni (kg) kiritiladi. Ekonomda 20 kg gacha (20 ham), biznesda 30 kg gacha (30 ham) bagaj bepul. Bepul me’yordan ortiqcha har bir kg uchun 50000 so‘m to‘lanadi. To‘lov summasini chiqaring (bepul bo‘lsa 0).",
+  "kirish": [
+   "tur — 1 yoki 2",
+   "vazn — bagaj vazni (kg)"
+  ],
+  "chiqish": [
+   "to‘lov summasi"
+  ],
+  "cheklov": "tur 1 yoki 2; 1 ≤ vazn ≤ 50",
+  "samples": [
+   [
+    1,
+    23
+   ],
+   [
+    1,
+    18
+   ],
+   [
+    2,
+    30
+   ],
+   [
+    2,
+    34
+   ]
+  ],
+  "izoh": "Ekonom (1): bepul me’yor 20 kg. Ortiqcha: 23 − 20 = 3 kg. To‘lov: 3 × 50000 = 150000.",
+  "sampleOutputs": [
+   "150000",
+   "0",
+   "0",
+   "200000"
+  ]
+ },
+ {
+  "title": "Makulatura yig‘ish",
+  "story": "Uchta sinf makulatura yig‘di: 1-sinf a kg, 2-sinf b kg, 3-sinf c kg. Barcha sonlar har xil. Eng ko‘p yig‘gan sinf raqamini chiqaring. Masalani ichma-ich If bilan yeching (and ishlatmang).",
+  "kirish": [
+   "a, b, c — yig‘ilgan makulatura (kg)"
+  ],
+  "chiqish": [
+   "eng ko‘p yig‘gan sinf raqami: 1, 2 yoki 3"
+  ],
+  "cheklov": "1 ≤ a, b, c ≤ 1000; sonlar har xil",
+  "samples": [
+   [
+    70,
+    20,
+    65
+   ],
+   [
+    40,
+    55,
+    30
+   ],
+   [
+    10,
+    15,
+    25
+   ]
+  ],
+  "izoh": "a = 70 > b = 20, shuning uchun a ni c bilan solishtiramiz: 70 > 65 → 1-sinf.",
+  "sampleOutputs": [
+   "1",
+   "2",
+   "3"
+  ]
+ },
+ {
+  "title": "Shaxmat katagi",
+  "story": "Shaxmat taxtasida katak ustun raqami x va qator raqami y bilan beriladi (ikkalasi 1 dan 8 gacha). (1; 1) katak qora rangda. Qoida: x + y juft bo‘lsa katak Qora, toq bo‘lsa Oq. Agar x yoki y 1–8 oralig‘ida bo‘lmasa, Xato deb chiqaring.",
+  "kirish": [
+   "x — ustun",
+   "y — qator"
+  ],
+  "chiqish": [
+   "Qora, Oq yoki Xato"
+  ],
+  "cheklov": "−20 ≤ x, y ≤ 20",
+  "samples": [
+   [
+    3,
+    6
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    9,
+    2
+   ]
+  ],
+  "izoh": "3 va 6 ikkalasi ham 1–8 oralig‘ida. 3 + 6 = 9, toq → Oq.",
+  "sampleOutputs": [
+   "Oq",
+   "Qora",
+   "Xato"
+  ]
+ },
+ {
+  "title": "Telefon zaryadi",
+  "story": "Zaryad foizi va telefon zaryadga ulanganmi (1 — ha, 0 — yo‘q) kiritiladi. Zaryad 20 yoki undan kam bo‘lsa: ulangan bo‘lsa — Zaryadlanmoqda, ulanmagan bo‘lsa — Zaryad kam. Zaryad 20 dan ko‘p bo‘lsa: 100 bo‘lsa — Toliq, aks holda — Normal.",
+  "kirish": [
+   "zaryad — foiz",
+   "ulangan — 1 yoki 0"
+  ],
+  "chiqish": [
+   "Zaryadlanmoqda, Zaryad kam, Toliq yoki Normal"
+  ],
+  "cheklov": "0 ≤ zaryad ≤ 100; ulangan 0 yoki 1",
+  "samples": [
+   [
+    15,
+    1
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    100,
+    1
+   ],
+   [
+    64,
+    0
+   ]
+  ],
+  "izoh": "15 ≤ 20, zaryad kam guruhida. Telefon ulangan (1) → Zaryadlanmoqda.",
+  "sampleOutputs": [
+   "Zaryadlanmoqda",
+   "Zaryad kam",
+   "Toliq",
+   "Normal"
+  ]
+ },
+ {
+  "title": "Raketa uchirish",
+  "story": "Raketa uchirishdan oldin teskari sanoq qilinadi. N kiritiladi. N dan 1 gacha sonlarni chiqaring, oxirgi qatorda Start! deb chiqaring.",
+  "kirish": [
+   "N"
+  ],
+  "chiqish": [
+   "N + 1 qator"
+  ],
+  "cheklov": "1 ≤ N ≤ 100",
+  "samples": [
+   [
+    5
+   ],
+   [
+    1
+   ]
+  ],
+  "izoh": "For sikli i = 5 dan 1 gacha, qadam −1: 5, 4, 3, 2, 1. Sikl tugagach Start! chiqariladi.",
+  "sampleOutputs": [
+   "5\n4\n3\n2\n1\nStart!",
+   "1\nStart!"
+  ]
+ },
+ {
+  "title": "Karra jadvali",
+  "story": "n soni kiritiladi. Uning 1 dan 10 gacha bo‘lgan sonlarga ko‘paytmasini «n x i = natija» ko‘rinishida chiqaring (har biri alohida qatorda).",
+  "kirish": [
+   "n"
+  ],
+  "chiqish": [
+   "10 qator"
+  ],
+  "cheklov": "1 ≤ n ≤ 20",
+  "samples": [
+   [
+    7
+   ]
+  ],
+  "izoh": "i = 1 da: 7 x 1 = 7; i = 2 da: 7 x 2 = 14; … i = 10 da: 7 x 10 = 70. Har bir qator n & \" x \" & i & \" = \" & n * i ko‘rinishida tuziladi.",
+  "sampleOutputs": [
+   "7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70"
+  ]
+ },
+ {
+  "title": "Jamg‘arma",
+  "story": "Bola har oy cho‘chqachaga x so‘m soladi. Boshida cho‘chqacha bo‘sh. N oy davomida har oy oxirida cho‘chqachada qancha pul borligini chiqaring.",
+  "kirish": [
+   "x — har oy solinadigan pul",
+   "N — oylar soni"
+  ],
+  "chiqish": [
+   "N qator: har oy oxiridagi summa"
+  ],
+  "cheklov": "1000 ≤ x ≤ 1000000; 1 ≤ N ≤ 24",
+  "samples": [
+   [
+    20000,
+    4
+   ],
+   [
+    5000,
+    2
+   ]
+  ],
+  "izoh": "Boshida s = 0. 1-oy: s = 0 + 20000 = 20000; 2-oy: 40000; 3-oy: 60000; 4-oy: 80000. Har oy s chiqariladi.",
+  "sampleOutputs": [
+   "20000\n40000\n60000\n80000",
+   "5000\n10000"
+  ]
+ },
+ {
+  "title": "Bakteriyalar",
+  "story": "Idishda 1 ta bakteriya bor. Har soatda bakteriyalar soni 2 baravar ko‘payadi. N soat davomida har soat oxiridagi bakteriyalar sonini chiqaring.",
+  "kirish": [
+   "N — soatlar soni"
+  ],
+  "chiqish": [
+   "N qator"
+  ],
+  "cheklov": "1 ≤ N ≤ 20",
+  "samples": [
+   [
+    5
+   ],
+   [
+    1
+   ]
+  ],
+  "izoh": "Boshida b = 1. Har soatda b = b × 2: 2, 4, 8, 16, 32.",
+  "sampleOutputs": [
+   "2\n4\n8\n16\n32",
+   "2"
+  ]
+ },
+ {
+  "title": "Kitoblarni tartiblash",
+  "story": "Javonga N ta har xil kitobni necha xil tartibda qo‘yish mumkin? Javob 1 · 2 · 3 · … · N ko‘paytmaga teng. Shu ko‘paytmani toping.",
+  "kirish": [
+   "N — kitoblar soni"
+  ],
+  "chiqish": [
+   "tartiblar soni"
+  ],
+  "cheklov": "1 ≤ N ≤ 10",
+  "samples": [
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    1
+   ]
+  ],
+  "izoh": "p = 1 dan boshlanadi. p = 1·1 = 1, 1·2 = 2, 2·3 = 6, 6·4 = 24, 24·5 = 120.",
+  "sampleOutputs": [
+   "120",
+   "6",
+   "1"
+  ]
+ },
+ {
+  "title": "Oraliq yig‘indisi",
+  "story": "Yugurish yo‘lagida a-metrdan b-metrgacha belgilar qo‘yilgan. a dan b gacha (ikkalasi ham kiradi) bo‘lgan barcha butun sonlar yig‘indisini toping.",
+  "kirish": [
+   "a",
+   "b"
+  ],
+  "chiqish": [
+   "yig‘indi"
+  ],
+  "cheklov": "1 ≤ a ≤ b ≤ 10000",
+  "samples": [
+   [
+    3,
+    7
+   ],
+   [
+    10,
+    10
+   ]
+  ],
+  "izoh": "3 + 4 + 5 + 6 + 7 = 25.",
+  "sampleOutputs": [
+   "25",
+   "10"
+  ]
+ },
+ {
+  "title": "Haftalik xarajat",
+  "story": "Talaba N kun davomida har kungi xarajatini yozib bordi. N, keyin har kungi xarajat ketma-ket kiritiladi. Jami xarajatni toping.",
+  "kirish": [
+   "N — kunlar soni",
+   "keyin N ta son — kunlik xarajatlar"
+  ],
+  "chiqish": [
+   "jami xarajat"
+  ],
+  "cheklov": "1 ≤ N ≤ 31; 0 ≤ xarajat ≤ 1000000",
+  "samples": [
+   [
+    4,
+    15000,
+    20000,
+    0,
+    12000
+   ],
+   [
+    1,
+    7000
+   ]
+  ],
+  "izoh": "Sikl 4 marta aylanadi, har safar xarajat kiritilib jamiga qo‘shiladi: 15000 + 20000 + 0 + 12000 = 47000.",
+  "sampleOutputs": [
+   "47000",
+   "7000"
+  ]
+ },
+ {
+  "title": "Teatr zali",
+  "story": "Teatr zalining 1-qatorida K ta o‘rin bor, har bir keyingi qatorda oldingisidan 2 ta o‘rin ko‘p. Zalda N ta qator bor. Zaldagi jami o‘rinlar sonini toping.",
+  "kirish": [
+   "K — 1-qatordagi o‘rinlar",
+   "N — qatorlar soni"
+  ],
+  "chiqish": [
+   "jami o‘rinlar"
+  ],
+  "cheklov": "1 ≤ K ≤ 100; 1 ≤ N ≤ 100",
+  "samples": [
+   [
+    10,
+    4
+   ],
+   [
+    20,
+    1
+   ]
+  ],
+  "izoh": "Qatorlar: 10, 12, 14, 16. Jami: 10 + 12 + 14 + 16 = 52.",
+  "sampleOutputs": [
+   "52",
+   "20"
+  ]
+ },
+ {
+  "title": "Sovg‘ali mehmonlar",
+  "story": "To‘yga N ta mehmon keldi, ular 1 dan N gacha raqamlangan. Har bir mehmon raqamini chiqaring. Raqami 5 ga bo‘linadigan mehmonlar sovg‘a oladi: ularning raqami yoniga bitta bo‘sh joy bilan Sovga so‘zini yozing. (For ichida If)",
+  "kirish": [
+   "N — mehmonlar soni"
+  ],
+  "chiqish": [
+   "N qator"
+  ],
+  "cheklov": "1 ≤ N ≤ 100",
+  "samples": [
+   [
+    7
+   ],
+   [
+    3
+   ]
+  ],
+  "izoh": "i = 1…7. Faqat i = 5 da 5 mod 5 = 0, shuning uchun 5-qatorda «5 Sovga», qolganlarida faqat raqam chiqadi.",
+  "sampleOutputs": [
+   "1\n2\n3\n4\n5 Sovga\n6\n7",
+   "1\n2\n3"
+  ]
+ },
+ {
+  "title": "Juft sonlar yig‘indisi",
+  "story": "a va b kiritiladi. a dan b gacha (ikkalasi ham kiradi) bo‘lgan sonlardan faqat juftlarining yig‘indisini toping. (For ichida If)",
+  "kirish": [
+   "a",
+   "b"
+  ],
+  "chiqish": [
+   "juft sonlar yig‘indisi"
+  ],
+  "cheklov": "1 ≤ a ≤ b ≤ 10000",
+  "samples": [
+   [
+    1,
+    10
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    5,
+    5
+   ]
+  ],
+  "izoh": "1 dan 10 gacha juft sonlar: 2, 4, 6, 8, 10. Yig‘indi: 2 + 4 + 6 + 8 + 10 = 30.",
+  "sampleOutputs": [
+   "30",
+   "10",
+   "0"
+  ]
+ },
+ {
+  "title": "Eng qimmat mahsulot",
+  "story": "Xaridor N ta mahsulot oldi. N, keyin har bir mahsulot narxi ketma-ket kiritiladi. Jami summani va eng qimmat mahsulot narxini toping. (For ichida If)",
+  "kirish": [
+   "N",
+   "keyin N ta narx"
+  ],
+  "chiqish": [
+   "1-qator: jami summa",
+   "2-qator: eng qimmat narx"
+  ],
+  "cheklov": "1 ≤ N ≤ 50; 1 ≤ narx ≤ 10000000",
+  "samples": [
+   [
+    4,
+    12000,
+    35000,
+    8000,
+    20000
+   ],
+   [
+    1,
+    5000
+   ]
+  ],
+  "izoh": "Jami: 12000 + 35000 + 8000 + 20000 = 75000. Eng katta narx: boshida max = 0; 12000 > 0 → max = 12000; 35000 > 12000 → max = 35000; 8000 va 20000 kichik → max = 35000.",
+  "sampleOutputs": [
+   "75000\n35000",
+   "5000\n5000"
+  ]
+ },
+ {
+  "title": "Haftalik harorat",
+  "story": "N kun davomida har kungi harorat kiritiladi. Nechta kun harorat musbat, nechta kun manfiy va nechta kun 0 bo‘lganini toping. (For ichida ichma-ich If)",
+  "kirish": [
+   "N",
+   "keyin N ta harorat"
+  ],
+  "chiqish": [
+   "1-qator: musbat kunlar",
+   "2-qator: manfiy kunlar",
+   "3-qator: nol kunlar"
+  ],
+  "cheklov": "1 ≤ N ≤ 31; −50 ≤ harorat ≤ 50",
+  "samples": [
+   [
+    7,
+    3,
+    -2,
+    0,
+    5,
+    -1,
+    4,
+    0
+   ],
+   [
+    2,
+    -5,
+    -3
+   ]
+  ],
+  "izoh": "Haroratlar: 3, −2, 0, 5, −1, 4, 0. Musbat: 3, 5, 4 → 3 ta. Manfiy: −2, −1 → 2 ta. Nol: 0, 0 → 2 ta.",
+  "sampleOutputs": [
+   "3\n2\n2",
+   "0\n2\n0"
+  ]
+ },
+ {
+  "title": "Teng guruhlar",
+  "story": "O‘qituvchi N ta o‘quvchini teng guruhlarga bo‘lmoqchi. Bitta guruhdagi o‘quvchilar soni bo‘la oladigan barcha sonlarni, ya’ni N ning barcha bo‘luvchilarini, o‘sish tartibida chiqaring. (For ichida If)",
+  "kirish": [
+   "N — o‘quvchilar soni"
+  ],
+  "chiqish": [
+   "N ning bo‘luvchilari, har biri alohida qatorda"
+  ],
+  "cheklov": "1 ≤ N ≤ 1000",
+  "samples": [
+   [
+    12
+   ],
+   [
+    7
+   ]
+  ],
+  "izoh": "i = 1 dan 12 gacha tekshiriladi: 12 mod i = 0 bo‘lsa chiqariladi. Bunday sonlar: 1, 2, 3, 4, 6, 12.",
+  "sampleOutputs": [
+   "1\n2\n3\n4\n6\n12",
+   "1\n7"
+  ]
+ },
+ {
+  "title": "Imtihon natijalari",
+  "story": "Guruhda N ta o‘quvchi bor. Har bir o‘quvchining bali kiritiladi. Har bir ball kiritilgandan keyin, ball 60 yoki undan ko‘p bo‘lsa Topshirdi, aks holda Topshirmadi deb chiqaring. Oxirgi qatorda nechta o‘quvchi topshirganini chiqaring. (For ichida If)",
+  "kirish": [
+   "N",
+   "keyin N ta ball"
+  ],
+  "chiqish": [
+   "N qator: Topshirdi yoki Topshirmadi",
+   "oxirgi qator: topshirganlar soni"
+  ],
+  "cheklov": "1 ≤ N ≤ 40; 0 ≤ ball ≤ 100",
+  "samples": [
+   [
+    4,
+    75,
+    40,
+    60,
+    59
+   ],
+   [
+    2,
+    100,
+    90
+   ]
+  ],
+  "izoh": "75 ≥ 60 → Topshirdi; 40 → Topshirmadi; 60 ≥ 60 → Topshirdi; 59 → Topshirmadi. Topshirganlar: 2 ta.",
+  "sampleOutputs": [
+   "Topshirdi\nTopshirmadi\nTopshirdi\nTopshirmadi\n2",
+   "Topshirdi\nTopshirdi\n2"
+  ]
+ },
+ {
+  "title": "10 000 qadam",
+  "story": "Aqlli soat 7 kun davomida har kuni nechta qadam bosilganini yozib bordi. Har bir kun uchun: 10000 yoki undan ko‘p bo‘lsa Maqsad, aks holda Kam deb chiqaring. Oxirgi qatorda maqsadga erishilgan kunlar sonini chiqaring. (For ichida If)",
+  "kirish": [
+   "7 ta son — har kungi qadamlar"
+  ],
+  "chiqish": [
+   "7 qator: Maqsad yoki Kam",
+   "oxirgi qator: maqsadli kunlar soni"
+  ],
+  "cheklov": "0 ≤ qadam ≤ 100000",
+  "samples": [
+   [
+    12000,
+    9000,
+    10000,
+    15000,
+    3000,
+    8000,
+    10500
+   ]
+  ],
+  "izoh": "12000 → Maqsad, 9000 → Kam, 10000 → Maqsad (teng ham hisoblanadi), 15000 → Maqsad, 3000 → Kam, 8000 → Kam, 10500 → Maqsad. Jami 4 kun.",
+  "sampleOutputs": [
+   "Maqsad\nKam\nMaqsad\nMaqsad\nKam\nKam\nMaqsad\n4"
+  ]
+ },
+ {
+  "title": "Ko‘chadagi uylar",
+  "story": "Ko‘chaning chap tomonida toq raqamli uylar (1, 3, 5, …), o‘ng tomonida juft raqamli uylar (2, 4, 6, …) joylashgan. Tomon (1 — chap, 2 — o‘ng) va ko‘chadagi eng katta uy raqami N kiritiladi. Shu tomondagi barcha uy raqamlarini o‘sish tartibida chiqaring. Tomon 1 yoki 2 bo‘lmasa, Xato deb chiqaring. (If ichida For)",
+  "kirish": [
+   "tomon — 1 yoki 2",
+   "N — eng katta uy raqami"
+  ],
+  "chiqish": [
+   "uy raqamlari (har biri alohida qatorda) yoki Xato"
+  ],
+  "cheklov": "−10 ≤ tomon ≤ 10; 2 ≤ N ≤ 200",
+  "samples": [
+   [
+    2,
+    9
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    3,
+    10
+   ]
+  ],
+  "izoh": "Tomon 2 — o‘ng tomon, juft raqamlar. For i = 2 dan 9 gacha, qadam 2: 2, 4, 6, 8 (10 > 9, kirmaydi).",
+  "sampleOutputs": [
+   "2\n4\n6\n8",
+   "1\n3\n5\n7",
+   "Xato"
+  ]
+ },
+ {
+  "title": "Ombor kodi",
+  "story": "Omborchi tizimga kirish uchun kod kiritadi. To‘g‘ri kod — 2580. Kod to‘g‘ri bo‘lsa, qutilar soni N, keyin har bir qutidagi mahsulotlar soni kiritiladi va jami mahsulotlar soni chiqariladi. Kod noto‘g‘ri bo‘lsa, boshqa hech narsa kiritilmaydi va Kod xato deb chiqariladi. (If ichida For)",
+  "kirish": [
+   "kod",
+   "kod to‘g‘ri bo‘lsa: N, keyin N ta son"
+  ],
+  "chiqish": [
+   "jami mahsulotlar soni yoki Kod xato"
+  ],
+  "cheklov": "0 ≤ kod ≤ 9999; 1 ≤ N ≤ 50; 0 ≤ mahsulot ≤ 1000",
+  "samples": [
+   [
+    2580,
+    3,
+    12,
+    30,
+    8
+   ],
+   [
+    1234
+   ]
+  ],
+  "izoh": "Kod 2580 — to‘g‘ri, shuning uchun If ichidagi For ishlaydi: N = 3, qutilar 12, 30, 8. Jami: 12 + 30 + 8 = 50.",
+  "sampleOutputs": [
+   "50",
+   "Kod xato"
+  ]
+ },
+ {
+  "title": "Mashg‘ulot rejasi",
+  "story": "Sportchi N kunlik reja tuzadi. Daraja d kiritiladi. d = 1 (boshlang‘ich) bo‘lsa, har kuni 10 tadan mashq qiladi. d = 2 (o‘rta) bo‘lsa, 1-kuni 10 ta mashq qiladi, har keyingi kuni 5 tadan ko‘proq. Boshqa daraja bo‘lsa, Xato deb chiqaring. Har bir kunning mashqlar sonini alohida qatorda chiqaring. (If ichida For)",
+  "kirish": [
+   "d — daraja",
+   "N — kunlar soni"
+  ],
+  "chiqish": [
+   "N qator: har kungi mashqlar soni yoki Xato"
+  ],
+  "cheklov": "−10 ≤ d ≤ 10; 1 ≤ N ≤ 30",
+  "samples": [
+   [
+    2,
+    4
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    5,
+    3
+   ]
+  ],
+  "izoh": "d = 2. 1-kun 10, 2-kun 10 + 5 = 15, 3-kun 20, 4-kun 25.",
+  "sampleOutputs": [
+   "10\n15\n20\n25",
+   "10\n10\n10",
+   "Xato"
+  ]
+ }
+]

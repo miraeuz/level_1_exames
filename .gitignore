@@ -1,0 +1,8 @@
+node_modules
+dist
+tests/e2e-out
+scripts/out/bank-teacher.json
+.env
+scripts/out
+# reference solutions are kept private (public repo)
+scripts/src/problems.ts
