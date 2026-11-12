@@ -1,0 +1,4569 @@
+[
+ {
+  "n": 1,
+  "topic": "S1",
+  "question": "Ikkilik (2-lik) sanoq sistemasida qaysi raqamlar ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0 va 1",
+   "0, 1 va 2",
+   "1 va 2",
+   "0 dan 9 gacha"
+  ],
+  "correct": "A",
+  "explanation": "Ikkilik sistemada faqat 0 va 1 raqamlari bor."
+ },
+ {
+  "n": 2,
+  "topic": "S1",
+  "question": "Uchlik (3-lik) sanoq sistemasida qaysi raqamlar ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0 va 1",
+   "1, 2 va 3",
+   "0, 1 va 2",
+   "0, 1, 2 va 3"
+  ],
+  "correct": "C",
+  "explanation": "Uchlik sistemada 0, 1 va 2 raqamlari ishlatiladi (asosdan kichik raqamlar)."
+ },
+ {
+  "n": 3,
+  "topic": "S1",
+  "question": "O‘nlik sanoq sistemasining asosi nechaga teng?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "8",
+   "9",
+   "10"
+  ],
+  "correct": "D",
+  "explanation": "Oʻnlik sistemada 10 ta raqam bor (0–9), asosi 10."
+ },
+ {
+  "n": 4,
+  "topic": "S1",
+  "question": "Uchlik sanoq sistemasining asosi nechaga teng?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "10"
+  ],
+  "correct": "C",
+  "explanation": "Uchlik sistemaning asosi 3."
+ },
+ {
+  "n": 5,
+  "topic": "S1",
+  "question": "Quyidagi yozuvlardan qaysi biri 3-lik sanoq sistemasida noto‘g‘ri yozilgan?",
+  "code": null,
+  "table": null,
+  "options": [
+   "120₃",
+   "202₃",
+   "213₃",
+   "111₃"
+  ],
+  "correct": "C",
+  "explanation": "213₃ da «3» raqami bor, lekin 3-lik sistemada faqat 0, 1, 2 boʻladi."
+ },
+ {
+  "n": 6,
+  "topic": "S1",
+  "question": "Quyidagi sonlardan qaysi biri 2-lik sanoq sistemasida yozilishi mumkin?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1012",
+   "1101",
+   "2110",
+   "1301"
+  ],
+  "correct": "B",
+  "explanation": "1101 faqat 0 va 1 dan iborat; qolganlarida 2 yoki 3 bor."
+ },
+ {
+  "n": 7,
+  "topic": "S1",
+  "question": "Kompyuter ichida ma’lumotlar asosan qaysi sanoq sistemasida ifodalanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "10-lik",
+   "3-lik",
+   "2-lik",
+   "8-lik"
+  ],
+  "correct": "C",
+  "explanation": "Kompyuter maʼlumotlarni ikkilik (0 va 1) koʻrinishda saqlaydi."
+ },
+ {
+  "n": 8,
+  "topic": "S1",
+  "question": "1 bit nechta turli qiymat qabul qila oladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "2",
+   "8",
+   "10"
+  ],
+  "correct": "B",
+  "explanation": "Bit 0 yoki 1 — ikkita qiymat."
+ },
+ {
+  "n": 9,
+  "topic": "S1",
+  "question": "1 bayt necha bitga teng?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "4",
+   "8",
+   "10"
+  ],
+  "correct": "C",
+  "explanation": "1 bayt = 8 bit."
+ },
+ {
+  "n": 10,
+  "topic": "S1",
+  "question": "2₁₀ soni ikkilik sanoq sistemasida qanday yoziladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "11₂",
+   "10₂",
+   "100₂",
+   "1₂"
+  ],
+  "correct": "B",
+  "explanation": "2 ni yozamiz: 11₂ = 3, 10₂ = 2, 100₂ = 4, 1₂ = 1."
+ },
+ {
+  "n": 11,
+  "topic": "S1",
+  "question": "3₁₀ soni uchlik sanoq sistemasida qanday yoziladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3₃",
+   "10₃",
+   "11₃",
+   "100₃"
+  ],
+  "correct": "B",
+  "explanation": "3 ni yozamiz: 10₃ = 3, 11₃ = 4, 100₃ = 9."
+ },
+ {
+  "n": 12,
+  "topic": "S1",
+  "question": "10₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "10"
+  ],
+  "correct": "B",
+  "explanation": "10₂ = 1·2¹ + 0·2⁰ = 2. Javob: 2."
+ },
+ {
+  "n": 13,
+  "topic": "S1",
+  "question": "11₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "3",
+   "4",
+   "11"
+  ],
+  "correct": "B",
+  "explanation": "11₂ = 1·2¹ + 1·2⁰ = 3. Javob: 3."
+ },
+ {
+  "n": 14,
+  "topic": "S1",
+  "question": "100₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "4",
+   "8",
+   "100"
+  ],
+  "correct": "B",
+  "explanation": "100₂ = 1·2² + 0·2¹ + 0·2⁰ = 4. Javob: 4."
+ },
+ {
+  "n": 15,
+  "topic": "S1",
+  "question": "101₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "correct": "B",
+  "explanation": "101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5. Javob: 5."
+ },
+ {
+  "n": 16,
+  "topic": "S1",
+  "question": "110₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "5",
+   "6",
+   "7"
+  ],
+  "correct": "C",
+  "explanation": "110₂ = 1·2² + 1·2¹ + 0·2⁰ = 6. Javob: 6."
+ },
+ {
+  "n": 17,
+  "topic": "S1",
+  "question": "111₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "correct": "C",
+  "explanation": "111₂ = 1·2² + 1·2¹ + 1·2⁰ = 7. Javob: 7."
+ },
+ {
+  "n": 18,
+  "topic": "S1",
+  "question": "1000₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "6",
+   "8",
+   "10",
+   "16"
+  ],
+  "correct": "B",
+  "explanation": "1000₂ = 1·2³ + 0·2² + 0·2¹ + 0·2⁰ = 8. Javob: 8."
+ },
+ {
+  "n": 19,
+  "topic": "S1",
+  "question": "1001₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "7",
+   "8",
+   "9",
+   "11"
+  ],
+  "correct": "C",
+  "explanation": "1001₂ = 1·2³ + 0·2² + 0·2¹ + 1·2⁰ = 9. Javob: 9."
+ },
+ {
+  "n": 20,
+  "topic": "S1",
+  "question": "1010₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "8",
+   "10",
+   "12",
+   "14"
+  ],
+  "correct": "B",
+  "explanation": "1010₂ = 1·2³ + 0·2² + 1·2¹ + 0·2⁰ = 10. Javob: 10."
+ },
+ {
+  "n": 21,
+  "topic": "S1",
+  "question": "1011₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "10",
+   "11",
+   "12",
+   "13"
+  ],
+  "correct": "B",
+  "explanation": "1011₂ = 1·2³ + 0·2² + 1·2¹ + 1·2⁰ = 11. Javob: 11."
+ },
+ {
+  "n": 22,
+  "topic": "S1",
+  "question": "1100₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "10",
+   "11",
+   "12",
+   "13"
+  ],
+  "correct": "C",
+  "explanation": "1100₂ = 1·2³ + 1·2² + 0·2¹ + 0·2⁰ = 12. Javob: 12."
+ },
+ {
+  "n": 23,
+  "topic": "S1",
+  "question": "1111₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "13",
+   "14",
+   "15",
+   "16"
+  ],
+  "correct": "C",
+  "explanation": "1111₂ = 1·2³ + 1·2² + 1·2¹ + 1·2⁰ = 15. Javob: 15."
+ },
+ {
+  "n": 24,
+  "topic": "S1",
+  "question": "10000₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "8",
+   "10",
+   "16",
+   "32"
+  ],
+  "correct": "C",
+  "explanation": "10000₂ = 1·2⁴ + 0·2³ + 0·2² + 0·2¹ + 0·2⁰ = 16. Javob: 16."
+ },
+ {
+  "n": 25,
+  "topic": "S1",
+  "question": "10101₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "19",
+   "20",
+   "21",
+   "22"
+  ],
+  "correct": "C",
+  "explanation": "10101₂ = 1·2⁴ + 0·2³ + 1·2² + 0·2¹ + 1·2⁰ = 21. Javob: 21."
+ },
+ {
+  "n": 26,
+  "topic": "S1",
+  "question": "11010₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "22",
+   "24",
+   "26",
+   "28"
+  ],
+  "correct": "C",
+  "explanation": "11010₂ = 1·2⁴ + 1·2³ + 0·2² + 1·2¹ + 0·2⁰ = 26. Javob: 26."
+ },
+ {
+  "n": 27,
+  "topic": "S1",
+  "question": "3₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "10",
+   "11",
+   "100",
+   "111"
+  ],
+  "correct": "B",
+  "explanation": "3 ni 2 ga ketma-ket boʻlamiz: 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 11₂."
+ },
+ {
+  "n": 28,
+  "topic": "S1",
+  "question": "5₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "100",
+   "101",
+   "110",
+   "111"
+  ],
+  "correct": "B",
+  "explanation": "5 ni 2 ga ketma-ket boʻlamiz: 5 : 2 = 2 (qoldiq 1); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 101₂."
+ },
+ {
+  "n": 29,
+  "topic": "S1",
+  "question": "6₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "101",
+   "110",
+   "111",
+   "100"
+  ],
+  "correct": "B",
+  "explanation": "6 ni 2 ga ketma-ket boʻlamiz: 6 : 2 = 3 (qoldiq 0); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 110₂."
+ },
+ {
+  "n": 30,
+  "topic": "S1",
+  "question": "9₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "111",
+   "1010",
+   "1100",
+   "1001"
+  ],
+  "correct": "D",
+  "explanation": "9 ni 2 ga ketma-ket boʻlamiz: 9 : 2 = 4 (qoldiq 1); 4 : 2 = 2 (qoldiq 0); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1001₂."
+ },
+ {
+  "n": 31,
+  "topic": "S1",
+  "question": "12₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "1010",
+   "1100",
+   "1110",
+   "1001"
+  ],
+  "correct": "B",
+  "explanation": "12 ni 2 ga ketma-ket boʻlamiz: 12 : 2 = 6 (qoldiq 0); 6 : 2 = 3 (qoldiq 0); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1100₂."
+ },
+ {
+  "n": 32,
+  "topic": "S1",
+  "question": "16₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "1000",
+   "1111",
+   "10000",
+   "10001"
+  ],
+  "correct": "C",
+  "explanation": "16 ni 2 ga ketma-ket boʻlamiz: 16 : 2 = 8 (qoldiq 0); 8 : 2 = 4 (qoldiq 0); 4 : 2 = 2 (qoldiq 0); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10000₂."
+ },
+ {
+  "n": 33,
+  "topic": "S1",
+  "question": "19₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "10011",
+   "10101",
+   "11001",
+   "10110"
+  ],
+  "correct": "A",
+  "explanation": "19 ni 2 ga ketma-ket boʻlamiz: 19 : 2 = 9 (qoldiq 1); 9 : 2 = 4 (qoldiq 1); 4 : 2 = 2 (qoldiq 0); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10011₂."
+ },
+ {
+  "n": 34,
+  "topic": "S1",
+  "question": "25₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "10101",
+   "11010",
+   "10011",
+   "11001"
+  ],
+  "correct": "D",
+  "explanation": "25 ni 2 ga ketma-ket boʻlamiz: 25 : 2 = 12 (qoldiq 1); 12 : 2 = 6 (qoldiq 0); 6 : 2 = 3 (qoldiq 0); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 11001₂."
+ },
+ {
+  "n": 35,
+  "topic": "S1",
+  "question": "10₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "3",
+   "4",
+   "10"
+  ],
+  "correct": "B",
+  "explanation": "10₃ = 1·3¹ + 0·3⁰ = 3. Javob: 3."
+ },
+ {
+  "n": 36,
+  "topic": "S1",
+  "question": "11₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "5",
+   "11"
+  ],
+  "correct": "B",
+  "explanation": "11₃ = 1·3¹ + 1·3⁰ = 4. Javob: 4."
+ },
+ {
+  "n": 37,
+  "topic": "S1",
+  "question": "12₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "correct": "B",
+  "explanation": "12₃ = 1·3¹ + 2·3⁰ = 5. Javob: 5."
+ },
+ {
+  "n": 38,
+  "topic": "S1",
+  "question": "20₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "correct": "B",
+  "explanation": "20₃ = 2·3¹ + 0·3⁰ = 6. Javob: 6."
+ },
+ {
+  "n": 39,
+  "topic": "S1",
+  "question": "21₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "correct": "C",
+  "explanation": "21₃ = 2·3¹ + 1·3⁰ = 7. Javob: 7."
+ },
+ {
+  "n": 40,
+  "topic": "S1",
+  "question": "22₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "correct": "C",
+  "explanation": "22₃ = 2·3¹ + 2·3⁰ = 8. Javob: 8."
+ },
+ {
+  "n": 41,
+  "topic": "S1",
+  "question": "100₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "6",
+   "9",
+   "100"
+  ],
+  "correct": "C",
+  "explanation": "100₃ = 1·3² + 0·3¹ + 0·3⁰ = 9. Javob: 9."
+ },
+ {
+  "n": 42,
+  "topic": "S1",
+  "question": "102₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "10",
+   "11",
+   "12",
+   "13"
+  ],
+  "correct": "B",
+  "explanation": "102₃ = 1·3² + 0·3¹ + 2·3⁰ = 11. Javob: 11."
+ },
+ {
+  "n": 43,
+  "topic": "S1",
+  "question": "120₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "12",
+   "14",
+   "15",
+   "16"
+  ],
+  "correct": "C",
+  "explanation": "120₃ = 1·3² + 2·3¹ + 0·3⁰ = 15. Javob: 15."
+ },
+ {
+  "n": 44,
+  "topic": "S1",
+  "question": "211₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "20",
+   "21",
+   "22",
+   "23"
+  ],
+  "correct": "C",
+  "explanation": "211₃ = 2·3² + 1·3¹ + 1·3⁰ = 22. Javob: 22."
+ },
+ {
+  "n": 45,
+  "topic": "S1",
+  "question": "2₁₀ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "2",
+   "10",
+   "11"
+  ],
+  "correct": "B",
+  "explanation": "2 ni 3 ga ketma-ket boʻlamiz: 2 : 3 = 0 (qoldiq 2). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 2₃."
+ },
+ {
+  "n": 46,
+  "topic": "S1",
+  "question": "4₁₀ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "10",
+   "11",
+   "12",
+   "20"
+  ],
+  "correct": "B",
+  "explanation": "4 ni 3 ga ketma-ket boʻlamiz: 4 : 3 = 1 (qoldiq 1); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 11₃."
+ },
+ {
+  "n": 47,
+  "topic": "S1",
+  "question": "5₁₀ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "11",
+   "12",
+   "20",
+   "21"
+  ],
+  "correct": "B",
+  "explanation": "5 ni 3 ga ketma-ket boʻlamiz: 5 : 3 = 1 (qoldiq 2); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 12₃."
+ },
+ {
+  "n": 48,
+  "topic": "S1",
+  "question": "7₁₀ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "12",
+   "20",
+   "21",
+   "22"
+  ],
+  "correct": "C",
+  "explanation": "7 ni 3 ga ketma-ket boʻlamiz: 7 : 3 = 2 (qoldiq 1); 2 : 3 = 0 (qoldiq 2). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 21₃."
+ },
+ {
+  "n": 49,
+  "topic": "S1",
+  "question": "10₁₀ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "100",
+   "101",
+   "110",
+   "111"
+  ],
+  "correct": "B",
+  "explanation": "10 ni 3 ga ketma-ket boʻlamiz: 10 : 3 = 3 (qoldiq 1); 3 : 3 = 1 (qoldiq 0); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 101₃."
+ },
+ {
+  "n": 50,
+  "topic": "S1",
+  "question": "14₁₀ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "121",
+   "111",
+   "112",
+   "122"
+  ],
+  "correct": "C",
+  "explanation": "14 ni 3 ga ketma-ket boʻlamiz: 14 : 3 = 4 (qoldiq 2); 4 : 3 = 1 (qoldiq 1); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 112₃."
+ },
+ {
+  "n": 51,
+  "topic": "S1",
+  "question": "101₂ sonini 3-lik sanoq sistemasiga o‘tkazing.",
+  "code": null,
+  "table": null,
+  "options": [
+   "12₃",
+   "21₃",
+   "11₃",
+   "102₃"
+  ],
+  "correct": "A",
+  "explanation": "101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5₁₀ = 12 (3-lik)."
+ },
+ {
+  "n": 52,
+  "topic": "S1",
+  "question": "22₃ sonini 2-lik sanoq sistemasiga o‘tkazing.",
+  "code": null,
+  "table": null,
+  "options": [
+   "1010₂",
+   "111₂",
+   "1000₂",
+   "1100₂"
+  ],
+  "correct": "C",
+  "explanation": "22₃ = 2·3¹ + 2·3⁰ = 8₁₀ = 1000 (2-lik)."
+ },
+ {
+  "n": 53,
+  "topic": "S1",
+  "question": "110₂ sonini 3-lik sanoq sistemasiga o‘tkazing.",
+  "code": null,
+  "table": null,
+  "options": [
+   "11₃",
+   "12₃",
+   "20₃",
+   "21₃"
+  ],
+  "correct": "C",
+  "explanation": "110₂ = 1·2² + 1·2¹ + 0·2⁰ = 6₁₀ = 20 (3-lik)."
+ },
+ {
+  "n": 54,
+  "topic": "S1",
+  "question": "21₃ sonini 2-lik sanoq sistemasiga o‘tkazing.",
+  "code": null,
+  "table": null,
+  "options": [
+   "101₂",
+   "110₂",
+   "111₂",
+   "1001₂"
+  ],
+  "correct": "C",
+  "explanation": "21₃ = 2·3¹ + 1·3⁰ = 7₁₀ = 111 (2-lik)."
+ },
+ {
+  "n": 55,
+  "topic": "S1",
+  "question": "1₂ + 1₂ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "10",
+   "11",
+   "100"
+  ],
+  "correct": "B",
+  "explanation": "1₂ = 1·2⁰ = 1; 1₂ = 1·2⁰ = 1; amal natijasi: 2. 2 ni 2 ga ketma-ket boʻlamiz: 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10₂."
+ },
+ {
+  "n": 56,
+  "topic": "S1",
+  "question": "10₂ + 1₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "3",
+   "4",
+   "11"
+  ],
+  "correct": "B",
+  "explanation": "10₂ = 1·2¹ + 0·2⁰ = 2; 1₂ = 1·2⁰ = 1; amal natijasi: 3. Javob: 3."
+ },
+ {
+  "n": 57,
+  "topic": "S1",
+  "question": "11₂ + 11₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "4",
+   "5",
+   "6",
+   "22"
+  ],
+  "correct": "C",
+  "explanation": "11₂ = 1·2¹ + 1·2⁰ = 3; 11₂ = 1·2¹ + 1·2⁰ = 3; amal natijasi: 6. Javob: 6."
+ },
+ {
+  "n": 58,
+  "topic": "S1",
+  "question": "101₂ + 1₂ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "102",
+   "111",
+   "100",
+   "110"
+  ],
+  "correct": "D",
+  "explanation": "101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5; 1₂ = 1·2⁰ = 1; amal natijasi: 6. 6 ni 2 ga ketma-ket boʻlamiz: 6 : 2 = 3 (qoldiq 0); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 110₂."
+ },
+ {
+  "n": 59,
+  "topic": "S1",
+  "question": "11₃ + 11₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "6",
+   "7",
+   "8",
+   "22"
+  ],
+  "correct": "B",
+  "explanation": "11₃ = 1·3¹ + 1·3⁰ = 4; 11₂ = 1·2¹ + 1·2⁰ = 3; amal natijasi: 7. Javob: 7."
+ },
+ {
+  "n": 60,
+  "topic": "S1",
+  "question": "1010₂ + 12₃ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "13",
+   "15",
+   "17",
+   "22"
+  ],
+  "correct": "B",
+  "explanation": "1010₂ = 1·2³ + 0·2² + 1·2¹ + 0·2⁰ = 10; 12₃ = 1·3¹ + 2·3⁰ = 5; amal natijasi: 15. Javob: 15."
+ },
+ {
+  "n": 61,
+  "topic": "S1",
+  "question": "1100₂ − 101₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "5",
+   "6",
+   "7",
+   "9"
+  ],
+  "correct": "C",
+  "explanation": "1100₂ = 1·2³ + 1·2² + 0·2¹ + 0·2⁰ = 12; 101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5; amal natijasi: 7. Javob: 7."
+ },
+ {
+  "n": 62,
+  "topic": "S1",
+  "question": "102₃ − 11₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "correct": "C",
+  "explanation": "102₃ = 1·3² + 0·3¹ + 2·3⁰ = 11; 11₂ = 1·2¹ + 1·2⁰ = 3; amal natijasi: 8. Javob: 8."
+ },
+ {
+  "n": 63,
+  "topic": "S1",
+  "question": "21₃ + 14₁₀ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "10011",
+   "10101",
+   "11001",
+   "10110"
+  ],
+  "correct": "B",
+  "explanation": "21₃ = 2·3¹ + 1·3⁰ = 7; amal natijasi: 21. 21 ni 2 ga ketma-ket boʻlamiz: 21 : 2 = 10 (qoldiq 1); 10 : 2 = 5 (qoldiq 0); 5 : 2 = 2 (qoldiq 1); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10101₂."
+ },
+ {
+  "n": 64,
+  "topic": "S1",
+  "question": "110₂ × 11₂ = ?₁₀",
+  "code": null,
+  "table": null,
+  "options": [
+   "12",
+   "16",
+   "18",
+   "24"
+  ],
+  "correct": "C",
+  "explanation": "110₂ = 1·2² + 1·2¹ + 0·2⁰ = 6; 11₂ = 1·2¹ + 1·2⁰ = 3; amal natijasi: 18. Javob: 18."
+ },
+ {
+  "n": 65,
+  "topic": "S1",
+  "question": "20₃ + 101₂ = ?₃",
+  "code": null,
+  "table": null,
+  "options": [
+   "102",
+   "110",
+   "111",
+   "120"
+  ],
+  "correct": "A",
+  "explanation": "20₃ = 2·3¹ + 0·3⁰ = 6; 101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5; amal natijasi: 11. 11 ni 3 ga ketma-ket boʻlamiz: 11 : 3 = 3 (qoldiq 2); 3 : 3 = 1 (qoldiq 0); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 102₃."
+ },
+ {
+  "n": 66,
+  "topic": "S1",
+  "question": "1111₂ + 1₂ = ?₂",
+  "code": null,
+  "table": null,
+  "options": [
+   "11110",
+   "11111",
+   "10000",
+   "1112"
+  ],
+  "correct": "C",
+  "explanation": "1111₂ = 1·2³ + 1·2² + 1·2¹ + 1·2⁰ = 15; 1₂ = 1·2⁰ = 1; amal natijasi: 16. 16 ni 2 ga ketma-ket boʻlamiz: 16 : 2 = 8 (qoldiq 0); 8 : 2 = 4 (qoldiq 0); 4 : 2 = 2 (qoldiq 0); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10000₂."
+ },
+ {
+  "n": 67,
+  "topic": "S1",
+  "question": "Quyidagi sonlardan qaysi biri eng katta?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1111₂",
+   "121₃",
+   "14₁₀",
+   "10010₂"
+  ],
+  "correct": "D",
+  "explanation": "Hammasini 10-likka oʻtkazamiz: 1111₂ = 15, 121₃ = 16, 14₁₀ = 14, 10010₂ = 18."
+ },
+ {
+  "n": 68,
+  "topic": "S1",
+  "question": "Quyidagi sonlardan qaysi biri eng kichik?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1100₂",
+   "102₃",
+   "13₁₀",
+   "111₃"
+  ],
+  "correct": "B",
+  "explanation": "Hammasini 10-likka oʻtkazamiz: 1100₂ = 12, 102₃ = 11, 13₁₀ = 13, 111₃ = 13."
+ },
+ {
+  "n": 69,
+  "topic": "S1",
+  "question": "Qaysi tenglik to‘g‘ri?",
+  "code": null,
+  "table": null,
+  "options": [
+   "101₂ = 5₁₀",
+   "11₃ = 5₁₀",
+   "100₂ = 3₁₀",
+   "22₃ = 6₁₀"
+  ],
+  "correct": "A",
+  "explanation": "Tekshiramiz: 101₂ = 5, 11₃ = 4, 100₂ = 4, 22₃ = 8."
+ },
+ {
+  "n": 70,
+  "topic": "S1",
+  "question": "To‘rt xonali eng katta ikkilik son 10-lik sistemada nechaga teng?",
+  "code": null,
+  "table": null,
+  "options": [
+   "14",
+   "15",
+   "16",
+   "31"
+  ],
+  "correct": "B",
+  "explanation": "Toʻrt xonali eng katta ikkilik son 1111₂ = 8 + 4 + 2 + 1 = 15."
+ },
+ {
+  "n": 71,
+  "topic": "S2",
+  "question": "CPU (markaziy protsessor)ning asosiy vazifasi nima?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Buyruqlarni bajarish va hisoblashlarni amalga oshirish",
+   "Ma’lumotlarni doimiy saqlash",
+   "Hujjatlarni qog‘ozga chop etish",
+   "Ovozni yozib olish"
+  ],
+  "correct": "A",
+  "explanation": "CPU buyruqlarni bajaradi va hisoblaydi."
+ },
+ {
+  "n": 72,
+  "topic": "S2",
+  "question": "RAM qanday xotira?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Doimiy xotira",
+   "Tezkor, vaqtinchalik xotira",
+   "Tashqi optik disk",
+   "Faqat o‘qish uchun mo‘ljallangan xotira"
+  ],
+  "correct": "B",
+  "explanation": "RAM — tezkor, vaqtinchalik xotira; kompyuter oʻchsa tozalanadi."
+ },
+ {
+  "n": 73,
+  "topic": "S2",
+  "question": "Ishlayotgan dasturlar va ochiq fayllar vaqtincha qayerda saqlanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "SSD da",
+   "HDD da",
+   "RAM da",
+   "Monitorda"
+  ],
+  "correct": "C",
+  "explanation": "Ishlayotgan dasturlar RAM da turadi."
+ },
+ {
+  "n": 74,
+  "topic": "S2",
+  "question": "Kompyuter o‘chirilganda qaysi xotiradagi ma’lumotlar o‘chib ketadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "HDD",
+   "SSD",
+   "Fleshka",
+   "RAM"
+  ],
+  "correct": "D",
+  "explanation": "RAM elektr oʻchganda tozalanadi; HDD, SSD, fleshka maʼlumotni saqlab qoladi."
+ },
+ {
+  "n": 75,
+  "topic": "S2",
+  "question": "Fayllarni uzoq muddat (doimiy) saqlash uchun qaysi qurilma ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "RAM",
+   "CPU",
+   "SSD",
+   "GPU"
+  ],
+  "correct": "C",
+  "explanation": "SSD maʼlumotni doimiy saqlaydi."
+ },
+ {
+  "n": 76,
+  "topic": "S2",
+  "question": "Tasvir va grafikani qayta ishlash uchun asosan qaysi qurilma ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "RAM",
+   "GPU",
+   "HDD",
+   "Quvvat bloki"
+  ],
+  "correct": "B",
+  "explanation": "GPU (videokarta) tasvir va grafikani qayta ishlaydi."
+ },
+ {
+  "n": 77,
+  "topic": "S2",
+  "question": "Quyidagilardan qaysi biri kiritish qurilmasi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Monitor",
+   "Printer",
+   "Klaviatura",
+   "Karnay"
+  ],
+  "correct": "C",
+  "explanation": "Klaviatura orqali maʼlumot kiritiladi."
+ },
+ {
+  "n": 78,
+  "topic": "S2",
+  "question": "Quyidagilardan qaysi biri chiqarish qurilmasi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Sichqoncha",
+   "Monitor",
+   "Mikrofon",
+   "Skaner"
+  ],
+  "correct": "B",
+  "explanation": "Monitor natijani koʻrsatadi — chiqarish qurilmasi."
+ },
+ {
+  "n": 79,
+  "topic": "S2",
+  "question": "Printer qanday qurilma hisoblanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Kiritish qurilmasi",
+   "Chiqarish qurilmasi",
+   "Saqlash qurilmasi",
+   "Hisoblash qurilmasi"
+  ],
+  "correct": "B",
+  "explanation": "Printer natijani qogʻozga chiqaradi — chiqarish qurilmasi."
+ },
+ {
+  "n": 80,
+  "topic": "S2",
+  "question": "Monitor nima vazifani bajaradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Tasvirni ekranda ko‘rsatadi",
+   "Ma’lumotlarni saqlaydi",
+   "Buyruqlarni bajaradi",
+   "Ovozni yozib oladi"
+  ],
+  "correct": "A",
+  "explanation": "Monitor tasvirni ekranda koʻrsatadi."
+ },
+ {
+  "n": 81,
+  "topic": "S2",
+  "question": "SSD va HDD ni solishtirganda qaysi gap to‘g‘ri?",
+  "code": null,
+  "table": null,
+  "options": [
+   "SSD odatda HDD dan tezroq ishlaydi",
+   "HDD har doim SSD dan tezroq",
+   "SSD ma’lumotni elektr o‘chganda o‘chiradi",
+   "HDD faqat grafik uchun ishlatiladi"
+  ],
+  "correct": "A",
+  "explanation": "SSD da harakatlanuvchi qism yoʻq, odatda HDD dan ancha tez."
+ },
+ {
+  "n": 82,
+  "topic": "S2",
+  "question": "Kompyuter tavsifidagi «8 GB RAM» yozuvi nimani bildiradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Disk hajmi 8 GB",
+   "Protsessorda 8 ta yadro bor",
+   "Ekran o‘lchami 8 dyuym",
+   "Tezkor xotira hajmi 8 GB"
+  ],
+  "correct": "D",
+  "explanation": "«8 GB RAM» — tezkor xotira hajmi."
+ },
+ {
+  "n": 83,
+  "topic": "S2",
+  "question": "Quvvat bloki qanday vazifani bajaradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Ma’lumotlarni saqlaydi",
+   "Grafikani hisoblaydi",
+   "Qurilmalarni elektr toki bilan ta’minlaydi",
+   "Ovoz chiqaradi"
+  ],
+  "correct": "C",
+  "explanation": "Quvvat bloki barcha qurilmalarni elektr bilan taʼminlaydi."
+ },
+ {
+  "n": 84,
+  "topic": "S2",
+  "question": "Xotira va disk hajmi qaysi birlikda o‘lchanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "GB",
+   "Dyuym",
+   "Vatt",
+   "Metr"
+  ],
+  "correct": "A",
+  "explanation": "Xotira va disk hajmi GB (gigabayt) da oʻlchanadi."
+ },
+ {
+  "n": 85,
+  "topic": "S2",
+  "question": "Qaysi juftlik to‘g‘ri moslashtirilgan?",
+  "code": null,
+  "table": null,
+  "options": [
+   "GPU — doimiy saqlash; SSD — hisoblash",
+   "RAM — tasvir chiqarish; HDD — buyruq bajarish",
+   "CPU — hisoblash; RAM — vaqtinchalik xotira",
+   "Monitor — kiritish; Klaviatura — chiqarish"
+  ],
+  "correct": "C",
+  "explanation": "CPU — hisoblash, RAM — vaqtinchalik xotira."
+ },
+ {
+  "n": 86,
+  "topic": "S3",
+  "question": "Excelda formula qaysi belgi bilan boshlanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "#",
+   "=",
+   "@",
+   "$"
+  ],
+  "correct": "B",
+  "explanation": "Excelda formula = belgisi bilan boshlanadi."
+ },
+ {
+  "n": 87,
+  "topic": "S3",
+  "question": "Excelda katak manzili qanday yoziladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "A1",
+   "1A",
+   "A-1",
+   "1-A"
+  ],
+  "correct": "A",
+  "explanation": "Manzil: avval ustun harfi, keyin qator raqami — A1."
+ },
+ {
+  "n": 88,
+  "topic": "S3",
+  "question": "Excelda ustunlar qanday belgilanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Raqamlar bilan",
+   "Harflar bilan",
+   "Ranglar bilan",
+   "Belgilar bilan"
+  ],
+  "correct": "B",
+  "explanation": "Ustunlar harflar bilan belgilanadi (A, B, C…)."
+ },
+ {
+  "n": 89,
+  "topic": "S3",
+  "question": "Excelda qatorlar qanday belgilanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Harflar bilan",
+   "Ranglar bilan",
+   "Raqamlar bilan",
+   "Belgilar bilan"
+  ],
+  "correct": "C",
+  "explanation": "Qatorlar raqamlar bilan belgilanadi (1, 2, 3…)."
+ },
+ {
+  "n": 90,
+  "topic": "S3",
+  "question": "Excelda ko‘paytirish amali qaysi belgi bilan yoziladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "x",
+   ":",
+   "^",
+   "*"
+  ],
+  "correct": "D",
+  "explanation": "Koʻpaytirish * belgisi bilan yoziladi."
+ },
+ {
+  "n": 91,
+  "topic": "S3",
+  "question": "Excelda bo‘lish amali qaysi belgi bilan yoziladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "/",
+   ":",
+   "\\",
+   "÷"
+  ],
+  "correct": "A",
+  "explanation": "Boʻlish / belgisi bilan yoziladi."
+ },
+ {
+  "n": 92,
+  "topic": "S3",
+  "question": "A1:B3 yozuvi nimani bildiradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Faqat A1 va B3 kataklarini",
+   "A ustunini to‘liq",
+   "A1 dan B3 gacha bo‘lgan to‘rtburchak diapazonni",
+   "1-qatordan 3-qatorgacha barcha kataklarni"
+  ],
+  "correct": "C",
+  "explanation": "A1:B3 — A1 dan B3 gacha boʻlgan toʻrtburchak diapazon."
+ },
+ {
+  "n": 93,
+  "topic": "S3",
+  "question": "A1:B3 diapazonida nechta katak bor?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "5",
+   "6",
+   "9"
+  ],
+  "correct": "C",
+  "explanation": "A1:B3: 2 ta ustun × 3 ta qator = 6 ta katak."
+ },
+ {
+  "n": 94,
+  "topic": "S3",
+  "question": "Excelda Filter (filtr) qaysi menyuda joylashgan?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Home",
+   "Insert",
+   "View",
+   "Data"
+  ],
+  "correct": "D",
+  "explanation": "Filter Data menyusida joylashgan."
+ },
+ {
+  "n": 95,
+  "topic": "S3",
+  "question": "Excelda Sort (saralash) qaysi menyuda joylashgan?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Data",
+   "Formulas",
+   "Review",
+   "View"
+  ],
+  "correct": "A",
+  "explanation": "Sort ham Data menyusida."
+ },
+ {
+  "n": 96,
+  "topic": "S3",
+  "question": "Filter yoqilganda ustun sarlavhalarida nima paydo bo‘ladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Ochiluvchi ro‘yxat tugmasi (strelka)",
+   "Barcha kataklar bo‘shab qoladi",
+   "Ustunlar avtomatik o‘chadi",
+   "Shrift rangi o‘zgaradi"
+  ],
+  "correct": "A",
+  "explanation": "Filter yoqilganda sarlavhalarda ochiluvchi roʻyxat strelkasi paydo boʻladi."
+ },
+ {
+  "n": 97,
+  "topic": "S3",
+  "question": "SUM funksiyasi nimani hisoblaydi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Eng katta qiymatni",
+   "Sonlar yig‘indisini",
+   "O‘rta arifmetik qiymatni",
+   "Kataklar sonini"
+  ],
+  "correct": "B",
+  "explanation": "SUM sonlar yigʻindisini hisoblaydi."
+ },
+ {
+  "n": 98,
+  "topic": "S3",
+  "question": "COUNT funksiyasi nimani sanaydi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Bo‘sh bo‘lmagan barcha kataklarni",
+   "Faqat son yozilgan kataklarni",
+   "Faqat bo‘sh kataklarni",
+   "Kataklardagi sonlar yig‘indisini"
+  ],
+  "correct": "B",
+  "explanation": "COUNT faqat son yozilgan kataklarni sanaydi."
+ },
+ {
+  "n": 99,
+  "topic": "S3",
+  "question": "COUNTA funksiyasi nimani sanaydi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Faqat son yozilgan kataklarni",
+   "Faqat bo‘sh kataklarni",
+   "Bo‘sh bo‘lmagan barcha kataklarni",
+   "Eng katta qiymatni"
+  ],
+  "correct": "C",
+  "explanation": "COUNTA boʻsh boʻlmagan barcha kataklarni (son ham, matn ham) sanaydi."
+ },
+ {
+  "n": 100,
+  "topic": "S3",
+  "question": "AVERAGE funksiyasi nimani hisoblaydi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "O‘rta arifmetik qiymatni",
+   "Eng katta qiymatni",
+   "Eng kichik qiymatni",
+   "Kataklar sonini"
+  ],
+  "correct": "A",
+  "explanation": "AVERAGE — oʻrta arifmetik qiymat."
+ },
+ {
+  "n": 101,
+  "topic": "S3",
+  "question": "MAX funksiyasi nimani topadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Eng kichik qiymatni",
+   "Yig‘indini",
+   "Eng katta qiymatni",
+   "O‘rtacha qiymatni"
+  ],
+  "correct": "C",
+  "explanation": "MAX eng katta qiymatni topadi."
+ },
+ {
+  "n": 102,
+  "topic": "S3",
+  "question": "Qaysi formula to‘g‘ri yozilgan?",
+  "code": null,
+  "table": null,
+  "options": [
+   "A1+B1=",
+   "=A1+B1",
+   "=A1 B1",
+   "A1=+B1"
+  ],
+  "correct": "B",
+  "explanation": "Formula = bilan boshlanadi: =A1+B1."
+ },
+ {
+  "n": 103,
+  "topic": "S3",
+  "question": "$A$1 manzili nimani bildiradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Faqat ustun qotirilgan",
+   "Faqat qator qotirilgan",
+   "Ustun ham, qator ham qotirilgan",
+   "Nisbiy (o‘zgaruvchan) manzil"
+  ],
+  "correct": "C",
+  "explanation": "$A$1 — ustun ham, qator ham qotirilgan (absolyut manzil)."
+ },
+ {
+  "n": 104,
+  "topic": "S3",
+  "question": "**=A1+A2** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "3"
+   ],
+   [
+    "2",
+    "9"
+   ]
+  ],
+  "options": [
+   "6",
+   "12",
+   "27",
+   "39"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 3, A2 = 9. =A1+A2 → 12."
+ },
+ {
+  "n": 105,
+  "topic": "S3",
+  "question": "**=A1+B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "7",
+    "5"
+   ]
+  ],
+  "options": [
+   "2",
+   "12",
+   "35",
+   "75"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 7, B1 = 5. =A1+B1 → 12."
+ },
+ {
+  "n": 106,
+  "topic": "S3",
+  "question": "**=A1-B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "20",
+    "8"
+   ]
+  ],
+  "options": [
+   "12",
+   "28",
+   "−12",
+   "160"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 20, B1 = 8. =A1-B1 → 12."
+ },
+ {
+  "n": 107,
+  "topic": "S3",
+  "question": "**=B1-A1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "4",
+    "13"
+   ]
+  ],
+  "options": [
+   "9",
+   "17",
+   "−9",
+   "52"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 4, B1 = 13. =B1-A1 → 9."
+ },
+ {
+  "n": 108,
+  "topic": "S3",
+  "question": "**=A1*B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "6",
+    "5"
+   ]
+  ],
+  "options": [
+   "11",
+   "30",
+   "1",
+   "65"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, B1 = 5. =A1*B1 → 30."
+ },
+ {
+  "n": 109,
+  "topic": "S3",
+  "question": "**=A1/B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "15",
+    "3"
+   ]
+  ],
+  "options": [
+   "5",
+   "12",
+   "18",
+   "45"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 15, B1 = 3. =A1/B1 → 5."
+ },
+ {
+  "n": 110,
+  "topic": "S3",
+  "question": "**=A1*2** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "9"
+   ]
+  ],
+  "options": [
+   "7",
+   "11",
+   "18",
+   "92"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 9. =A1*2 → 18."
+ },
+ {
+  "n": 111,
+  "topic": "S3",
+  "question": "**=A1+B1+C1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B",
+    "C"
+   ],
+   [
+    "1",
+    "2",
+    "5",
+    "4"
+   ]
+  ],
+  "options": [
+   "7",
+   "11",
+   "13",
+   "40"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 2, B1 = 5, C1 = 4. =A1+B1+C1 → 11."
+ },
+ {
+  "n": 112,
+  "topic": "S3",
+  "question": "**=A1*B2** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "3",
+    "8"
+   ],
+   [
+    "2",
+    "5",
+    "6"
+   ]
+  ],
+  "options": [
+   "18",
+   "24",
+   "30",
+   "40"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 3, B2 = 6. =A1*B2 → 18."
+ },
+ {
+  "n": 113,
+  "topic": "S3",
+  "question": "**=A2/B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "10",
+    "4"
+   ],
+   [
+    "2",
+    "20",
+    "5"
+   ]
+  ],
+  "options": [
+   "2",
+   "4",
+   "5",
+   "2.5"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A2 = 20, B1 = 4. =A2/B1 → 5."
+ },
+ {
+  "n": 114,
+  "topic": "S3",
+  "question": "**=A1+B1*C1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B",
+    "C"
+   ],
+   [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  ],
+  "options": [
+   "9",
+   "14",
+   "20",
+   "24"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 2, B1 = 3, C1 = 4. =A1+B1*C1 → 14."
+ },
+ {
+  "n": 115,
+  "topic": "S3",
+  "question": "**=(A1+B1)*C1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B",
+    "C"
+   ],
+   [
+    "1",
+    "5",
+    "1",
+    "3"
+   ]
+  ],
+  "options": [
+   "8",
+   "9",
+   "15",
+   "18"
+  ],
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 5, B1 = 1, C1 = 3. =(A1+B1)*C1 → 18."
+ },
+ {
+  "n": 116,
+  "topic": "S3",
+  "question": "**=A1-B1/C1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B",
+    "C"
+   ],
+   [
+    "1",
+    "12",
+    "6",
+    "3"
+   ]
+  ],
+  "options": [
+   "2",
+   "6",
+   "10",
+   "18"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 12, B1 = 6, C1 = 3. =A1-B1/C1 → 10."
+ },
+ {
+  "n": 117,
+  "topic": "S3",
+  "question": "**=A2+B2*2** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "1",
+    "9"
+   ],
+   [
+    "2",
+    "6",
+    "3"
+   ]
+  ],
+  "options": [
+   "11",
+   "12",
+   "15",
+   "18"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A2 = 6, B2 = 3. =A2+B2*2 → 12."
+ },
+ {
+  "n": 118,
+  "topic": "S3",
+  "question": "**=A1*A1-B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "4",
+    "6"
+   ]
+  ],
+  "options": [
+   "−8",
+   "2",
+   "10",
+   "16"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, B1 = 6. =A1*A1-B1 → 10."
+ },
+ {
+  "n": 119,
+  "topic": "S3",
+  "question": "**=C2-A1+B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B",
+    "C"
+   ],
+   [
+    "1",
+    "10",
+    "2",
+    "7"
+   ],
+   [
+    "2",
+    "3",
+    "5",
+    "20"
+   ]
+  ],
+  "options": [
+   "8",
+   "12",
+   "17",
+   "28"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 10, B1 = 2, C2 = 20. =C2-A1+B1 → 12."
+ },
+ {
+  "n": 120,
+  "topic": "S3",
+  "question": "**=A1/B1+C1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B",
+    "C"
+   ],
+   [
+    "1",
+    "18",
+    "3",
+    "4"
+   ]
+  ],
+  "options": [
+   "6",
+   "7",
+   "10",
+   "22"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 18, B1 = 3, C1 = 4. =A1/B1+C1 → 10."
+ },
+ {
+  "n": 121,
+  "topic": "S3",
+  "question": "**=SUM(A1:A3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "4"
+   ],
+   [
+    "2",
+    "6"
+   ],
+   [
+    "3",
+    "10"
+   ]
+  ],
+  "options": [
+   "3",
+   "10",
+   "20",
+   "24"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, A2 = 6, A3 = 10. =SUM(A1:A3) → 20."
+ },
+ {
+  "n": 122,
+  "topic": "S3",
+  "question": "**=SUM(A1:B2)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "1",
+    "2"
+   ],
+   [
+    "2",
+    "3",
+    "4"
+   ]
+  ],
+  "options": [
+   "4",
+   "5",
+   "10",
+   "24"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 1, A2 = 3, B1 = 2, B2 = 4. =SUM(A1:B2) → 10."
+ },
+ {
+  "n": 123,
+  "topic": "S3",
+  "question": "**=MAX(A1:A3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "6"
+   ],
+   [
+    "2",
+    "2"
+   ],
+   [
+    "3",
+    "9"
+   ]
+  ],
+  "options": [
+   "2",
+   "6",
+   "9",
+   "17"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 6, A2 = 2, A3 = 9. =MAX(A1:A3) → 9."
+ },
+ {
+  "n": 124,
+  "topic": "S3",
+  "question": "**=MIN(A1:A3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "7"
+   ],
+   [
+    "2",
+    "3"
+   ],
+   [
+    "3",
+    "5"
+   ]
+  ],
+  "options": [
+   "3",
+   "5",
+   "7",
+   "15"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 7, A2 = 3, A3 = 5. =MIN(A1:A3) → 3."
+ },
+ {
+  "n": 125,
+  "topic": "S3",
+  "question": "**=MAX(A1:A4)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "5"
+   ],
+   [
+    "2",
+    "12"
+   ],
+   [
+    "3",
+    "8"
+   ],
+   [
+    "4",
+    "3"
+   ]
+  ],
+  "options": [
+   "3",
+   "8",
+   "12",
+   "28"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 5, A2 = 12, A3 = 8, A4 = 3. =MAX(A1:A4) → 12."
+ },
+ {
+  "n": 126,
+  "topic": "S3",
+  "question": "**=MIN(B1:B4)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "B"
+   ],
+   [
+    "1",
+    "9"
+   ],
+   [
+    "2",
+    "4"
+   ],
+   [
+    "3",
+    "15"
+   ],
+   [
+    "4",
+    "6"
+   ]
+  ],
+  "options": [
+   "4",
+   "6",
+   "9",
+   "15"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: B1 = 9, B2 = 4, B3 = 15, B4 = 6. =MIN(B1:B4) → 4."
+ },
+ {
+  "n": 127,
+  "topic": "S3",
+  "question": "**=AVERAGE(A1:A2)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "4"
+   ],
+   [
+    "2",
+    "10"
+   ]
+  ],
+  "options": [
+   "4",
+   "7",
+   "10",
+   "14"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 4, A2 = 10. =AVERAGE(A1:A2) → 7."
+ },
+ {
+  "n": 128,
+  "topic": "S3",
+  "question": "**=AVERAGE(A1:A3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "6"
+   ],
+   [
+    "2",
+    "9"
+   ],
+   [
+    "3",
+    "12"
+   ]
+  ],
+  "options": [
+   "6",
+   "9",
+   "12",
+   "27"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, A2 = 9, A3 = 12. =AVERAGE(A1:A3) → 9."
+ },
+ {
+  "n": 129,
+  "topic": "S3",
+  "question": "**=AVERAGE(A1:A4)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "3"
+   ],
+   [
+    "2",
+    "5"
+   ],
+   [
+    "3",
+    "7"
+   ],
+   [
+    "4",
+    "9"
+   ]
+  ],
+  "options": [
+   "5",
+   "6",
+   "7",
+   "24"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 3, A2 = 5, A3 = 7, A4 = 9. =AVERAGE(A1:A4) → 6."
+ },
+ {
+  "n": 130,
+  "topic": "S3",
+  "question": "**=MAX(A1:B2)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "7",
+    "2"
+   ],
+   [
+    "2",
+    "4",
+    "11"
+   ]
+  ],
+  "options": [
+   "7",
+   "11",
+   "13",
+   "24"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 7, A2 = 4, B1 = 2, B2 = 11. =MAX(A1:B2) → 11."
+ },
+ {
+  "n": 131,
+  "topic": "S3",
+  "question": "**=MIN(A1:B2)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "-2",
+    "5"
+   ],
+   [
+    "2",
+    "0",
+    "3"
+   ]
+  ],
+  "options": [
+   "−2",
+   "0",
+   "3",
+   "5"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = −2, A2 = 0, B1 = 5, B2 = 3. =MIN(A1:B2) → −2."
+ },
+ {
+  "n": 132,
+  "topic": "S3",
+  "question": "**=AVERAGE(A1:B2)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "2",
+    "6"
+   ],
+   [
+    "2",
+    "4",
+    "8"
+   ]
+  ],
+  "options": [
+   "4",
+   "5",
+   "10",
+   "20"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 2, A2 = 4, B1 = 6, B2 = 8. =AVERAGE(A1:B2) → 5."
+ },
+ {
+  "n": 133,
+  "topic": "S3",
+  "question": "**=MAX(A1:A4)-MIN(A1:A4)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "8"
+   ],
+   [
+    "2",
+    "3"
+   ],
+   [
+    "3",
+    "15"
+   ],
+   [
+    "4",
+    "6"
+   ]
+  ],
+  "options": [
+   "3",
+   "9",
+   "12",
+   "15"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 8, A2 = 3, A3 = 15, A4 = 6. =MAX(A1:A4)-MIN(A1:A4) → 12."
+ },
+ {
+  "n": 134,
+  "topic": "S3",
+  "question": "**=MAX(A1:A3)+MIN(B1:B3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "4",
+    "6"
+   ],
+   [
+    "2",
+    "10",
+    "2"
+   ],
+   [
+    "3",
+    "7",
+    "9"
+   ]
+  ],
+  "options": [
+   "6",
+   "11",
+   "12",
+   "19"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, A2 = 10, A3 = 7, B1 = 6, B2 = 2, B3 = 9. =MAX(A1:A3)+MIN(B1:B3) → 12."
+ },
+ {
+  "n": 135,
+  "topic": "S3",
+  "question": "**=AVERAGE(A1:A2)*B1** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "4",
+    "3"
+   ],
+   [
+    "2",
+    "8",
+    ""
+   ]
+  ],
+  "options": [
+   "12",
+   "14",
+   "18",
+   "36"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, A2 = 8, B1 = 3, B2 = boʻsh. =AVERAGE(A1:A2)*B1 → 18."
+ },
+ {
+  "n": 136,
+  "topic": "S3",
+  "question": "**=MAX(A1:A3)/MIN(A1:A3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "4"
+   ],
+   [
+    "2",
+    "20"
+   ],
+   [
+    "3",
+    "5"
+   ]
+  ],
+  "options": [
+   "4",
+   "5",
+   "16",
+   "29"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 4, A2 = 20, A3 = 5. =MAX(A1:A3)/MIN(A1:A3) → 5."
+ },
+ {
+  "n": 137,
+  "topic": "S3",
+  "question": "**=COUNT(A1:A3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "4"
+   ],
+   [
+    "2",
+    "5"
+   ],
+   [
+    "3",
+    "6"
+   ]
+  ],
+  "options": [
+   "1",
+   "3",
+   "6",
+   "15"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 4, A2 = 5, A3 = 6. =COUNT(A1:A3) → 3."
+ },
+ {
+  "n": 138,
+  "topic": "S3",
+  "question": "**=COUNT(A1:A5)** natijasi nechaga teng? (A4 katak bo‘sh)",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "7"
+   ],
+   [
+    "2",
+    "olma"
+   ],
+   [
+    "3",
+    "3"
+   ],
+   [
+    "4",
+    ""
+   ],
+   [
+    "5",
+    "12"
+   ]
+  ],
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 7, A2 = olma, A3 = 3, A4 = boʻsh, A5 = 12. =COUNT(A1:A5) → 3."
+ },
+ {
+  "n": 139,
+  "topic": "S3",
+  "question": "**=COUNTA(A1:A5)** natijasi nechaga teng? (A3 katak bo‘sh)",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "Ali"
+   ],
+   [
+    "2",
+    "5"
+   ],
+   [
+    "3",
+    ""
+   ],
+   [
+    "4",
+    "Vali"
+   ],
+   [
+    "5",
+    "8"
+   ]
+  ],
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = Ali, A2 = 5, A3 = boʻsh, A4 = Vali, A5 = 8. =COUNTA(A1:A5) → 4."
+ },
+ {
+  "n": 140,
+  "topic": "S3",
+  "question": "**=COUNT(A1:B3)** natijasi nechaga teng? (A2 katak bo‘sh, A3 katakda «10 kg» matni yozilgan)",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "4",
+    "x"
+   ],
+   [
+    "2",
+    "",
+    "9"
+   ],
+   [
+    "3",
+    "10 kg",
+    "6"
+   ]
+  ],
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 4, A2 = boʻsh, A3 = 10 kg, B1 = x, B2 = 9, B3 = 6. =COUNT(A1:B3) → 3."
+ },
+ {
+  "n": 141,
+  "topic": "S3",
+  "question": "**=COUNTA(A1:A4)-COUNT(A1:A4)** natijasi nechaga teng? (A3 katak bo‘sh)",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "5"
+   ],
+   [
+    "2",
+    "ha"
+   ],
+   [
+    "3",
+    ""
+   ],
+   [
+    "4",
+    "yo‘q"
+   ]
+  ],
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 5, A2 = ha, A3 = boʻsh, A4 = yo‘q. =COUNTA(A1:A4)-COUNT(A1:A4) → 2."
+ },
+ {
+  "n": 142,
+  "topic": "S3",
+  "question": "A1:A6 diapazonida 4 ta son, 1 ta matn bor va 1 ta katak bo‘sh. **=COUNTA(A1:A6)** natijasi nechaga teng?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": "C",
+  "explanation": "COUNTA boʻsh boʻlmagan kataklarni sanaydi: 4 ta son + 1 ta matn = 5."
+ },
+ {
+  "n": 143,
+  "topic": "S3",
+  "question": "**=IF(A1<0; \"Manfiy\"; \"Musbat\")** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "5"
+   ]
+  ],
+  "options": [
+   "Manfiy",
+   "Musbat",
+   "5",
+   "0"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 5. =IF(A1<0; \"Manfiy\"; \"Musbat\") → Musbat."
+ },
+ {
+  "n": 144,
+  "topic": "S3",
+  "question": "**=IF(A1>10; \"Ha\"; \"Yo‘q\")** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "14"
+   ]
+  ],
+  "options": [
+   "Ha",
+   "Yo‘q",
+   "14",
+   "10"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 14. =IF(A1>10; \"Ha\"; \"Yo‘q\") → Ha."
+ },
+ {
+  "n": 145,
+  "topic": "S3",
+  "question": "**=IF(A1>=50; \"O‘tdi\"; \"O‘tmadi\")** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "49"
+   ]
+  ],
+  "options": [
+   "O‘tdi",
+   "O‘tmadi",
+   "49",
+   "50"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 49. =IF(A1>=50; \"O‘tdi\"; \"O‘tmadi\") → O‘tmadi."
+ },
+ {
+  "n": 146,
+  "topic": "S3",
+  "question": "**=IF(A1=B1; \"Teng\"; \"Teng emas\")** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "8",
+    "8"
+   ]
+  ],
+  "options": [
+   "Teng emas",
+   "16",
+   "Teng",
+   "8"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 8, B1 = 8. =IF(A1=B1; \"Teng\"; \"Teng emas\") → Teng."
+ },
+ {
+  "n": 147,
+  "topic": "S3",
+  "question": "**=IF(A1>B1; A1*2; B1)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "6",
+    "9"
+   ]
+  ],
+  "options": [
+   "6",
+   "9",
+   "12",
+   "18"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, B1 = 9. =IF(A1>B1; A1*2; B1) → 9."
+ },
+ {
+  "n": 148,
+  "topic": "S3",
+  "question": "**=IF(A1<B1; B1-A1; A1-B1)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "12",
+    "5"
+   ]
+  ],
+  "options": [
+   "−7",
+   "7",
+   "12",
+   "17"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 12, B1 = 5. =IF(A1<B1; B1-A1; A1-B1) → 7."
+ },
+ {
+  "n": 149,
+  "topic": "S3",
+  "question": "**=IF(A1>0; A1+B1; A1*B1)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "-3",
+    "4"
+   ]
+  ],
+  "options": [
+   "1",
+   "12",
+   "−12",
+   "−7"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = −3, B1 = 4. =IF(A1>0; A1+B1; A1*B1) → −12."
+ },
+ {
+  "n": 150,
+  "topic": "S3",
+  "question": "**=IF(A1<5; \"Kichik\"; IF(A1<10; \"O‘rta\"; \"Katta\"))** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "10"
+   ]
+  ],
+  "options": [
+   "Kichik",
+   "O‘rta",
+   "Katta",
+   "10"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 10. =IF(A1<5; \"Kichik\"; IF(A1<10; \"O‘rta\"; \"Katta\")) → Katta."
+ },
+ {
+  "n": 151,
+  "topic": "S3",
+  "question": "**=IF(MAX(A1:A3)>10; \"Bor\"; \"Yo‘q\")** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "4"
+   ],
+   [
+    "2",
+    "10"
+   ],
+   [
+    "3",
+    "9"
+   ]
+  ],
+  "options": [
+   "Bor",
+   "Yo‘q",
+   "10",
+   "23"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 4, A2 = 10, A3 = 9. =IF(MAX(A1:A3)>10; \"Bor\"; \"Yo‘q\") → Yo‘q."
+ },
+ {
+  "n": 152,
+  "topic": "S3",
+  "question": "**=IF(AVERAGE(A1:A3)>=5; \"Yaxshi\"; \"Past\")** natijasi nima?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "3"
+   ],
+   [
+    "2",
+    "4"
+   ],
+   [
+    "3",
+    "8"
+   ]
+  ],
+  "options": [
+   "Past",
+   "5",
+   "15",
+   "Yaxshi"
+  ],
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 3, A2 = 4, A3 = 8. =IF(AVERAGE(A1:A3)>=5; \"Yaxshi\"; \"Past\") → Yaxshi."
+ },
+ {
+  "n": 153,
+  "topic": "S3",
+  "question": "**=IF(COUNT(A1:A4)=4; \"To‘liq\"; \"Chala\")** natijasi nima? (A2 katak bo‘sh)",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "2"
+   ],
+   [
+    "2",
+    ""
+   ],
+   [
+    "3",
+    "5"
+   ],
+   [
+    "4",
+    "7"
+   ]
+  ],
+  "options": [
+   "To‘liq",
+   "Chala",
+   "3",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 2, A2 = boʻsh, A3 = 5, A4 = 7. =IF(COUNT(A1:A4)=4; \"To‘liq\"; \"Chala\") → Chala."
+ },
+ {
+  "n": 154,
+  "topic": "S3",
+  "question": "**=AVERAGE(MIN(A1:A3); MAX(B1:B3))** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "5",
+    "3"
+   ],
+   [
+    "2",
+    "2",
+    "10"
+   ],
+   [
+    "3",
+    "8",
+    "6"
+   ]
+  ],
+  "options": [
+   "4",
+   "5",
+   "6",
+   "12"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 5, A2 = 2, A3 = 8, B1 = 3, B2 = 10, B3 = 6. =AVERAGE(MIN(A1:A3); MAX(B1:B3)) → 6."
+ },
+ {
+  "n": 155,
+  "topic": "S3",
+  "question": "**=MIN(A1:A3)*MAX(B1:B2)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "6",
+    "4"
+   ],
+   [
+    "2",
+    "3",
+    "7"
+   ],
+   [
+    "3",
+    "9",
+    ""
+   ]
+  ],
+  "options": [
+   "12",
+   "21",
+   "27",
+   "63"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, A2 = 3, A3 = 9, B1 = 4, B2 = 7, B3 = boʻsh. =MIN(A1:A3)*MAX(B1:B2) → 21."
+ },
+ {
+  "n": 156,
+  "topic": "S3",
+  "question": "**=MAX(MIN(A1:A2); MIN(B1:B2))** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "4",
+    "6"
+   ],
+   [
+    "2",
+    "9",
+    "3"
+   ]
+  ],
+  "options": [
+   "3",
+   "4",
+   "6",
+   "9"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 4, A2 = 9, B1 = 6, B2 = 3. =MAX(MIN(A1:A2); MIN(B1:B2)) → 4."
+ },
+ {
+  "n": 157,
+  "topic": "S3",
+  "question": "**=MIN(MAX(A1:A3); 7)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "2"
+   ],
+   [
+    "2",
+    "11"
+   ],
+   [
+    "3",
+    "5"
+   ]
+  ],
+  "options": [
+   "2",
+   "5",
+   "7",
+   "11"
+  ],
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 2, A2 = 11, A3 = 5. =MIN(MAX(A1:A3); 7) → 7."
+ },
+ {
+  "n": 158,
+  "topic": "S3",
+  "question": "**=AVERAGE(A1:A3)+COUNT(B1:B3)** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A",
+    "B"
+   ],
+   [
+    "1",
+    "2",
+    "5"
+   ],
+   [
+    "2",
+    "4",
+    "x"
+   ],
+   [
+    "3",
+    "9",
+    "8"
+   ]
+  ],
+  "options": [
+   "5",
+   "7",
+   "8",
+   "10"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 2, A2 = 4, A3 = 9, B1 = 5, B2 = x, B3 = 8. =AVERAGE(A1:A3)+COUNT(B1:B3) → 7."
+ },
+ {
+  "n": 159,
+  "topic": "S3",
+  "question": "**=IF(SUM(A1:A3)>20; MAX(A1:A3); MIN(A1:A3))** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "6"
+   ],
+   [
+    "2",
+    "9"
+   ],
+   [
+    "3",
+    "4"
+   ]
+  ],
+  "options": [
+   "4",
+   "6",
+   "9",
+   "19"
+  ],
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 6, A2 = 9, A3 = 4. =IF(SUM(A1:A3)>20; MAX(A1:A3); MIN(A1:A3)) → 4."
+ },
+ {
+  "n": 160,
+  "topic": "S3",
+  "question": "**=MAX(A1:A3)+MIN(A1:A3)*2** natijasi nechaga teng?",
+  "code": null,
+  "table": [
+   [
+    "",
+    "A"
+   ],
+   [
+    "1",
+    "5"
+   ],
+   [
+    "2",
+    "1"
+   ],
+   [
+    "3",
+    "8"
+   ]
+  ],
+  "options": [
+   "9",
+   "10",
+   "16",
+   "18"
+  ],
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 5, A2 = 1, A3 = 8. =MAX(A1:A3)+MIN(A1:A3)*2 → 10."
+ },
+ {
+  "n": 161,
+  "topic": "S3",
+  "question": "C1 katakdagi **=A1*B1** formulasi C2 katakka nusxalansa, C2 da qanday formula hosil bo‘ladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "=A1*B1",
+   "=A2*B2",
+   "=B2*C2",
+   "=A2*B1"
+  ],
+  "correct": "B",
+  "explanation": "Nisbiy manzillar bir qator pastga surilsa, qator raqamlari 1 ga oshadi: =A2*B2."
+ },
+ {
+  "n": 162,
+  "topic": "S3",
+  "question": "C1 katakdagi **=$A$1*B1** formulasi C3 katakka nusxalansa, C3 da qanday formula hosil bo‘ladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "=$A$1*B1",
+   "=$A$3*B3",
+   "=A3*B3",
+   "=$A$1*B3"
+  ],
+  "correct": "D",
+  "explanation": "$A$1 oʻzgarmaydi, B1 esa 2 qator pastga surilib B3 boʻladi: =$A$1*B3."
+ },
+ {
+  "n": 163,
+  "topic": "S3",
+  "question": "A1 katakda «olma» matni yozilgan. B1 katakka **=A1+1** formulasi yozilsa, qanday natija chiqadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "#DIV/0!",
+   "1",
+   "#VALUE!",
+   "olma1"
+  ],
+  "correct": "C",
+  "explanation": "Matnga son qoʻshib boʻlmaydi — #VALUE! xatosi chiqadi."
+ },
+ {
+  "n": 164,
+  "topic": "S3",
+  "question": "A1 katakda 10, B1 katakda 0 soni yozilgan. **=A1/B1** formulasi qanday natija beradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0",
+   "#DIV/0!",
+   "10",
+   "#VALUE!"
+  ],
+  "correct": "B",
+  "explanation": "Nolga boʻlish — #DIV/0! xatosi."
+ },
+ {
+  "n": 165,
+  "topic": "S4",
+  "question": "Flowgorithmda foydalanuvchidan qiymat kiritishni amalga oshiruvchi element qaysi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Output",
+   "Assign",
+   "Input",
+   "Declare"
+  ],
+  "correct": "C",
+  "explanation": "Input — foydalanuvchidan qiymat kiritish."
+ },
+ {
+  "n": 166,
+  "topic": "S4",
+  "question": "Natijani ekranga chiqarish uchun qaysi element ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Output",
+   "Input",
+   "Declare",
+   "If"
+  ],
+  "correct": "A",
+  "explanation": "Output — natijani ekranga chiqarish."
+ },
+ {
+  "n": 167,
+  "topic": "S4",
+  "question": "O‘zgaruvchini e’lon qilish (nomi va turini belgilash) uchun qaysi element ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Assign",
+   "Declare",
+   "Output",
+   "For"
+  ],
+  "correct": "B",
+  "explanation": "Declare — oʻzgaruvchini eʼlon qilish."
+ },
+ {
+  "n": 168,
+  "topic": "S4",
+  "question": "O‘zgaruvchiga qiymat yoki ifoda natijasini berish uchun qaysi element ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Input",
+   "If",
+   "Declare",
+   "Assign"
+  ],
+  "correct": "D",
+  "explanation": "Assign — oʻzgaruvchiga qiymat berish."
+ },
+ {
+  "n": 169,
+  "topic": "S4",
+  "question": "Shartni tekshirib, ikki yo‘ldan birini tanlash uchun qaysi element ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "For",
+   "If",
+   "Output",
+   "Assign"
+  ],
+  "correct": "B",
+  "explanation": "If shartni tekshirib, ikki yoʻldan birini tanlaydi."
+ },
+ {
+  "n": 170,
+  "topic": "S4",
+  "question": "Amallarni belgilangan marta takrorlash uchun qaysi element ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "For",
+   "If",
+   "Input",
+   "Declare"
+  ],
+  "correct": "A",
+  "explanation": "For — belgilangan marta takrorlash."
+ },
+ {
+  "n": 171,
+  "topic": "S4",
+  "question": "If elementidan nechta chiqish yo‘li bor?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "If dan 2 ta yoʻl chiqadi: True va False."
+ },
+ {
+  "n": 172,
+  "topic": "S4",
+  "question": "Flowgorithmda butun sonlarni saqlash uchun qaysi ma’lumot turi ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Real",
+   "String",
+   "Integer",
+   "Boolean"
+  ],
+  "correct": "C",
+  "explanation": "Butun sonlar — Integer."
+ },
+ {
+  "n": 173,
+  "topic": "S4",
+  "question": "«Aziz» kabi matnni saqlash uchun qaysi ma’lumot turi ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Integer",
+   "Real",
+   "Boolean",
+   "String"
+  ],
+  "correct": "D",
+  "explanation": "Matn — String."
+ },
+ {
+  "n": 174,
+  "topic": "S4",
+  "question": "3.5 kabi kasrli sonni saqlash uchun qaysi ma’lumot turi ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Real",
+   "Integer",
+   "String",
+   "Boolean"
+  ],
+  "correct": "A",
+  "explanation": "Kasr son — Real."
+ },
+ {
+  "n": 175,
+  "topic": "S4",
+  "question": "Input elementi orqali o‘zgaruvchiga qiymat kiritishdan oldin o‘zgaruvchi bilan nima qilinishi kerak?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Output qilinishi",
+   "Declare orqali e’lon qilinishi",
+   "For ichiga joylashtirilishi",
+   "If bilan tekshirilishi"
+  ],
+  "correct": "B",
+  "explanation": "Input dan oldin oʻzgaruvchi Declare orqali eʼlon qilinishi kerak."
+ },
+ {
+  "n": 176,
+  "topic": "S4",
+  "question": "Flowgorithmda dastur bajarilishi qaysi blokdan boshlanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "End",
+   "Output",
+   "Main",
+   "If"
+  ],
+  "correct": "C",
+  "explanation": "Dastur Main blokidan boshlanadi."
+ },
+ {
+  "n": 177,
+  "topic": "S4",
+  "question": "Flowgorithmda If elementi qanday shaklda tasvirlanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Romb",
+   "Oval",
+   "Parallelogramm",
+   "To‘g‘ri to‘rtburchak"
+  ],
+  "correct": "A",
+  "explanation": "If — romb shaklida."
+ },
+ {
+  "n": 178,
+  "topic": "S4",
+  "question": "Flowgorithmda Input va Output elementlari qanday shaklda tasvirlanadi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Romb",
+   "Parallelogramm",
+   "Oval",
+   "Uchburchak"
+  ],
+  "correct": "B",
+  "explanation": "Input va Output — parallelogramm."
+ },
+ {
+  "n": 179,
+  "topic": "S4",
+  "question": "Flowgorithmda bo‘lishdagi qoldiqni topish uchun qaysi amal ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "/",
+   "^",
+   "mod",
+   "&"
+  ],
+  "correct": "C",
+  "explanation": "Qoldiq — mod."
+ },
+ {
+  "n": 180,
+  "topic": "S4",
+  "question": "Flowgorithmda ikki matnni birlashtirish uchun qaysi belgi ishlatiladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "*",
+   "&",
+   "/",
+   "%"
+  ],
+  "correct": "B",
+  "explanation": "Matnlarni birlashtirish — &."
+ },
+ {
+  "n": 181,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Declare Integer a",
+   "Assign a = 4",
+   "Assign a = a + 3",
+   "Output a"
+  ],
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "7",
+   "12"
+  ],
+  "correct": "C",
+  "explanation": "a = 4, keyin a = 4 + 3 = 7."
+ },
+ {
+  "n": 182,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Declare Integer x, y",
+   "Assign x = 10",
+   "Assign y = x * 2",
+   "Assign x = y − 5",
+   "Output x"
+  ],
+  "table": null,
+  "options": [
+   "5",
+   "10",
+   "15",
+   "20"
+  ],
+  "correct": "C",
+  "explanation": "x = 10, y = 20, x = 20 − 5 = 15."
+ },
+ {
+  "n": 183,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Declare Integer a, b, t",
+   "Assign a = 3",
+   "Assign b = 8",
+   "Assign t = a",
+   "Assign a = b",
+   "Assign b = t",
+   "Output a"
+  ],
+  "table": null,
+  "options": [
+   "0",
+   "3",
+   "8",
+   "11"
+  ],
+  "correct": "C",
+  "explanation": "t = 3, a = 8, b = 3. Chiqadi a = 8."
+ },
+ {
+  "n": 184,
+  "topic": "S4",
+  "question": "Foydalanuvchi 6 sonini kiritdi. Ekranga nima chiqadi?",
+  "code": [
+   "Declare Integer a",
+   "Input a",
+   "Output a * a + 1"
+  ],
+  "table": null,
+  "options": [
+   "13",
+   "36",
+   "37",
+   "49"
+  ],
+  "correct": "C",
+  "explanation": "6 × 6 + 1 = 37."
+ },
+ {
+  "n": 185,
+  "topic": "S4",
+  "question": "a = 10 bo‘lsa, ekranga nima chiqadi?",
+  "code": [
+   "If a > 10",
+   "  True: Output \"Katta\"",
+   "  False: Output \"Kichik\""
+  ],
+  "table": null,
+  "options": [
+   "Katta",
+   "Kichik",
+   "10",
+   "Hech narsa chiqmaydi"
+  ],
+  "correct": "B",
+  "explanation": "10 > 10 yolgʻon, False yoʻli: Kichik."
+ },
+ {
+  "n": 186,
+  "topic": "S4",
+  "question": "a = 15 bo‘lsa, ekranga nima chiqadi?",
+  "code": [
+   "If a mod 2 = 0",
+   "  True: Output \"Juft\"",
+   "  False: Output \"Toq\""
+  ],
+  "table": null,
+  "options": [
+   "Juft",
+   "15",
+   "1",
+   "Toq"
+  ],
+  "correct": "D",
+  "explanation": "15 mod 2 = 1, shart yolgʻon: Toq."
+ },
+ {
+  "n": 187,
+  "topic": "S4",
+  "question": "a = 9 bo‘lsa, ekranga nima chiqadi?",
+  "code": [
+   "If a >= 5 and a <= 9",
+   "  True: Output \"Ha\"",
+   "  False: Output \"Yo‘q\""
+  ],
+  "table": null,
+  "options": [
+   "Ha",
+   "Yo‘q",
+   "9",
+   "5"
+  ],
+  "correct": "A",
+  "explanation": "9 ≥ 5 va 9 ≤ 9 — ikkalasi rost: Ha."
+ },
+ {
+  "n": 188,
+  "topic": "S4",
+  "question": "Quyidagi siklda Output elementi necha marta bajariladi?",
+  "code": [
+   "For i = 1 to 5",
+   "  Output i"
+  ],
+  "table": null,
+  "options": [
+   "1",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": "C",
+  "explanation": "i = 1, 2, 3, 4, 5 — 5 marta."
+ },
+ {
+  "n": 189,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Assign s = 0",
+   "For i = 1 to 4",
+   "  Assign s = s + i",
+   "Output s"
+  ],
+  "table": null,
+  "options": [
+   "4",
+   "6",
+   "10",
+   "24"
+  ],
+  "correct": "C",
+  "explanation": "0 + 1 + 2 + 3 + 4 = 10."
+ },
+ {
+  "n": 190,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Assign p = 1",
+   "For i = 1 to 4",
+   "  Assign p = p * i",
+   "Output p"
+  ],
+  "table": null,
+  "options": [
+   "4",
+   "10",
+   "24",
+   "120"
+  ],
+  "correct": "C",
+  "explanation": "1 × 1 × 2 × 3 × 4 = 24."
+ },
+ {
+  "n": 191,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Assign s = 0",
+   "For i = 1 to 9, qadam 2",
+   "  Assign s = s + i",
+   "Output s"
+  ],
+  "table": null,
+  "options": [
+   "9",
+   "20",
+   "25",
+   "45"
+  ],
+  "correct": "C",
+  "explanation": "1 + 3 + 5 + 7 + 9 = 25."
+ },
+ {
+  "n": 192,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Assign k = 0",
+   "For i = 1 to 10",
+   "  If i mod 3 = 0",
+   "    True: Assign k = k + 1",
+   "Output k"
+  ],
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "10",
+   "18"
+  ],
+  "correct": "A",
+  "explanation": "1..10 orasida 3 ga boʻlinadiganlar: 3, 6, 9 — 3 ta."
+ },
+ {
+  "n": 193,
+  "topic": "S4",
+  "question": "Quyidagi sikl ekranga nimani chiqaradi?",
+  "code": [
+   "For i = 3 dan 1 gacha (kamayish tartibida, qadam 1)",
+   "  Output i"
+  ],
+  "table": null,
+  "options": [
+   "1 2 3",
+   "3",
+   "3 2 1",
+   "3 2 1 0"
+  ],
+  "correct": "C",
+  "explanation": "i 3 dan 1 gacha kamayadi: 3 2 1."
+ },
+ {
+  "n": 194,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Declare Real r",
+   "Assign r = 7 / 2",
+   "Output r"
+  ],
+  "table": null,
+  "options": [
+   "3",
+   "3.5",
+   "4",
+   "1"
+  ],
+  "correct": "B",
+  "explanation": "r Real: 7 / 2 = 3.5."
+ },
+ {
+  "n": 195,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Declare Integer n",
+   "Assign n = 17",
+   "Output (n mod 5) * 3"
+  ],
+  "table": null,
+  "options": [
+   "2",
+   "5",
+   "6",
+   "15"
+  ],
+  "correct": "C",
+  "explanation": "17 mod 5 = 2, 2 × 3 = 6."
+ },
+ {
+  "n": 196,
+  "topic": "S4",
+  "question": "Algoritm natijasida ekranga nima chiqadi?",
+  "code": [
+   "Assign x = 2",
+   "For i = 1 to 3",
+   "  Assign x = x * x",
+   "Output x"
+  ],
+  "table": null,
+  "options": [
+   "8",
+   "16",
+   "64",
+   "256"
+  ],
+  "correct": "D",
+  "explanation": "x: 2 → 4 → 16 → 256."
+ },
+ {
+  "n": 197,
+  "topic": "S5",
+  "question": "floor(x) nimani bildiradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "x dan katta bo‘lmagan eng katta butun sonni",
+   "x dan kichik bo‘lmagan eng kichik butun sonni",
+   "x ga eng yaqin butun sonni",
+   "x ning kasr qismini"
+  ],
+  "correct": "A",
+  "explanation": "floor(x) — x dan katta boʻlmagan eng katta butun son (pastga)."
+ },
+ {
+  "n": 198,
+  "topic": "S5",
+  "question": "ceil(x) nimani bildiradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "x ning kasr qismini",
+   "x ga eng yaqin butun sonni",
+   "x dan kichik bo‘lmagan eng kichik butun sonni",
+   "x dan katta bo‘lmagan eng katta butun sonni"
+  ],
+  "correct": "C",
+  "explanation": "ceil(x) — x dan kichik boʻlmagan eng kichik butun son (yuqoriga)."
+ },
+ {
+  "n": 199,
+  "topic": "S5",
+  "question": "round(x) nimani bildiradi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "Har doim pastga yaxlitlashni",
+   "x ga eng yaqin butun sonni",
+   "Har doim yuqoriga yaxlitlashni",
+   "x ning kasr qismini"
+  ],
+  "correct": "B",
+  "explanation": "round(x) — x ga eng yaqin butun son."
+ },
+ {
+  "n": 200,
+  "topic": "S5",
+  "question": "floor(2.5) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "2",
+   "2.5",
+   "3"
+  ],
+  "correct": "B",
+  "explanation": "floor(2.5) = 2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 201,
+  "topic": "S5",
+  "question": "ceil(2.5) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "2.5",
+   "3",
+   "4"
+  ],
+  "correct": "C",
+  "explanation": "ceil(2.5) = 3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 202,
+  "topic": "S5",
+  "question": "floor(3.7) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "3",
+   "4",
+   "3.7"
+  ],
+  "correct": "B",
+  "explanation": "floor(3.7) = 3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 203,
+  "topic": "S5",
+  "question": "ceil(3.2) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "3.2",
+   "5",
+   "4"
+  ],
+  "correct": "D",
+  "explanation": "ceil(3.2) = 4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 204,
+  "topic": "S5",
+  "question": "floor(8.1) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "7",
+   "8",
+   "9",
+   "8.1"
+  ],
+  "correct": "B",
+  "explanation": "floor(8.1) = 8. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 205,
+  "topic": "S5",
+  "question": "ceil(8.9) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "8",
+   "8.9",
+   "9",
+   "10"
+  ],
+  "correct": "C",
+  "explanation": "ceil(8.9) = 9. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 206,
+  "topic": "S5",
+  "question": "floor(0.3) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0",
+   "1",
+   "−1",
+   "3"
+  ],
+  "correct": "A",
+  "explanation": "floor(0.3) = 0. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 207,
+  "topic": "S5",
+  "question": "ceil(0.3) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "correct": "B",
+  "explanation": "ceil(0.3) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 208,
+  "topic": "S5",
+  "question": "round(4.2) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "4.5",
+   "5"
+  ],
+  "correct": "B",
+  "explanation": "round(4.2) = 4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 209,
+  "topic": "S5",
+  "question": "round(4.8) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "4",
+   "4.5",
+   "5",
+   "6"
+  ],
+  "correct": "C",
+  "explanation": "round(4.8) = 5. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 210,
+  "topic": "S5",
+  "question": "round(3.4) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "3.5",
+   "2"
+  ],
+  "correct": "A",
+  "explanation": "round(3.4) = 3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 211,
+  "topic": "S5",
+  "question": "round(3.5) = ? (0.5 bo‘lsa, noldan uzoqqa yaxlitlanadi)",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "3.5",
+   "4",
+   "5"
+  ],
+  "correct": "C",
+  "explanation": "round(3.5) = 4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 212,
+  "topic": "S5",
+  "question": "round(1.5) = ? (0.5 bo‘lsa, noldan uzoqqa yaxlitlanadi)",
+  "code": null,
+  "table": null,
+  "options": [
+   "1",
+   "1.5",
+   "2",
+   "3"
+  ],
+  "correct": "C",
+  "explanation": "round(1.5) = 2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 213,
+  "topic": "S5",
+  "question": "round(6.5) = ? (0.5 bo‘lsa, noldan uzoqqa yaxlitlanadi)",
+  "code": null,
+  "table": null,
+  "options": [
+   "6",
+   "6.5",
+   "7",
+   "8"
+  ],
+  "correct": "C",
+  "explanation": "round(6.5) = 7. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 214,
+  "topic": "S5",
+  "question": "floor(6) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "5",
+   "6",
+   "7",
+   "0"
+  ],
+  "correct": "B",
+  "explanation": "floor(6) = 6. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 215,
+  "topic": "S5",
+  "question": "ceil(7) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "6",
+   "7",
+   "8",
+   "0"
+  ],
+  "correct": "B",
+  "explanation": "ceil(7) = 7. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 216,
+  "topic": "S5",
+  "question": "floor(9.99) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "9",
+   "10",
+   "9.9",
+   "8"
+  ],
+  "correct": "A",
+  "explanation": "floor(9.99) = 9. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 217,
+  "topic": "S5",
+  "question": "ceil(5.01) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "5",
+   "6",
+   "5.1",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "ceil(5.01) = 6. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 218,
+  "topic": "S5",
+  "question": "round(7.49) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "8",
+   "7.5",
+   "7",
+   "6"
+  ],
+  "correct": "C",
+  "explanation": "round(7.49) = 7. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 219,
+  "topic": "S5",
+  "question": "floor(−1.5) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−1",
+   "−2",
+   "1",
+   "2"
+  ],
+  "correct": "B",
+  "explanation": "floor(−1.5) = −2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 220,
+  "topic": "S5",
+  "question": "ceil(−1.5) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−2",
+   "−1",
+   "0",
+   "1"
+  ],
+  "correct": "B",
+  "explanation": "ceil(−1.5) = −1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 221,
+  "topic": "S5",
+  "question": "ceil(−3.7) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−4",
+   "−3",
+   "3",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "ceil(−3.7) = −3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 222,
+  "topic": "S5",
+  "question": "floor(−3.2) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−3",
+   "−2",
+   "−4",
+   "3"
+  ],
+  "correct": "C",
+  "explanation": "floor(−3.2) = −4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 223,
+  "topic": "S5",
+  "question": "round(−1.2) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−1",
+   "−2",
+   "0",
+   "1"
+  ],
+  "correct": "A",
+  "explanation": "round(−1.2) = −1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 224,
+  "topic": "S5",
+  "question": "round(−2.3) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−3",
+   "−1",
+   "2",
+   "−2"
+  ],
+  "correct": "D",
+  "explanation": "round(−2.3) = −2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 225,
+  "topic": "S5",
+  "question": "round(−3.5) = ? (0.5 bo‘lsa, noldan uzoqqa yaxlitlanadi)",
+  "code": null,
+  "table": null,
+  "options": [
+   "−3",
+   "−4",
+   "3",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "round(−3.5) = −4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 226,
+  "topic": "S5",
+  "question": "ceil(−0.4) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−1",
+   "0",
+   "1",
+   "4"
+  ],
+  "correct": "B",
+  "explanation": "ceil(−0.4) = 0. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 227,
+  "topic": "S5",
+  "question": "floor(−0.6) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0",
+   "1",
+   "−1",
+   "−2"
+  ],
+  "correct": "C",
+  "explanation": "floor(−0.6) = −1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 228,
+  "topic": "S5",
+  "question": "Pishiriq uchun 3.2 kg un kerak. Do‘konda faqat 1 kg lik qoplar sotiladi. Nechta qop sotib olish kerak?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correct": "C",
+  "explanation": "3.2 kg uchun ceil(3.2) = 4 ta qop kerak (3 ta qop yetmaydi)."
+ },
+ {
+  "n": 229,
+  "topic": "S5",
+  "question": "Sinfda 25 o‘quvchi bor. Har bir partada 2 kishi o‘tiradi. Kamida nechta parta kerak?",
+  "code": null,
+  "table": null,
+  "options": [
+   "12",
+   "13",
+   "14",
+   "25"
+  ],
+  "correct": "B",
+  "explanation": "25 / 2 = 12.5 → ceil = 13 ta parta."
+ },
+ {
+  "n": 230,
+  "topic": "S5",
+  "question": "Sizda 10 ming so‘m bor. Bitta daftar 3 ming so‘m turadi. Ko‘pi bilan nechta daftar sotib olish mumkin?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2",
+   "3",
+   "4",
+   "7"
+  ],
+  "correct": "B",
+  "explanation": "10 / 3 = 3.33… → floor = 3 ta daftar."
+ },
+ {
+  "n": 231,
+  "topic": "S5",
+  "question": "Ekskursiyaga 45 o‘quvchi boradi. Har bir mikroavtobusga 12 kishi sig‘adi. Kamida nechta mikroavtobus kerak?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": "B",
+  "explanation": "45 / 12 = 3.75 → ceil = 4 ta mikroavtobus."
+ },
+ {
+  "n": 232,
+  "topic": "S5",
+  "question": "Javonning uzunligi 48 sm, har bir kitobning qalinligi 2.5 sm. Javonga nechta kitob to‘liq sig‘adi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "18",
+   "19",
+   "20",
+   "21"
+  ],
+  "correct": "B",
+  "explanation": "48 / 2.5 = 19.2 → floor = 19 ta kitob."
+ },
+ {
+  "n": 233,
+  "topic": "S5",
+  "question": "Yuk mashinasi bir qatnovda 3 tonna yuk tashiydi. 10.5 tonna yukni tashish uchun kamida necha qatnov kerak?",
+  "code": null,
+  "table": null,
+  "options": [
+   "3",
+   "4",
+   "5",
+   "10"
+  ],
+  "correct": "B",
+  "explanation": "10.5 / 3 = 3.5 → ceil = 4 ta qatnov."
+ },
+ {
+  "n": 234,
+  "topic": "S5",
+  "question": "floor(2.8) + ceil(−1.5) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "correct": "B",
+  "explanation": "floor(2.8) + ceil(−1.5) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 235,
+  "topic": "S5",
+  "question": "ceil(4.1) − floor(4.9) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "0",
+   "1",
+   "2",
+   "9"
+  ],
+  "correct": "B",
+  "explanation": "ceil(4.1) − floor(4.9) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 236,
+  "topic": "S5",
+  "question": "round(2.5) + round(−2.5) = ? (0.5 bo‘lsa, noldan uzoqqa yaxlitlanadi)",
+  "code": null,
+  "table": null,
+  "options": [
+   "−1",
+   "1",
+   "5",
+   "0"
+  ],
+  "correct": "D",
+  "explanation": "round(2.5) + round(−2.5) = 0. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 237,
+  "topic": "S5",
+  "question": "floor(−7.5) + ceil(−7.5) = ?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−14",
+   "−15",
+   "−16",
+   "0"
+  ],
+  "correct": "B",
+  "explanation": "floor(−7.5) + ceil(−7.5) = −15. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ {
+  "n": 238,
+  "topic": "S5",
+  "question": "Qaysi tenglik noto‘g‘ri?",
+  "code": null,
+  "table": null,
+  "options": [
+   "floor(4.9) = 4",
+   "ceil(−4.9) = −4",
+   "floor(−4.1) = −4",
+   "ceil(4.1) = 5"
+  ],
+  "correct": "C",
+  "explanation": "Tekshiramiz: floor(4.9) = 4; ceil(−4.9) = −4; floor(−4.1) = −5; ceil(4.1) = 5."
+ },
+ {
+  "n": 239,
+  "topic": "S5",
+  "question": "x ning qaysi qiymatida floor(x) = ceil(x) bo‘ladi?",
+  "code": null,
+  "table": null,
+  "options": [
+   "2.5",
+   "−1.5",
+   "0.1",
+   "3"
+  ],
+  "correct": "D",
+  "explanation": "floor(x) = ceil(x) faqat x butun son boʻlganda: x = 3."
+ },
+ {
+  "n": 240,
+  "topic": "S5",
+  "question": "floor(x) = −3 bo‘lsa, x qaysi son bo‘lishi mumkin?",
+  "code": null,
+  "table": null,
+  "options": [
+   "−2.5",
+   "−3.6",
+   "−3.2",
+   "3.2"
+  ],
+  "correct": "A",
+  "explanation": "Har bir variant uchun floor: floor(−2.5) = −3, floor(−3.6) = −4, floor(−3.2) = −4, floor(3.2) = 3."
+ },
+ {
+  "n": 241,
+  "topic": "S5",
+  "question": "round(x) = 5 bo‘lsa (0.5 bo‘lsa, noldan uzoqqa yaxlitlanadi), x qaysi son bo‘lishi mumkin?",
+  "code": null,
+  "table": null,
+  "options": [
+   "4.4",
+   "5.5",
+   "4.5",
+   "5.6"
+  ],
+  "correct": "C",
+  "explanation": "Har bir variant uchun round: round(4.4) = 4, round(5.5) = 6, round(4.5) = 5, round(5.6) = 6."
+ }
+]

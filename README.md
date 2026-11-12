@@ -23,8 +23,8 @@ publishes it to GitHub Pages (Settings → Pages → Source: GitHub Actions).
 
 | Part | Content | Count | Time | Points |
 |---|---|---|---|---|
-| 1-qism | Test: oʻzgaruvchilar, Input/Output, amallar, mod (pool 67) | 25 | 35 min | 1 |
-| 2-qism | Test: If, ichma-ich If, For, For+If (pool 74) | 30 | 40 min | 1 |
+| 1-qism | Test: sanoq sistemalari, kompyuter apparatlari (pool 85, from the 241-question set) | 25 | 35 min | 1 |
+| 2-qism | Test: Excel formulalari, Flowgorithm, floor/ceil/round (pool 156) | 30 | 40 min | 1 |
 | 3-qism | Practical problems, `.fprg` upload (pool 50) | 20 | 120 min | 3 |
 | 4-qism | Hard problems (pool 17) — judged and shown, **not counted** in the total | 5 | 60 min | 3 (bonus) |
 
@@ -59,7 +59,9 @@ Each step is sent only once per attempt id.
 
 ## Question bank (`npm run bank`)
 
-Sources are in `scripts/src/` (questions as data, problems with Flowgorithm reference solutions). The generator:
+Test questions (parts 1–2) come from the 241-question set in `scripts/it/it-241.md`; `scripts/it/solve.py` computes every answer
+(number conversions, Excel formulas, floor/ceil/round, algorithms) and fails unless each question has exactly one correct option.
+Problems (parts 3–4) are in `scripts/src/` with Flowgorithm reference solutions. The generator:
 - runs every program with the interpreter and writes the correct answers and expected outputs (nothing by hand);
 - checks that the explanation contains the real result and that no wrong option equals the real output;
 - compares every Part 3 sample output with the outputs published to students earlier;

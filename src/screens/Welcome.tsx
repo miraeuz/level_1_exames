@@ -57,10 +57,10 @@ export default function Welcome() {
             <Icon name="clock" className="h-3.5 w-3.5" /> Jami ~{Math.round(totalMin / 6) / 10} soat · {examConfig.parts.length} qism
           </span>
           <h1 className="text-[clamp(1.8rem,1.3rem+2vw,2.8rem)] font-extrabold leading-tight tracking-tight">
-            {examConfig.brand.tagline}: <span className="text-primary">Flowgorithm</span>
+            {examConfig.brand.tagline}: <span className="text-primary">informatika</span>
           </h1>
           <p className="mt-3 max-w-xl text-muted">
-            Test savollariga javob bering va amaliy masalalarni Flowgorithm dasturida yechib, <span className="font-mono">.fprg</span> faylini yuklang. Natijalar avtomatik
+            Sanoq sistemalari, kompyuter apparatlari, Excel va floor/ceil/round boʻyicha test savollariga javob bering, amaliy masalalarni esa Flowgorithm dasturida yechib, <span className="font-mono">.fprg</span> faylini yuklang. Natijalar avtomatik
             tekshiriladi.
           </p>
 

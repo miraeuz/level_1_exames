@@ -70,7 +70,9 @@ let qid = 0;
 const questions: any[] = [];
 const conceptHits: Record<string, number[]> = Object.fromEntries(CONCEPTS.map((c) => [c.id, []]));
 
-for (const q of QUESTIONS) {
+// Parts 1–2 now come from the 241-question IT set (scripts/it). The old Flowgorithm-only questions are not used.
+const LEGACY: QDef[] = process.env.LEGACY_QUESTIONS ? QUESTIONS : [];
+for (const q of LEGACY) {
   qid++;
   const where = `Savol ${qid} (${q.topic})`;
   const topic = TOPICS.find((t) => t.id === q.topic);
@@ -188,10 +190,51 @@ for (const q of QUESTIONS) {
   questions.push(out);
 }
 
+
+// ---------- 241-question IT set (answers computed by scripts/it/solve.py) ----------
+const IT = JSON.parse(readFileSync(new URL("./src/it-questions.json", import.meta.url), "utf8")) as {
+  n: number; topic: string; question: string; code: string[] | null; table: string[][] | null; options: string[]; correct: string; explanation: string;
+}[];
+for (const q of IT) {
+  qid++;
+  const where = `Savol ${q.n} (${q.topic})`;
+  const topic = TOPICS.find((t) => t.id === q.topic)!;
+  if (!q.correct || q.options.length !== 4) fail(`${where}: javob kaliti yoki variantlar yo'q`);
+  if (!q.explanation) fail(`${where}: izoh yo'q`);
+  const all = q.options.map((o) => o.trim().toLowerCase());
+  if (new Set(all).size !== 4) fail(`${where}: bir xil variantlar bor`);
+  // balance answer letters: move the correct option to the least-used position, keep the others in order
+  const ci = "ABCD".indexOf(q.correct);
+  const others = q.options.filter((_, i) => i !== ci);
+  const pos = letterCount.indexOf(Math.min(...letterCount));
+  letterCount[pos]++;
+  const opts = [...others];
+  opts.splice(pos, 0, q.options[ci]);
+  const diff = /tenglik|eng katta|eng kichik|sonini|IF\(|AVERAGE\(M|MAX\(M|MIN\(M|COUNTA\(A1:A4\)-|\$A\$1\*|bo‘lsa, x|[+−×] .*=/.test(q.question)
+    ? "hard" : /^\d+₂ = \?₁₀$|^\d+₃ = \?₁₀$|qaysi|nima|qanday/i.test(q.question) && !q.table ? "easy" : "medium";
+  const out: any = {
+    id: qid,
+    src: q.n,
+    topic: q.topic,
+    part: topic.part,
+    type: "single_choice",
+    difficulty: diff,
+    question: uz(q.question),
+    options: opts.map((o, i) => `${"ABCD"[i]}) ${uz(o)}`),
+    correct_answer: "ABCD"[pos],
+    explanation: uz(q.explanation),
+  };
+  if (q.code) out.code = q.code.map(uz);
+  if (q.table) out.table = q.table.map((r) => r.map(uz));
+  const hay = (q.question + " " + (q.code ?? []).join(" ") + " " + q.options.join(" ") + " " + q.explanation).toLowerCase();
+  for (const c of CONCEPTS) if (c.topics.includes(q.topic) && c.test.test(hay)) conceptHits[c.id].push(qid);
+  questions.push(out);
+}
+
 // duplicates
 const seen = new Map<string, number>();
 for (const q of questions) {
-  const k = (q.question + "|" + (q.program ?? "") + "|" + (q.stdin ?? "")).replace(/\s+/g, " ");
+  const k = (q.question + "|" + (q.program ?? "") + "|" + (q.stdin ?? "") + "|" + JSON.stringify(q.code ?? q.table ?? q.options)).replace(/\s+/g, " ");
   if (seen.has(k)) fail(`Takroriy savol: ${seen.get(k)} va ${q.id}`);
   seen.set(k, q.id);
   if (q.program) {

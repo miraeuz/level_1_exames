@@ -4,6 +4,7 @@ import { useExam } from "../store/exam";
 import { questionById, problemById, topicName, optText } from "../lib/bank";
 import { Icon, Logo, Ring, ThemeMenu, Verdict, Dialog } from "../components/ui";
 import { ProgramView } from "../components/Program";
+import { RichText, SheetTable, CodeBlock } from "../components/Rich";
 import { fmtDateTime, fmtDuration } from "../lib/util";
 import { enqueueDelivery, kick } from "../delivery/queue";
 import { fileBase } from "../delivery/summary";
@@ -327,7 +328,11 @@ function QuestionReview({ qid, answer }: { qid: number; answer: unknown }) {
   return (
     <div className="anim-enter mt-4 rounded-xl border border-border p-4">
       <div className="text-xs text-muted">{topicName(q.topic)}</div>
-      <div className="mt-1 font-semibold">{q.question}</div>
+      <div className="mt-1 font-semibold">
+        <RichText text={q.question} />
+      </div>
+      {q.table && <SheetTable rows={q.table} />}
+      {q.code && <CodeBlock lines={q.code} />}
       {q.program && (
         <div className="mt-3">
           <ProgramView src={q.program} compact />

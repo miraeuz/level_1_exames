@@ -188,13 +188,19 @@ export async function buildPdf(a: Attempt): Promise<Blob> {
         {
           columns: [
             { text: `${i + 1}. `, bold: true, width: 18 },
-            { text: q.question, bold: true, width: "*" },
+            { text: q.question.replace(/\*\*/g, ""), bold: true, width: "*" },
             { text: ok ? "✓ toʻgʻri" : "✗ notoʻgʻri", color: ok ? C.ok : C.bad, bold: true, width: 70, alignment: "right" },
           ],
         },
         { text: `${topicName(q.topic)} · ${q.type}${q.stdin ? ` · kiritish: ${q.stdin.replace(/\n/g, ", ")}` : ""}`, color: C.muted, fontSize: 8, margin: [18, 1, 0, 2] },
       ];
       if (q.program) block.push({ stack: chart(q.program, 230, 260), margin: [18, 0, 0, 0] });
+      if (q.table)
+        block.push({
+          table: { body: q.table.map((r, ri) => r.map((c, ci) => ({ text: c || " ", font: "Mono", fontSize: 8.5, alignment: ci === 0 || ri === 0 ? "center" : "right", fillColor: ci === 0 || ri === 0 ? C.soft : undefined, color: ci === 0 || ri === 0 ? C.muted : "#0f172a" }))) },
+          margin: [18, 2, 0, 4],
+        });
+      if (q.code) block.push({ text: q.code.join("\n"), font: "Mono", fontSize: 8.5, margin: [18, 2, 0, 4], background: C.soft });
       if (q.options) {
         const chosen = Array.isArray(qr?.answer) ? (qr!.answer as string[]) : [qr?.answer];
         const correct = Array.isArray(q.correct_answer) ? q.correct_answer : [q.correct_answer];

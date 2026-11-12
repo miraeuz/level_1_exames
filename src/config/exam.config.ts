@@ -18,13 +18,13 @@ export interface PartConfig {
 export const examConfig = {
   brand: {
     academy: "MIRAE Academy",
-    title: "Flowgorithm: boshlangʻich dasturlash",
+    title: "Boshlangʻich informatika (1-daraja)",
     tagline: "Yakuniy imtihon",
-    examName: "Flowgorithm-imtihon",
+    examName: "1-daraja-imtihon",
   },
   parts: [
-    { id: "p1", title: "1-qism", subtitle: "Test: oʻzgaruvchilar, kiritish-chiqarish, amallar", kind: "questions", count: 25, durationMinutes: 35, pool: { part: 1 }, points: 1, counted: true },
-    { id: "p2", title: "2-qism", subtitle: "Test: If, ichma-ich If, For", kind: "questions", count: 30, durationMinutes: 40, pool: { part: 2 }, points: 1, counted: true },
+    { id: "p1", title: "1-qism", subtitle: "Test: sanoq sistemalari, kompyuter apparatlari", kind: "questions", count: 25, durationMinutes: 35, pool: { part: 1 }, points: 1, counted: true },
+    { id: "p2", title: "2-qism", subtitle: "Test: Excel formulalari, Flowgorithm, floor / ceil / round", kind: "questions", count: 30, durationMinutes: 40, pool: { part: 2 }, points: 1, counted: true },
     { id: "p3", title: "3-qism", subtitle: "Amaliy masalalar (Flowgorithm .fprg)", kind: "problems", count: 20, durationMinutes: 120, pool: { part: 3 }, points: 3, counted: true },
     { id: "p4", title: "4-qism", subtitle: "Qiyin masalalar — bonus, umumiy ballga qoʻshilmaydi", kind: "problems", count: 5, durationMinutes: 60, pool: { part: 4 }, points: 3, counted: false },
   ] as PartConfig[],

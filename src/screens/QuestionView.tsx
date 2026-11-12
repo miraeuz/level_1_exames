@@ -3,6 +3,7 @@ import { useExam } from "../store/exam";
 import { questionById, topicName, optText } from "../lib/bank";
 import { ProgramView } from "../components/Program";
 import { Icon } from "../components/ui";
+import { RichText, SheetTable, CodeBlock } from "../components/Rich";
 
 const TYPE_LABEL: Record<string, string> = {
   single_choice: "Bitta javob",
@@ -31,7 +32,11 @@ export default function QuestionView({ qid, index, total }: { qid: number; index
         <span className="chip">{TYPE_LABEL[q.type]}</span>
         <span className="chip">{DIFF[q.difficulty]}</span>
       </div>
-      <h2 className="text-[1.15rem] font-semibold leading-relaxed sm:text-[1.25rem]">{q.question}</h2>
+      <h2 className="text-[1.15rem] font-semibold leading-relaxed sm:text-[1.25rem]">
+        <RichText text={q.question} />
+      </h2>
+      {q.table && <SheetTable rows={q.table} />}
+      {q.code && <CodeBlock lines={q.code} />}
       {q.stdin !== undefined && (
         <div className="mt-3 inline-flex flex-wrap items-center gap-2 rounded-lg border border-border bg-surface2 px-3 py-1.5 text-sm">
           <Icon name="keyboard" className="h-4 w-4 text-muted" /> Kiritiladi:

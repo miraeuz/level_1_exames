@@ -11,6 +11,8 @@ export interface Question {
   difficulty: "easy" | "medium" | "hard";
   question: string;
   program?: string;
+  code?: string[];
+  table?: string[][];
   stdin?: string;
   inputs?: string[];
   options?: string[];

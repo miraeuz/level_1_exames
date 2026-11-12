@@ -344,7 +344,7 @@ try {
   // a question with a flowchart (for screenshots)
   await t.page.getByRole("button", { name: /Boshlash/ }).click();
   const tc = await attemptOf(t.page);
-  const withProg = tc.parts[1].items.findIndex((id) => qById.get(id).program);
+  const withProg = tc.parts[1].items.findIndex((id) => qById.get(id).table);
   await t.page.locator("aside").getByRole("button", { name: new RegExp(`^${withProg + 1}-savol`) }).click();
   await t.page.waitForTimeout(400);
   await shot(t.page, "09-question-flowchart-1440");
