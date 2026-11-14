@@ -1,5 +1,6 @@
 // Minimal IndexedDB key-value store (uploaded .fprg files, generated PDFs, delivery queue).
-const DB = "fg-exam";
+import { examConfig } from "../config/exam.config";
+const DB = examConfig.storageKeys.db;
 const STORE = "kv";
 let dbp: Promise<IDBDatabase> | null = null;
 

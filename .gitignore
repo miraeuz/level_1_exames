@@ -6,3 +6,4 @@ scripts/out/bank-teacher.json
 scripts/out
 # reference solutions are kept private (public repo)
 scripts/src/problems.ts
+scripts/src/problems-v2.ts

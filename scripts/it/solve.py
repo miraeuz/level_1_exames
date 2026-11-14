@@ -4,7 +4,11 @@
 import json, re, math
 from fractions import Fraction
 
-Q = json.load(open("parsed.json", encoding="utf8"))
+import sys
+PARSED = sys.argv[1] if len(sys.argv) > 1 else "parsed.json"
+KEYOUT = sys.argv[2] if len(sys.argv) > 2 else "key.json"
+QOUT = sys.argv[3] if len(sys.argv) > 3 else "../src/it-questions.json"
+Q = json.load(open(PARSED, encoding="utf8"))
 SUB = str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789")
 SUP = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
 issues = []
@@ -174,13 +178,24 @@ def eq_opt(o, v):
     try: return abs(float(o) - v) < 1e-9
     except ValueError: return False
 
+def _computable(q):
+    t = " ".join(q["text"]); sec = q["section"]
+    if sec.startswith("I bo"):
+        if ("eng katta" in t or "eng kichik" in t): return all(term(o) is not None for o in q["options"])
+        return bool(re.match(r"^.*= \?[₀-₉]+$", t) or "sonini" in t or "qanday yoziladi" in t or "tenglik" in t)
+    if sec.startswith("III"): return bool(re.search(r"\*\*(=.*?)\*\*(?=\s|$)", t)) and bool(q["table"])
+    if sec.startswith("V bo"): return bool(re.match(r"^(floor|ceil|round)\(.*\)( [+−] .*)? = \?", t)) or "noto‘g‘ri" in t or t.startswith("floor(x) =") or t.startswith("round(x) =")
+    return False
+
 key = {}
 for q in Q:
     n, opts, text = q["n"], q["options"], " ".join(q["text"])
     correct, expl = None, None
     sec = q["section"]
-    if n in MANUAL:
+    if PARSED == "parsed.json" and n in MANUAL:
         letter, expl = MANUAL[n]; correct = [letter]
+    elif q.get("key") and not _computable(q):
+        correct = [q["key"][0]]; expl = q["key"][1]
     elif sec.startswith("I bo"):
         m = re.match(r"^(.*?)\s*=\s*\?([₀-₉]+)$", text)
         if m:
@@ -241,17 +256,19 @@ for q in Q:
             correct = ["ABCD"[i] for i, o in enumerate(opts) if math.floor(float(o.replace("−", "-"))) == t]
             expl = "Har bir variant uchun floor: " + ", ".join(f"floor({o}) = {math.floor(float(o.replace('−','-')))}" for o in opts) + "."
         elif text.startswith("round(x) ="):
-            t = 5
+            t = int(re.search(r"= (\S+)", text).group(1).replace("−", "-"))
             r = lambda x: math.floor(abs(x) + 0.5) * (1 if x >= 0 else -1)
-            correct = ["ABCD"[i] for i, o in enumerate(opts) if r(float(o)) == t]
-            expl = "Har bir variant uchun round: " + ", ".join(f"round({o}) = {r(float(o))}" for o in opts) + "."
+            correct = ["ABCD"[i] for i, o in enumerate(opts) if r(float(o.replace("−", "-"))) == t]
+            expl = "Har bir variant uchun round: " + ", ".join(f"round({o}) = {r(float(o.replace('−', '-')))}" for o in opts) + "."
+    if q.get("key") and correct and q["key"][0] != correct[0]:
+        issues.append(f"Savol {n}: ichki kalit {q['key'][0]} hisoblangan {correct} bilan mos emas")
     if not correct or len(correct) != 1:
         issues.append(f"Savol {n}: toʻgʻri javoblar {correct} — {text[:70]}")
     key[n] = dict(correct=correct[0] if correct and len(correct) == 1 else None, explanation=expl)
 
 for k in key.values():
     if k["explanation"]: k["explanation"] = re.sub(r"(?<![\w])-(\d)", r"−\1", k["explanation"])
-json.dump(key, open("key.json", "w"), ensure_ascii=False, indent=1)
+json.dump(key, open(KEYOUT, "w"), ensure_ascii=False, indent=1)
 TOP = {"I bo": "S1", "II b": "S2", "III ": "S3", "IV b": "S4", "V bo": "S5"}
 out = []
 for q in Q:
@@ -263,7 +280,7 @@ for q in Q:
         rows = [[c.strip() for c in l.strip().strip("|").split("|")] for l in q["table"]]
         rows = [rows[0]] + rows[2:]
     out.append(dict(n=n, topic=sid, question=" ".join(text), code=code, table=rows, options=q["options"], correct=key[n]["correct"], explanation=key[n]["explanation"]))
-json.dump(out, open("../src/it-questions.json", "w"), ensure_ascii=False, indent=1)
+json.dump(out, open(QOUT, "w"), ensure_ascii=False, indent=1)
 from collections import Counter
 print("letters:", Counter(v["correct"] for v in key.values()))
 print("\n".join(issues) or "OK: har bir savolda aynan bitta toʻgʻri javob")

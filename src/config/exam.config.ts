@@ -1,5 +1,10 @@
 import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from "./secrets";
 
+/** Exam variant ("v1", "v2"); set at build time with VARIANT=v2. Each variant has its own bank and saved sessions. */
+export const VARIANT: string = ((import.meta as any).env?.VITE_VARIANT as string) || "v1";
+export const VARIANT_NO = VARIANT.replace(/^v/, "");
+const NS = VARIANT === "v1" ? "fg-exam" : `fg-exam:${VARIANT}`;
+
 export type PartKind = "questions" | "problems";
 
 export interface PartConfig {
@@ -19,8 +24,8 @@ export const examConfig = {
   brand: {
     academy: "MIRAE Academy",
     title: "Boshlangʻich informatika (1-daraja)",
-    tagline: "Yakuniy imtihon",
-    examName: "1-daraja-imtihon",
+    tagline: `Yakuniy imtihon · ${VARIANT_NO}-variant`,
+    examName: `1-daraja-imtihon-${VARIANT_NO}-variant`,
   },
   parts: [
     { id: "p1", title: "1-qism", subtitle: "Test: sanoq sistemalari, kompyuter apparatlari", kind: "questions", count: 25, durationMinutes: 35, pool: { part: 1 }, points: 1, counted: true },
@@ -44,7 +49,7 @@ export const examConfig = {
     notifyOnStart: true,
     dateFormat: "DD-MM-YYYY",
   },
-  storageKeys: { attempt: "fg-exam:attempt:v1", attempts: "fg-exam:attempts:v1", prefs: "fg-exam:prefs" },
+  storageKeys: { attempt: `${NS}:attempt:v1`, attempts: `${NS}:attempts:v1`, prefs: "fg-exam:prefs", db: VARIANT === "v1" ? "fg-exam" : `fg-exam-${VARIANT}` },
 };
 
 export type ExamConfig = typeof examConfig;

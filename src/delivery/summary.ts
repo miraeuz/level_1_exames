@@ -13,7 +13,7 @@ export function resultMessage(a: Attempt): string {
   const e = escapeHtml;
   const spent = a.parts.reduce((s, p) => s + p.timeSpentMs, 0);
   const lines = [
-    `<b>📋 ${e(examConfig.brand.title)}</b>`,
+    `<b>📋 ${e(examConfig.brand.title)} — ${e(examConfig.brand.tagline)}</b>`,
     `👤 <b>${e(a.student.lastName)} ${e(a.student.firstName)}</b> · ${e(a.student.group)}`,
     `🕒 ${fmtDateTime(a.finishedAt ?? Date.now())}`,
     ``,
@@ -34,7 +34,7 @@ export function resultMessage(a: Attempt): string {
 }
 
 export function startMessage(a: Attempt): string {
-  return `▶️ <b>${escapeHtml(a.student.lastName)} ${escapeHtml(a.student.firstName)}</b> (${escapeHtml(a.student.group)}) imtihonni boshladi · ${fmtDateTime(a.createdAt)}\n🆔 <code>${a.id}</code>`;
+  return `▶️ <b>${escapeHtml(a.student.lastName)} ${escapeHtml(a.student.firstName)}</b> (${escapeHtml(a.student.group)}) imtihonni boshladi (${escapeHtml(examConfig.brand.tagline)}) · ${fmtDateTime(a.createdAt)}\n🆔 <code>${a.id}</code>`;
 }
 
 export function problemFileName(index: number, pid: number) {

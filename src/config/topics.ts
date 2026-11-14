@@ -68,7 +68,7 @@ export const CONCEPTS: Concept[] = [
   { id: "e-maxmin", name: "MAX / MIN", topics: ["S3"], test: /max|min/ },
   { id: "e-count", name: "COUNT va COUNTA farqi", topics: ["S3"], test: /counta/ },
   { id: "e-if", name: "IF va ichma-ich formulalar", topics: ["S3"], test: /if\(/ },
-  { id: "e-abs", name: "Nisbiy / absolyut manzil", topics: ["S3"], test: /\$a\$1/ },
+  { id: "e-abs", name: "Nisbiy / absolyut manzil", topics: ["S3"], test: /\$a\$1|a\$1/ },
   { id: "e-menu", name: "Filter / Sort menyusi", topics: ["S3"], test: /filter|sort/ },
   { id: "e-err", name: "Xato qiymatlar (#VALUE!, #DIV/0!)", topics: ["S3"], test: /#value|#div/ },
   { id: "f-input", name: "Input / Output elementlari", topics: ["S4"], test: /input|output/ },

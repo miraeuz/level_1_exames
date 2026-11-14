@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && VARIANT=v2 vite build",
     "preview": "vite preview",
     "bank": "tsx scripts/build-bank.ts",
     "test": "vitest run",
     "e2e": "node tests/e2e.mjs",
-    "build:full": "npm run bank && tsc && vite build"
+    "build:full": "npm run bank && npm run bank:v2 && tsc && vite build && VARIANT=v2 vite build",
+    "bank:v2": "VARIANT=v2 tsx scripts/build-bank.ts"
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.20",

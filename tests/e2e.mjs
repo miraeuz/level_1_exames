@@ -11,11 +11,15 @@ const OUT = process.env.E2E_OUT ?? ROOT + "tests/e2e-out/";
 mkdirSync(OUT, { recursive: true });
 const PORT = 4321;
 const URL_ = `http://localhost:${PORT}/`;
-const bank = JSON.parse(readFileSync(ROOT + "src/data/bank.json", "utf8"));
-const teacher = JSON.parse(readFileSync(ROOT + "scripts/out/bank-teacher.json", "utf8"));
+const VARIANT = process.env.VARIANT ?? "v1";
+const SFX = VARIANT === "v1" ? "" : `-${VARIANT}`;
+const KEY = VARIANT === "v1" ? "fg-exam:attempt:v1" : `fg-exam:${VARIANT}:attempt:v1`;
+const DBN = VARIANT === "v1" ? "fg-exam" : `fg-exam-${VARIANT}`;
+const bank = JSON.parse(readFileSync(ROOT + `src/data/bank${SFX}.json`, "utf8"));
+const teacher = JSON.parse(readFileSync(ROOT + `scripts/out/bank-teacher${SFX}.json`, "utf8"));
 const qById = new Map(bank.questions.map((q) => [q.id, q]));
 const pById = new Map(bank.problems.map((p) => [p.id, p]));
-const ref = (p) => readFileSync(ROOT + `scripts/out/reference/${p.key.replace("-", "_")}.fprg`, "utf8");
+const ref = (p) => readFileSync(ROOT + `scripts/out/reference${SFX}/${p.key.replace("-", "_")}.fprg`, "utf8");
 
 const fails = [];
 const check = (cond, msg) => {
@@ -26,7 +30,7 @@ const check = (cond, msg) => {
 };
 
 // ---- start preview server ----
-const srv = spawn("npx", ["vite", "preview", "--port", String(PORT), "--strictPort"], { cwd: ROOT, stdio: "pipe" });
+const srv = spawn("npx", ["vite", "preview", "--port", String(PORT), "--strictPort"], { cwd: ROOT, stdio: "pipe", env: { ...process.env, VARIANT }, detached: true });
 await new Promise((res) => {
   srv.stdout.on("data", (d) => String(d).includes("Local") && res());
   setTimeout(res, 8000);
@@ -37,8 +41,7 @@ const tg = [];
 async function newPage(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, acceptDownloads: true, ...opts });
   // test hooks that run BEFORE the app loads (the app saves on pagehide, so editing storage before a reload would be overwritten)
-  await ctx.addInitScript(() => {
-    const K = "fg-exam:attempt:v1";
+  await ctx.addInitScript((K) => {
     if (sessionStorage.getItem("t:expire")) {
       const a = JSON.parse(localStorage.getItem(K));
       a.parts[0].activeSince = Date.now() - a.parts[0].remainingMs - 1000;
@@ -49,7 +52,7 @@ async function newPage(opts = {}) {
       localStorage.removeItem(K);
       sessionStorage.removeItem("t:dropkey");
     }
-  });
+  }, KEY);
   await ctx.route("https://api.telegram.org/**", async (route) => {
     const req = route.request();
     const method = req.url().split("/").pop();
@@ -63,7 +66,7 @@ async function newPage(opts = {}) {
   page.on("console", (m) => m.type() === "error" && !/Failed to load resource/.test(m.text()) && console.log("   console:", m.text()));
   return { ctx, page };
 }
-const attemptOf = (page) => page.evaluate(() => JSON.parse(localStorage.getItem("fg-exam:attempt:v1") || "null"));
+const attemptOf = (page) => page.evaluate((k) => JSON.parse(localStorage.getItem(k) || "null"), KEY);
 const shot = (page, name) => page.screenshot({ path: OUT + name + ".png", fullPage: false });
 
 // answer the current question (correct=true → right answer, false → a wrong one)
@@ -248,15 +251,15 @@ try {
   let exp3 = 0;
   for (const [pid, kind] of Object.entries(files)) {
     const meta = a.uploads[pid];
-    const src = await page.evaluate(async (k) => {
+    const src = await page.evaluate(async ([k, dbn]) => {
       return await new Promise((res) => {
-        const rq = indexedDB.open("fg-exam");
+        const rq = indexedDB.open(dbn);
         rq.onsuccess = () => {
           const g = rq.result.transaction("kv").objectStore("kv").get(k);
           g.onsuccess = () => res(g.result);
         };
       });
-    }, meta.key);
+    }, [meta.key, DBN]);
     const c = calc(Number(pid), src);
     const pts = Math.round(((3 * c.passed) / c.total) * 2) / 2;
     exp3 += pts;
@@ -328,7 +331,7 @@ try {
   await t.page.reload();
   await t.page.waitForTimeout(2500);
   await shot(t.page, "dbg-after-expire");
-  console.log("   state:", JSON.stringify(await t.page.evaluate(() => { const a = JSON.parse(localStorage.getItem("fg-exam:attempt:v1")); return [a.phase, a.current, a.parts.map(p => p.status)]; })));
+  console.log("   state:", JSON.stringify(await t.page.evaluate((k) => { const a = JSON.parse(localStorage.getItem(k)); return [a.phase, a.current, a.parts.map(p => p.status)]; }, KEY)));
   await t.page.waitForSelector("text=Keyingi qism", { timeout: 10000 });
   const ta = await attemptOf(t.page);
   check(ta.parts[0].status === "submitted" && ta.parts[0].autoSubmitted && ta.current === 1, "part 1 auto-submitted when time ran out");
@@ -357,7 +360,7 @@ try {
   console.error(e);
 } finally {
   await browser.close();
-  srv.kill();
+  try { process.kill(-srv.pid, "SIGTERM"); } catch { srv.kill(); }
 }
 
 console.log(`\n${fails.length ? "FAILED" : "PASSED"} — ${fails.length} muammo`);

@@ -1,0 +1,966 @@
+{
+ "1": {
+  "correct": "A",
+  "explanation": "Ikkilik (2-lik) sistemada faqat 0 va 1 ishlatiladi."
+ },
+ "2": {
+  "correct": "B",
+  "explanation": "3-lik sistemada 0, 1, 2 raqamlari bor, eng kattasi 2."
+ },
+ "3": {
+  "correct": "D",
+  "explanation": "Ikkilik sistemaning asosi 2."
+ },
+ "4": {
+  "correct": "B",
+  "explanation": "0 dan 9 gacha — 10 ta raqam."
+ },
+ "5": {
+  "correct": "D",
+  "explanation": "1201₂ da «2» raqami bor, 2-lik sistemada faqat 0 va 1 bo‘ladi."
+ },
+ "6": {
+  "correct": "A",
+  "explanation": "2120 faqat 0, 1, 2 dan iborat; qolganlarida 3 yoki 4 bor."
+ },
+ "7": {
+  "correct": "D",
+  "explanation": "Eng kichik birlik — bit (0 yoki 1)."
+ },
+ "8": {
+  "correct": "B",
+  "explanation": "00, 01, 10, 11 — 4 ta qiymat (2² = 4)."
+ },
+ "9": {
+  "correct": "D",
+  "explanation": "1 KB = 1024 bayt."
+ },
+ "10": {
+  "correct": "B",
+  "explanation": "4 ni yozamiz: 10₂ = 2, 100₂ = 4, 110₂ = 6, 11₂ = 3."
+ },
+ "11": {
+  "correct": "A",
+  "explanation": "5 ni yozamiz: 12₃ = 5, 11₃ = 4, 21₃ = 7, 20₃ = 6."
+ },
+ "12": {
+  "correct": "D",
+  "explanation": "1101₂ = 1·2³ + 1·2² + 0·2¹ + 1·2⁰ = 13. Javob: 13."
+ },
+ "13": {
+  "correct": "D",
+  "explanation": "1110₂ = 1·2³ + 1·2² + 1·2¹ + 0·2⁰ = 14. Javob: 14."
+ },
+ "14": {
+  "correct": "D",
+  "explanation": "10001₂ = 1·2⁴ + 0·2³ + 0·2² + 0·2¹ + 1·2⁰ = 17. Javob: 17."
+ },
+ "15": {
+  "correct": "C",
+  "explanation": "10010₂ = 1·2⁴ + 0·2³ + 0·2² + 1·2¹ + 0·2⁰ = 18. Javob: 18."
+ },
+ "16": {
+  "correct": "B",
+  "explanation": "10011₂ = 1·2⁴ + 0·2³ + 0·2² + 1·2¹ + 1·2⁰ = 19. Javob: 19."
+ },
+ "17": {
+  "correct": "B",
+  "explanation": "10100₂ = 1·2⁴ + 0·2³ + 1·2² + 0·2¹ + 0·2⁰ = 20. Javob: 20."
+ },
+ "18": {
+  "correct": "D",
+  "explanation": "10110₂ = 1·2⁴ + 0·2³ + 1·2² + 1·2¹ + 0·2⁰ = 22. Javob: 22."
+ },
+ "19": {
+  "correct": "B",
+  "explanation": "10111₂ = 1·2⁴ + 0·2³ + 1·2² + 1·2¹ + 1·2⁰ = 23. Javob: 23."
+ },
+ "20": {
+  "correct": "B",
+  "explanation": "11000₂ = 1·2⁴ + 1·2³ + 0·2² + 0·2¹ + 0·2⁰ = 24. Javob: 24."
+ },
+ "21": {
+  "correct": "C",
+  "explanation": "11001₂ = 1·2⁴ + 1·2³ + 0·2² + 0·2¹ + 1·2⁰ = 25. Javob: 25."
+ },
+ "22": {
+  "correct": "B",
+  "explanation": "11011₂ = 1·2⁴ + 1·2³ + 0·2² + 1·2¹ + 1·2⁰ = 27. Javob: 27."
+ },
+ "23": {
+  "correct": "D",
+  "explanation": "11100₂ = 1·2⁴ + 1·2³ + 1·2² + 0·2¹ + 0·2⁰ = 28. Javob: 28."
+ },
+ "24": {
+  "correct": "D",
+  "explanation": "11110₂ = 1·2⁴ + 1·2³ + 1·2² + 1·2¹ + 0·2⁰ = 30. Javob: 30."
+ },
+ "25": {
+  "correct": "C",
+  "explanation": "100000₂ = 1·2⁵ + 0·2⁴ + 0·2³ + 0·2² + 0·2¹ + 0·2⁰ = 32. Javob: 32."
+ },
+ "26": {
+  "correct": "A",
+  "explanation": "101010₂ = 1·2⁵ + 0·2⁴ + 1·2³ + 0·2² + 1·2¹ + 0·2⁰ = 42. Javob: 42."
+ },
+ "27": {
+  "correct": "B",
+  "explanation": "4 ni 2 ga ketma-ket boʻlamiz: 4 : 2 = 2 (qoldiq 0); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 100₂."
+ },
+ "28": {
+  "correct": "C",
+  "explanation": "7 ni 2 ga ketma-ket boʻlamiz: 7 : 2 = 3 (qoldiq 1); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 111₂."
+ },
+ "29": {
+  "correct": "B",
+  "explanation": "10 ni 2 ga ketma-ket boʻlamiz: 10 : 2 = 5 (qoldiq 0); 5 : 2 = 2 (qoldiq 1); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1010₂."
+ },
+ "30": {
+  "correct": "D",
+  "explanation": "11 ni 2 ga ketma-ket boʻlamiz: 11 : 2 = 5 (qoldiq 1); 5 : 2 = 2 (qoldiq 1); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1011₂."
+ },
+ "31": {
+  "correct": "D",
+  "explanation": "13 ni 2 ga ketma-ket boʻlamiz: 13 : 2 = 6 (qoldiq 1); 6 : 2 = 3 (qoldiq 0); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1101₂."
+ },
+ "32": {
+  "correct": "B",
+  "explanation": "14 ni 2 ga ketma-ket boʻlamiz: 14 : 2 = 7 (qoldiq 0); 7 : 2 = 3 (qoldiq 1); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1110₂."
+ },
+ "33": {
+  "correct": "A",
+  "explanation": "20 ni 2 ga ketma-ket boʻlamiz: 20 : 2 = 10 (qoldiq 0); 10 : 2 = 5 (qoldiq 0); 5 : 2 = 2 (qoldiq 1); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10100₂."
+ },
+ "34": {
+  "correct": "B",
+  "explanation": "24 ni 2 ga ketma-ket boʻlamiz: 24 : 2 = 12 (qoldiq 0); 12 : 2 = 6 (qoldiq 0); 6 : 2 = 3 (qoldiq 0); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 11000₂."
+ },
+ "35": {
+  "correct": "B",
+  "explanation": "101₃ = 1·3² + 0·3¹ + 1·3⁰ = 10. Javob: 10."
+ },
+ "36": {
+  "correct": "A",
+  "explanation": "110₃ = 1·3² + 1·3¹ + 0·3⁰ = 12. Javob: 12."
+ },
+ "37": {
+  "correct": "C",
+  "explanation": "111₃ = 1·3² + 1·3¹ + 1·3⁰ = 13. Javob: 13."
+ },
+ "38": {
+  "correct": "B",
+  "explanation": "112₃ = 1·3² + 1·3¹ + 2·3⁰ = 14. Javob: 14."
+ },
+ "39": {
+  "correct": "C",
+  "explanation": "121₃ = 1·3² + 2·3¹ + 1·3⁰ = 16. Javob: 16."
+ },
+ "40": {
+  "correct": "B",
+  "explanation": "122₃ = 1·3² + 2·3¹ + 2·3⁰ = 17. Javob: 17."
+ },
+ "41": {
+  "correct": "D",
+  "explanation": "200₃ = 2·3² + 0·3¹ + 0·3⁰ = 18. Javob: 18."
+ },
+ "42": {
+  "correct": "C",
+  "explanation": "201₃ = 2·3² + 0·3¹ + 1·3⁰ = 19. Javob: 19."
+ },
+ "43": {
+  "correct": "B",
+  "explanation": "202₃ = 2·3² + 0·3¹ + 2·3⁰ = 20. Javob: 20."
+ },
+ "44": {
+  "correct": "B",
+  "explanation": "210₃ = 2·3² + 1·3¹ + 0·3⁰ = 21. Javob: 21."
+ },
+ "45": {
+  "correct": "D",
+  "explanation": "3 ni 3 ga ketma-ket boʻlamiz: 3 : 3 = 1 (qoldiq 0); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 10₃."
+ },
+ "46": {
+  "correct": "C",
+  "explanation": "6 ni 3 ga ketma-ket boʻlamiz: 6 : 3 = 2 (qoldiq 0); 2 : 3 = 0 (qoldiq 2). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 20₃."
+ },
+ "47": {
+  "correct": "B",
+  "explanation": "8 ni 3 ga ketma-ket boʻlamiz: 8 : 3 = 2 (qoldiq 2); 2 : 3 = 0 (qoldiq 2). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 22₃."
+ },
+ "48": {
+  "correct": "B",
+  "explanation": "9 ni 3 ga ketma-ket boʻlamiz: 9 : 3 = 3 (qoldiq 0); 3 : 3 = 1 (qoldiq 0); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 100₃."
+ },
+ "49": {
+  "correct": "B",
+  "explanation": "11 ni 3 ga ketma-ket boʻlamiz: 11 : 3 = 3 (qoldiq 2); 3 : 3 = 1 (qoldiq 0); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 102₃."
+ },
+ "50": {
+  "correct": "A",
+  "explanation": "13 ni 3 ga ketma-ket boʻlamiz: 13 : 3 = 4 (qoldiq 1); 4 : 3 = 1 (qoldiq 1); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 111₃."
+ },
+ "51": {
+  "correct": "B",
+  "explanation": "111₂ = 1·2² + 1·2¹ + 1·2⁰ = 7₁₀ = 21 (3-lik)."
+ },
+ "52": {
+  "correct": "D",
+  "explanation": "12₃ = 1·3¹ + 2·3⁰ = 5₁₀ = 101 (2-lik)."
+ },
+ "53": {
+  "correct": "D",
+  "explanation": "1000₂ = 1·2³ + 0·2² + 0·2¹ + 0·2⁰ = 8₁₀ = 22 (3-lik)."
+ },
+ "54": {
+  "correct": "D",
+  "explanation": "102₃ = 1·3² + 0·3¹ + 2·3⁰ = 11₁₀ = 1011 (2-lik)."
+ },
+ "55": {
+  "correct": "C",
+  "explanation": "10₂ = 1·2¹ + 0·2⁰ = 2; 1₂ = 1·2⁰ = 1; amal natijasi: 3. 3 ni 2 ga ketma-ket boʻlamiz: 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 11₂."
+ },
+ "56": {
+  "correct": "D",
+  "explanation": "11₂ = 1·2¹ + 1·2⁰ = 3; 1₂ = 1·2⁰ = 1; amal natijasi: 4. Javob: 4."
+ },
+ "57": {
+  "correct": "B",
+  "explanation": "101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5; 11₂ = 1·2¹ + 1·2⁰ = 3; amal natijasi: 8. Javob: 8."
+ },
+ "58": {
+  "correct": "C",
+  "explanation": "110₂ = 1·2² + 1·2¹ + 0·2⁰ = 6; 1₂ = 1·2⁰ = 1; amal natijasi: 7. 7 ni 2 ga ketma-ket boʻlamiz: 7 : 2 = 3 (qoldiq 1); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 111₂."
+ },
+ "59": {
+  "correct": "C",
+  "explanation": "12₃ = 1·3¹ + 2·3⁰ = 5; 10₂ = 1·2¹ + 0·2⁰ = 2; amal natijasi: 7. Javob: 7."
+ },
+ "60": {
+  "correct": "C",
+  "explanation": "1100₂ = 1·2³ + 1·2² + 0·2¹ + 0·2⁰ = 12; 21₃ = 2·3¹ + 1·3⁰ = 7; amal natijasi: 19. Javob: 19."
+ },
+ "61": {
+  "correct": "B",
+  "explanation": "1010₂ = 1·2³ + 0·2² + 1·2¹ + 0·2⁰ = 10; 11₂ = 1·2¹ + 1·2⁰ = 3; amal natijasi: 7. Javob: 7."
+ },
+ "62": {
+  "correct": "D",
+  "explanation": "120₃ = 1·3² + 2·3¹ + 0·3⁰ = 15; 101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5; amal natijasi: 10. Javob: 10."
+ },
+ "63": {
+  "correct": "D",
+  "explanation": "12₃ = 1·3¹ + 2·3⁰ = 5; amal natijasi: 15. 15 ni 2 ga ketma-ket boʻlamiz: 15 : 2 = 7 (qoldiq 1); 7 : 2 = 3 (qoldiq 1); 3 : 2 = 1 (qoldiq 1); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1111₂."
+ },
+ "64": {
+  "correct": "B",
+  "explanation": "101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5; 10₂ = 1·2¹ + 0·2⁰ = 2; amal natijasi: 10. Javob: 10."
+ },
+ "65": {
+  "correct": "C",
+  "explanation": "11₃ = 1·3¹ + 1·3⁰ = 4; 110₂ = 1·2² + 1·2¹ + 0·2⁰ = 6; amal natijasi: 10. 10 ni 3 ga ketma-ket boʻlamiz: 10 : 3 = 3 (qoldiq 1); 3 : 3 = 1 (qoldiq 0); 1 : 3 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 101₃."
+ },
+ "66": {
+  "correct": "D",
+  "explanation": "111₂ = 1·2² + 1·2¹ + 1·2⁰ = 7; 1₂ = 1·2⁰ = 1; amal natijasi: 8. 8 ni 2 ga ketma-ket boʻlamiz: 8 : 2 = 4 (qoldiq 0); 4 : 2 = 2 (qoldiq 0); 2 : 2 = 1 (qoldiq 0); 1 : 2 = 0 (qoldiq 1). Qoldiqlarni pastdan yuqoriga oʻqiymiz: 1000₂."
+ },
+ "67": {
+  "correct": "A",
+  "explanation": "Hammasini 10-likka oʻtkazamiz: 112₃ = 14, 1101₂ = 13, 12₁₀ = 12, 1011₂ = 11."
+ },
+ "68": {
+  "correct": "D",
+  "explanation": "Hammasini 10-likka oʻtkazamiz: 1110₂ = 14, 15₁₀ = 15, 120₃ = 15, 111₃ = 13."
+ },
+ "69": {
+  "correct": "B",
+  "explanation": "Tekshiramiz: 12₃ = 5, 111₂ = 7, 1000₂ = 8, 21₃ = 7."
+ },
+ "70": {
+  "correct": "D",
+  "explanation": "Uch xonali eng katta ikkilik son 111₂ = 4 + 2 + 1 = 7."
+ },
+ "71": {
+  "correct": "C",
+  "explanation": "CPU barcha buyruqlarni bajaradi, shuning uchun uni kompyuterning «miyasi» deyishadi."
+ },
+ "72": {
+  "correct": "C",
+  "explanation": "RAM — tezkor xotira; disklar va fleshkadan ancha tez."
+ },
+ "73": {
+  "correct": "B",
+  "explanation": "HDD ma’lumotni doimiy saqlaydi; RAM esa tozalanadi."
+ },
+ "74": {
+  "correct": "D",
+  "explanation": "GPU grafik tasvirlarni hisoblaydi."
+ },
+ "75": {
+  "correct": "D",
+  "explanation": "SSD fayllarni doimiy saqlaydi."
+ },
+ "76": {
+  "correct": "B",
+  "explanation": "Sichqoncha orqali kompyuterga buyruq kiritiladi."
+ },
+ "77": {
+  "correct": "A",
+  "explanation": "Karnay ovozni chiqaradi."
+ },
+ "78": {
+  "correct": "D",
+  "explanation": "Skaner — kiritish qurilmasi: qog‘ozdagi matn yoki rasmni kompyuterga o‘tkazadi."
+ },
+ "79": {
+  "correct": "C",
+  "explanation": "Mikrofon ovozni kiritadi — u kiritish qurilmasi."
+ },
+ "80": {
+  "correct": "B",
+  "explanation": "Ona plata (motherboard) CPU, RAM, disklar va boshqa qurilmalarni bog‘laydi."
+ },
+ "81": {
+  "correct": "D",
+  "explanation": "HDD da aylanuvchi magnit disklar bor; SSD esa mikrosxemalardan iborat."
+ },
+ "82": {
+  "correct": "D",
+  "explanation": "SSD — disk, 512 GB uning hajmi."
+ },
+ "83": {
+  "correct": "B",
+  "explanation": "Chastota gigagersda (GHz) o‘lchanadi."
+ },
+ "84": {
+  "correct": "C",
+  "explanation": "Ochiq dasturlar RAM da turadi; RAM ko‘paysa, kompyuter tezroq ishlaydi."
+ },
+ "85": {
+  "correct": "C",
+  "explanation": "GPU grafikani hisoblaydi, SSD ma’lumotni doimiy saqlaydi."
+ },
+ "86": {
+  "correct": "C",
+  "explanation": "Excel ish kitobi .xlsx kengaytmasi bilan saqlanadi."
+ },
+ "87": {
+  "correct": "B",
+  "explanation": "Manzil: avval ustun harfi (B), keyin qator raqami (3)."
+ },
+ "88": {
+  "correct": "A",
+  "explanation": "Ustun va qator kesishgan joy — katak (yacheyka)."
+ },
+ "89": {
+  "correct": "A",
+  "explanation": "Daraja ^ belgisi bilan: =5^2 → 25."
+ },
+ "90": {
+  "correct": "D",
+  "explanation": "Qavs ichidagi amal birinchi bajariladi: =(2+3)*4."
+ },
+ "91": {
+  "correct": "B",
+  "explanation": "B, C, D — 3 ta ustun, 2–4 — 3 ta qator: 3 × 3 = 9."
+ },
+ "92": {
+  "correct": "D",
+  "explanation": "A1:A5 — A1, A2, A3, A4, A5 kataklari."
+ },
+ "93": {
+  "correct": "D",
+  "explanation": "Funksiyalar kutubxonasi Formulas menyusida."
+ },
+ "94": {
+  "correct": "A",
+  "explanation": "Diagramma Insert menyusi orqali qo‘shiladi."
+ },
+ "95": {
+  "correct": "A",
+  "explanation": "Sort A→Z matnlarni alifbo tartibida joylaydi."
+ },
+ "96": {
+  "correct": "B",
+  "explanation": "MIN — eng kichik qiymat."
+ },
+ "97": {
+  "correct": "D",
+  "explanation": "COUNT — faqat son, COUNTA — son ham, matn ham (bo‘sh bo‘lmasa)."
+ },
+ "98": {
+  "correct": "B",
+  "explanation": "Ikkalasi ham uchta katakdagi sonlarni qo‘shadi."
+ },
+ "99": {
+  "correct": "B",
+  "explanation": "=IF(shart; rost bo‘lsa; yolg‘on bo‘lsa)."
+ },
+ "100": {
+  "correct": "B",
+  "explanation": "Son ustunga sig‘masa, #### ko‘rinadi; ustunni kengaytirish kerak."
+ },
+ "101": {
+  "correct": "C",
+  "explanation": "=A1 — A1 dagi qiymatni ko‘rsatadi."
+ },
+ "102": {
+  "correct": "C",
+  "explanation": "Formula = belgisi bilan boshlanishi kerak; SUM(A1:A3) — oddiy matn bo‘lib qoladi."
+ },
+ "103": {
+  "correct": "D",
+  "explanation": "$ qator raqami oldida — faqat qator qotirilgan."
+ },
+ "104": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 6, A2 = 8. =A1+A2 → 14."
+ },
+ "105": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 9, B1 = 4. =A1+B1 → 13."
+ },
+ "106": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 25, B1 = 9. =A1-B1 → 16."
+ },
+ "107": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 7, B1 = 15. =B1-A1 → 8."
+ },
+ "108": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 8, B1 = 4. =A1*B1 → 32."
+ },
+ "109": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 24, B1 = 6. =A1/B1 → 4."
+ },
+ "110": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 7. =A1*3 → 21."
+ },
+ "111": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 3, B1 = 6, C1 = 5. =A1+B1+C1 → 14."
+ },
+ "112": {
+  "correct": "B",
+  "explanation": "Kataklar: A2 = 4, B1 = 7. =A2*B1 → 28."
+ },
+ "113": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 5, B2 = 30. =B2/A1 → 6."
+ },
+ "114": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 3, B1 = 2, C1 = 5. =A1+B1*C1 → 13."
+ },
+ "115": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, B1 = 2, C1 = 3. =(A1+B1)*C1 → 18."
+ },
+ "116": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 20, B1 = 8, C1 = 4. =A1-B1/C1 → 18."
+ },
+ "117": {
+  "correct": "A",
+  "explanation": "Kataklar: A2 = 5, B2 = 2. =A2+B2*3 → 11."
+ },
+ "118": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 3, B1 = 4. =A1*A1+B1 → 13."
+ },
+ "119": {
+  "correct": "D",
+  "explanation": "Kataklar: A2 = 8, B2 = 3, C1 = 30. =C1-A2+B2 → 25."
+ },
+ "120": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 28, B1 = 4, C1 = 2. =A1/B1-C1 → 5."
+ },
+ "121": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 5, A2 = 8, A3 = 12. =SUM(A1:A3) → 25."
+ },
+ "122": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 2, A2 = 5, B1 = 3, B2 = 6. =SUM(A1:B2) → 16."
+ },
+ "123": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 4, A2 = 11, A3 = 7. =MAX(A1:A3) → 11."
+ },
+ "124": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 9, A2 = 6, A3 = 8. =MIN(A1:A3) → 6."
+ },
+ "125": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 13, A2 = 6, A3 = 17, A4 = 2. =MAX(A1:A4) → 17."
+ },
+ "126": {
+  "correct": "C",
+  "explanation": "Kataklar: B1 = 12, B2 = 7, B3 = 20, B4 = 9. =MIN(B1:B4) → 7."
+ },
+ "127": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 6, A2 = 12. =AVERAGE(A1:A2) → 9."
+ },
+ "128": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, A2 = 10, A3 = 13. =AVERAGE(A1:A3) → 9."
+ },
+ "129": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 2, A2 = 4, A3 = 6, A4 = 8. =AVERAGE(A1:A4) → 5."
+ },
+ "130": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 9, A2 = 5, B1 = 3, B2 = 14. =MAX(A1:B2) → 14."
+ },
+ "131": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 4, A2 = 1, B1 = −3, B2 = 7. =MIN(A1:B2) → −3."
+ },
+ "132": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 3, A2 = 7, B1 = 5, B2 = 9. =AVERAGE(A1:B2) → 6."
+ },
+ "133": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 10, A2 = 4, A3 = 18, A4 = 7. =MAX(A1:A4)-MIN(A1:A4) → 14."
+ },
+ "134": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, A2 = 12, A3 = 5, B1 = 8, B2 = 3, B3 = 10. =MAX(A1:A3)+MIN(B1:B3) → 15."
+ },
+ "135": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, A2 = 10, B1 = 4, B2 = boʻsh. =AVERAGE(A1:A2)*B1 → 32."
+ },
+ "136": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, A2 = 24, A3 = 8. =MAX(A1:A3)/MIN(A1:A3) → 4."
+ },
+ "137": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 3, A2 = 8, A3 = 1, A4 = 6. =COUNT(A1:A4) → 4."
+ },
+ "138": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 5, A2 = nok, A3 = boʻsh, A4 = 9, A5 = 2. =COUNT(A1:A5) → 3."
+ },
+ "139": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = Olim, A2 = 4, A3 = Zarina, A4 = boʻsh, A5 = 7. =COUNTA(A1:A5) → 4."
+ },
+ "140": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 6, A2 = y, A3 = 3, B1 = boʻsh, B2 = 5, B3 = 5 dona. =COUNT(A1:B3) → 3."
+ },
+ "141": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = bor, A2 = 7, A3 = 2, A4 = boʻsh. =COUNTA(A1:A4)-COUNT(A1:A4) → 1."
+ },
+ "142": {
+  "correct": "D",
+  "explanation": "COUNTA bo‘sh bo‘lmagan kataklarni sanaydi: 2 ta son + 2 ta matn = 4."
+ },
+ "143": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = −4. =IF(A1>0; \"Musbat\"; \"Musbat emas\") → Musbat emas."
+ },
+ "144": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 18. =IF(A1>=18; \"Katta\"; \"Kichik\") → Katta."
+ },
+ "145": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 72. =IF(A1<60; \"Qayta\"; \"O‘tdi\") → O‘tdi."
+ },
+ "146": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = 5, B1 = 5. =IF(A1<>B1; \"Farqli\"; \"Bir xil\") → Bir xil."
+ },
+ "147": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 4, B1 = 10. =IF(A1<B1; A1*3; B1) → 12."
+ },
+ "148": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 6, B1 = 15. =IF(A1>B1; A1-B1; B1-A1) → 9."
+ },
+ "149": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 5, B1 = 3. =IF(A1<0; A1*B1; A1+B1) → 8."
+ },
+ "150": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 50. =IF(A1<50; \"Past\"; IF(A1<80; \"O‘rta\"; \"Yuqori\")) → O‘rta."
+ },
+ "151": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 8, A2 = 5, A3 = 12. =IF(MIN(A1:A3)<5; \"Bor\"; \"Yo‘q\") → Yo‘q."
+ },
+ "152": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 7, A2 = 6, A3 = 7. =IF(SUM(A1:A3)>=20; \"Yetadi\"; \"Yetmaydi\") → Yetadi."
+ },
+ "153": {
+  "correct": "B",
+  "explanation": "Kataklar: A1 = Ali, A2 = boʻsh, A3 = 4. =IF(COUNTA(A1:A3)=3; \"To‘la\"; \"Bo‘sh joy bor\") → Bo‘sh joy bor."
+ },
+ "154": {
+  "correct": "A",
+  "explanation": "Kataklar: A1 = 4, A2 = 9, A3 = 7, B1 = 6, B2 = 3, B3 = 8. =AVERAGE(MAX(A1:A3); MIN(B1:B3)) → 6."
+ },
+ "155": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 3, A2 = 8, A3 = 6, B1 = 5, B2 = 2, B3 = boʻsh. =MAX(A1:A3)*MIN(B1:B2) → 16."
+ },
+ "156": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 7, A2 = 3, B1 = 4, B2 = 9. =MIN(MAX(A1:A2); MAX(B1:B2)) → 7."
+ },
+ "157": {
+  "correct": "D",
+  "explanation": "Kataklar: A1 = 9, A2 = 4, A3 = 12. =MAX(MIN(A1:A3); 6) → 6."
+ },
+ "158": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 5, A2 = 3, A3 = 4, B1 = 2, B2 = z, B3 = 1. =SUM(A1:A3)-COUNT(B1:B3) → 10."
+ },
+ "159": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 2, A2 = 7, A3 = 9. =IF(AVERAGE(A1:A3)>5; MAX(A1:A3); MIN(A1:A3)) → 9."
+ },
+ "160": {
+  "correct": "C",
+  "explanation": "Kataklar: A1 = 6, A2 = 3, A3 = 5. =MIN(A1:A3)+MAX(A1:A3)*2 → 15."
+ },
+ "161": {
+  "correct": "D",
+  "explanation": "Bir ustun o‘ngga surilganda ustun harflari ham bittaga suriladi: A→B, B→C."
+ },
+ "162": {
+  "correct": "D",
+  "explanation": "A$1 da qator qotirilgan — o‘zgarmaydi; B1 ikki qator pastga surilib B3 bo‘ladi."
+ },
+ "163": {
+  "correct": "C",
+  "explanation": "Bo‘sh katak 0 deb olinadi, nolga bo‘lish — #DIV/0!."
+ },
+ "164": {
+  "correct": "B",
+  "explanation": "SUM matnli kataklarni hisobga olmaydi: 5 + 7 = 12."
+ },
+ "165": {
+  "correct": "C",
+  "explanation": "Dastur Main bilan boshlanib, End bilan tugaydi."
+ },
+ "166": {
+  "correct": "D",
+  "explanation": "Comment — izoh; dastur bajarilishiga ta’sir qilmaydi."
+ },
+ "167": {
+  "correct": "D",
+  "explanation": "Boolean — mantiqiy tur: true yoki false."
+ },
+ "168": {
+  "correct": "D",
+  "explanation": "For sikli olti burchakli shaklda chiziladi."
+ },
+ "169": {
+  "correct": "B",
+  "explanation": "Qiymat berish (Assign) to‘g‘ri to‘rtburchakda."
+ },
+ "170": {
+  "correct": "D",
+  "explanation": "Declare o‘zgaruvchini yaratadi (nom va tur)."
+ },
+ "171": {
+  "correct": "D",
+  "explanation": "2 ga bo‘lishdagi qoldiq 0 bo‘lsa, son juft."
+ },
+ "172": {
+  "correct": "D",
+  "explanation": "Matn har doim qo‘shtirnoq ichida yoziladi."
+ },
+ "173": {
+  "correct": "A",
+  "explanation": "Teng emas: <> (yoki !=)."
+ },
+ "174": {
+  "correct": "B",
+  "explanation": "Flowgorithmda / bo‘lish har doim kasr natija beradi: 3.5."
+ },
+ "175": {
+  "correct": "B",
+  "explanation": "Integer kasr qismini tashlab yuboradi: 9.8 → 9."
+ },
+ "176": {
+  "correct": "B",
+  "explanation": "step — har aylanishda i ga qo‘shiladigan (yoki ayiriladigan) qiymat."
+ },
+ "177": {
+  "correct": "D",
+  "explanation": "False yo‘li bo‘sh bo‘lishi mumkin."
+ },
+ "178": {
+  "correct": "D",
+  "explanation": "and — ikkala shart birga rost bo‘lishi kerak."
+ },
+ "179": {
+  "correct": "A",
+  "explanation": "or — kamida bittasi rost bo‘lsa yetarli."
+ },
+ "180": {
+  "correct": "A",
+  "explanation": "Ko‘paytirish * bilan: a * b."
+ },
+ "181": {
+  "correct": "A",
+  "explanation": "a = 5, keyin a = 5 × 2 = 10."
+ },
+ "182": {
+  "correct": "D",
+  "explanation": "y = 3 + 4 = 7, x = 7 × 2 = 14."
+ },
+ "183": {
+  "correct": "B",
+  "explanation": "a = 8, b = 8 − 2 = 6, a = 8 − 6 = 2 (qiymatlar almashdi)."
+ },
+ "184": {
+  "correct": "D",
+  "explanation": "4 × 3 − 2 = 10."
+ },
+ "185": {
+  "correct": "A",
+  "explanation": "7 ≥ 7 rost → Katta."
+ },
+ "186": {
+  "correct": "C",
+  "explanation": "12 mod 3 = 0 → Ha."
+ },
+ "187": {
+  "correct": "B",
+  "explanation": "4 > 5 yolg‘on, 4 < 2 yolg‘on — or ham yolg‘on → Yo‘q."
+ },
+ "188": {
+  "correct": "C",
+  "explanation": "i = 2, 3, 4, 5, 6 — 5 marta."
+ },
+ "189": {
+  "correct": "A",
+  "explanation": "2 + 3 + 4 + 5 = 14."
+ },
+ "190": {
+  "correct": "B",
+  "explanation": "i = 1, 3, 5: 1 × 1 × 3 × 5 = 15."
+ },
+ "191": {
+  "correct": "A",
+  "explanation": "2 + 4 + 6 + 8 + 10 = 30."
+ },
+ "192": {
+  "correct": "D",
+  "explanation": "4, 8, 12 — 3 ta."
+ },
+ "193": {
+  "correct": "A",
+  "explanation": "i 4 dan 2 gacha kamayadi: 4 3 2."
+ },
+ "194": {
+  "correct": "B",
+  "explanation": "r Real: 9 / 4 = 2.25."
+ },
+ "195": {
+  "correct": "C",
+  "explanation": "23 mod 6 = 5, 5 × 2 = 10."
+ },
+ "196": {
+  "correct": "A",
+  "explanation": "x: 1 → 3 → 9 → 27 → 81."
+ },
+ "197": {
+  "correct": "C",
+  "explanation": "floor har doim pastga (kichik butunga) yaxlitlaydi: 4."
+ },
+ "198": {
+  "correct": "C",
+  "explanation": "ceil — yuqoriga yaxlitlash."
+ },
+ "199": {
+  "correct": "C",
+  "explanation": "Butun sonda yaxlitlash kerak emas: hammasi 6."
+ },
+ "200": {
+  "correct": "B",
+  "explanation": "floor(1.5) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "201": {
+  "correct": "D",
+  "explanation": "ceil(1.5) = 2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "202": {
+  "correct": "A",
+  "explanation": "floor(5.6) = 5. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "203": {
+  "correct": "A",
+  "explanation": "ceil(5.2) = 6. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "204": {
+  "correct": "D",
+  "explanation": "floor(7.3) = 7. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "205": {
+  "correct": "D",
+  "explanation": "ceil(7.9) = 8. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "206": {
+  "correct": "A",
+  "explanation": "floor(0.8) = 0. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "207": {
+  "correct": "A",
+  "explanation": "ceil(0.8) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "208": {
+  "correct": "D",
+  "explanation": "round(5.3) = 5. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "209": {
+  "correct": "C",
+  "explanation": "round(5.7) = 6. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "210": {
+  "correct": "C",
+  "explanation": "round(2.4) = 2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "211": {
+  "correct": "A",
+  "explanation": "round(4.5) = 5. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "212": {
+  "correct": "D",
+  "explanation": "round(0.5) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "213": {
+  "correct": "C",
+  "explanation": "round(8.5) = 9. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "214": {
+  "correct": "D",
+  "explanation": "floor(9) = 9. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "215": {
+  "correct": "C",
+  "explanation": "ceil(4) = 4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "216": {
+  "correct": "D",
+  "explanation": "floor(3.01) = 3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "217": {
+  "correct": "D",
+  "explanation": "ceil(6.99) = 7. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "218": {
+  "correct": "B",
+  "explanation": "round(9.49) = 9. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "219": {
+  "correct": "B",
+  "explanation": "floor(−2.5) = −3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "220": {
+  "correct": "C",
+  "explanation": "ceil(−2.5) = −2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "221": {
+  "correct": "A",
+  "explanation": "ceil(−4.2) = −4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "222": {
+  "correct": "B",
+  "explanation": "floor(−4.7) = −5. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "223": {
+  "correct": "A",
+  "explanation": "round(−3.2) = −3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "224": {
+  "correct": "A",
+  "explanation": "round(−1.7) = −2. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "225": {
+  "correct": "A",
+  "explanation": "round(−4.5) = −5. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "226": {
+  "correct": "C",
+  "explanation": "ceil(−0.9) = 0. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "227": {
+  "correct": "A",
+  "explanation": "floor(−0.2) = −1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "228": {
+  "correct": "D",
+  "explanation": "5 ta banka yetmaydi, ceil(5.4) = 6."
+ },
+ "229": {
+  "correct": "B",
+  "explanation": "31 / 4 = 7.75 → ceil = 8."
+ },
+ "230": {
+  "correct": "A",
+  "explanation": "20 / 6 = 3.33… → floor = 3."
+ },
+ "231": {
+  "correct": "B",
+  "explanation": "50 / 15 = 3.33… → ceil = 4."
+ },
+ "232": {
+  "correct": "D",
+  "explanation": "100 / 7 = 14.28… → floor = 14."
+ },
+ "233": {
+  "correct": "C",
+  "explanation": "1500 / 400 = 3.75 → ceil = 4."
+ },
+ "234": {
+  "correct": "A",
+  "explanation": "floor(3.9) + ceil(−2.1) = 1. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "235": {
+  "correct": "D",
+  "explanation": "ceil(6.2) − floor(4.9) = 3. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "236": {
+  "correct": "D",
+  "explanation": "round(1.5) − round(−1.5) = 4. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "237": {
+  "correct": "C",
+  "explanation": "floor(−5.5) + ceil(−5.5) = −11. (floor — pastga, ceil — yuqoriga, round — eng yaqin butunga; 0.5 da noldan uzoqqa.)"
+ },
+ "238": {
+  "correct": "A",
+  "explanation": "Tekshiramiz: floor(−2.1) = −3; floor(2.9) = 2; ceil(−2.9) = −2; ceil(2.1) = 3."
+ },
+ "239": {
+  "correct": "A",
+  "explanation": "Butun sonlarda ceil(x) = floor(x), farq 0. Faqat 2.7 da: ceil = 3, floor = 2, farq 1."
+ },
+ "240": {
+  "correct": "B",
+  "explanation": "ceil(3.4) = 4; ceil(4.2) = 5, ceil(2.9) = 3, ceil(5) = 5."
+ },
+ "241": {
+  "correct": "C",
+  "explanation": "Har bir variant uchun round: round(−2.6) = −3, round(−1.4) = −1, round(−1.5) = −2, round(−2.5) = −3."
+ }
+}

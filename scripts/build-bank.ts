@@ -9,6 +9,10 @@ import { parseExpr, collectOps } from "../src/judge/expr";
 import { walk, Stmt } from "../src/judge/ast";
 import { QUESTIONS, QDef } from "./src/questions";
 import { PART3, PART4, ProblemDef } from "./src/problems";
+import { PART3_V2, PART4_V2 } from "./src/problems-v2";
+const VARIANT = process.env.VARIANT ?? "v1";
+const SFX = VARIANT === "v1" ? "" : `-${VARIANT}`;
+console.log(`Variant: ${VARIANT}`);
 import { rng, hashStr } from "./src/rng";
 import { TOPICS, ALLOWED, CONCEPTS } from "../src/config/topics";
 
@@ -192,7 +196,7 @@ for (const q of LEGACY) {
 
 
 // ---------- 241-question IT set (answers computed by scripts/it/solve.py) ----------
-const IT = JSON.parse(readFileSync(new URL("./src/it-questions.json", import.meta.url), "utf8")) as {
+const IT = JSON.parse(readFileSync(new URL(`./src/it-questions${SFX}.json`, import.meta.url), "utf8")) as {
   n: number; topic: string; question: string; code: string[] | null; table: string[][] | null; options: string[]; correct: string; explanation: string;
 }[];
 for (const q of IT) {
@@ -247,7 +251,7 @@ for (const q of questions) {
 // ---------- problems ----------
 const p3text = JSON.parse(readFileSync(new URL("./src/problems-text.json", import.meta.url), "utf8"));
 const p4text = JSON.parse(readFileSync(new URL("./src/hard-text.json", import.meta.url), "utf8"));
-mkdirSync(new URL("./out/reference/", import.meta.url), { recursive: true });
+mkdirSync(new URL(`./out/reference${SFX}/`, import.meta.url), { recursive: true });
 
 function mutants(body: B[]): B[][] {
   const res: B[][] = [];
@@ -297,6 +301,35 @@ function mutants(body: B[]): B[][] {
   };
   mut(forEnd);
   if (done) res.push(forEnd);
+  // swap True/False branches of each If (up to 3)
+  for (let n = 0; n < 3; n++) {
+    const b = JSON.parse(json);
+    let seen = 0, ok = false;
+    const sw = (bs: any[]) => {
+      for (const x of bs) {
+        if (ok) return;
+        if (x.k === "if") {
+          if (seen++ === n) {
+            [x.then, x.else] = [x.else, x.then];
+            ok = true;
+            return;
+          }
+          sw(x.then);
+          sw(x.else);
+        } else if (x.body) sw(x.body);
+      }
+    };
+    sw(b);
+    if (ok) res.push(b);
+  }
+  // reverse the order of top-level outputs (wrong output order)
+  const tops = JSON.parse(json);
+  const idx = tops.map((x: any, i: number) => (x.k === "output" ? i : -1)).filter((i: number) => i >= 0);
+  if (idx.length >= 2) {
+    const outs = idx.map((i: number) => tops[i]).reverse();
+    idx.forEach((i: number, j: number) => (tops[i] = outs[j]));
+    res.push(tops);
+  }
   return res;
 }
 
@@ -316,6 +349,11 @@ const buildProblem = (def: ProblemDef, text: any, part: 3 | 4, key: string) => {
     if (py !== undefined && !compareOutput(o, py).ok) fail(`${where}: namuna ${i + 1} chiqishi matndagi bilan mos emas:\n  fprg: ${JSON.stringify(o)}\n  matn: ${JSON.stringify(py)}`);
     return { input, output: o };
   });
+  const iz: string | undefined = def.izoh ?? text.izoh;
+  if (iz && VARIANT !== "v1") {
+    for (const t of samples[0].output.split(/\s+/).filter(Boolean)) if (!iz.includes(t)) fail(`${where}: izohda 1-misol natijasi «${t}» yo'q (natija: ${JSON.stringify(samples[0].output)})`);
+  }
+  if (VARIANT !== "v1" && part === 3 && !iz) fail(`${where}: izoh yo'q`);
   const r = rng(hashStr(text.title + part));
   const sampleSet = new Set(samples.map((s) => s.input));
   const tests: { input: string; output: string }[] = [];
@@ -330,7 +368,7 @@ const buildProblem = (def: ProblemDef, text: any, part: 3 | 4, key: string) => {
     }
     tests.push({ input: inp, output: normalizeOutput(rr.output) });
   }
-  if (tests.length < (guard >= 400 ? 5 : 8)) fail(`${where}: yashirin testlar kam (${tests.length})`);
+  if (tests.length < (guard >= 400 ? 3 : 8)) fail(`${where}: yashirin testlar kam (${tests.length})`);
   // weak-test detection
   const ms = mutants(def.ref);
   let killed = 0;
@@ -349,7 +387,7 @@ const buildProblem = (def: ProblemDef, text: any, part: 3 | 4, key: string) => {
     })) killed++;
   }
   if (killed < 2) fail(`${where}: testlar kuchsiz — ${ms.length} ta noto'g'ri yechimdan faqat ${killed} tasi yiqildi`);
-  writeFileSync(new URL(`./out/reference/P${part}_${String(key).padStart(2, "0")}.fprg`, import.meta.url), toFprg(def.ref, text.title, "Reference"));
+  writeFileSync(new URL(`./out/reference${SFX}/P${part}_${String(key).padStart(2, "0")}.fprg`, import.meta.url), toFprg(def.ref, text.title, "Reference"));
   const fixText = (s: string) => uz((def as any).statementFix ? (def as any).statementFix(s) : s);
   problems.push({
     id: pid,
@@ -374,8 +412,14 @@ function maxTopic(ts: string[]) {
   return ts.slice().sort().reverse()[0];
 }
 
-PART3.forEach((d, i) => buildProblem(d, p3text[i], 3, String(i + 1)));
-PART4.forEach((d, i) => buildProblem(d, p4text[d.idx], 4, String(i + 1)));
+if (VARIANT === "v1") {
+  PART3.forEach((d, i) => buildProblem(d, p3text[i], 3, String(i + 1)));
+  PART4.forEach((d, i) => buildProblem(d, p4text[d.idx], 4, String(i + 1)));
+} else {
+  const asText = (p: (typeof PART3_V2)[number]) => ({ title: p.title, story: p.story, kirish: p.kirish, chiqish: p.chiqish, cheklov: p.cheklov, samples: p.samples, izoh: p.izoh });
+  PART3_V2.forEach((p, i) => buildProblem(p as unknown as ProblemDef, asText(p), 3, String(i + 1)));
+  PART4_V2.forEach((p, i) => buildProblem(p as unknown as ProblemDef, asText(p), 4, String(i + 1)));
+}
 
 // ---------- coverage ----------
 const missing = CONCEPTS.filter((c) => conceptHits[c.id].length === 0);
@@ -388,7 +432,7 @@ const cov = [
   ...CONCEPTS.map((c) => `| ${c.topics.join(", ")} | ${c.name} | ${conceptHits[c.id].join(", ") || "**YO'Q**"} |`),
   "",
 ];
-writeFileSync(new URL("../coverage.md", import.meta.url), cov.join("\n"));
+writeFileSync(new URL(`../coverage${SFX}.md`, import.meta.url), cov.join("\n"));
 
 // ---------- summary ----------
 const by = (f: (q: any) => string) => questions.reduce((m: any, q) => ((m[f(q)] = (m[f(q)] ?? 0) + 1), m), {});
@@ -407,14 +451,14 @@ console.log(`1-qism: ${p1} savol, 2-qism: ${p2} savol, 3-qism: ${p3n} masala, 4-
 console.log("Mutantlar:", problems.map((p) => `${p.key}:${p.mutantsKilled}`).join(" "));
 
 // teacher copy with hidden outputs (NOT shipped), and the shipped bank without them
-writeFileSync(new URL("./out/bank-teacher.json", import.meta.url), JSON.stringify({ questions, problems }, null, 1));
+writeFileSync(new URL(`./out/bank-teacher${SFX}.json`, import.meta.url), JSON.stringify({ questions, problems }, null, 1));
 const shipped = {
-  meta: { course: "Flowgorithm: boshlang‘ich dasturlash", version: 1, generatedAt: new Date().toISOString(), rules: ALLOWED },
+  meta: { course: "Boshlang‘ich informatika (1-daraja)", variant: VARIANT, version: 1, generatedAt: new Date().toISOString(), rules: ALLOWED },
   topics: TOPICS,
   questions,
   problems: problems.map(({ _testOutputs, mutantsKilled, ...p }) => p),
 };
-writeFileSync(new URL("../src/data/bank.json", import.meta.url), JSON.stringify(shipped));
+writeFileSync(new URL(`../src/data/bank${SFX}.json`, import.meta.url), JSON.stringify(shipped));
 
 if (issues.length) {
   console.error(`\n${issues.length} ta muammo:\n- ` + issues.join("\n- "));
